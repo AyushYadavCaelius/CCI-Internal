@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Sum the issue assigned hours for each resources for a project rolled up at resource level --></help>
-    <label><!-- Issue Assigned Hours --></label>
-    <name>Issue_Assigned_Hours__c</name>
-</CustomFieldTranslation>

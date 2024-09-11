@@ -214,7 +214,7 @@
             <title>Top Customers by Open Case Age (Days)</title>
         </components>
     </middleSection>
-    <owner>mark.foulkrod+corporate@caeliusconsutling.com</owner>
+    <owner>lsilvas@farwestdistributors.com</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -318,7 +318,7 @@
             <title>Top Customers by Open Case Priority</title>
         </components>
     </rightSection>
-    <runningUser>mark.foulkrod+corporate@caeliusconsutling.com</runningUser>
+    <runningUser>lsilvas@farwestdistributors.com</runningUser>
     <textColor>#000000</textColor>
     <title>Agent Supervisor Overview</title>
     <titleColor>#000000</titleColor>

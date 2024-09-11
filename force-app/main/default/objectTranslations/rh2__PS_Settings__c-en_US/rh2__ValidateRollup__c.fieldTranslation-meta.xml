@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When checked, this setting causes Rollup Helper to automatically run rollup queries for validation purposes each time a rollup is created or edited. --></help>
-    <label><!-- Validate Rollup Query --></label>
-    <name>rh2__ValidateRollup__c</name>
-</CustomFieldTranslation>

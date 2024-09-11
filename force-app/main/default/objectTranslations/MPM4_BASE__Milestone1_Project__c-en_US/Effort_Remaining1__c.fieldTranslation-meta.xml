@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The Effort Remaining in Hours to complete a Project --></help>
-    <label><!-- Effort Hrs Remaining --></label>
-    <name>Effort_Remaining1__c</name>
-</CustomFieldTranslation>

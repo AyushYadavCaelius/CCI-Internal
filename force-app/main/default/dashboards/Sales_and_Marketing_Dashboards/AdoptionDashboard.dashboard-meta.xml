@@ -136,7 +136,7 @@
             <title>Last 30 Days</title>
         </components>
     </middleSection>
-    <owner>mark.foulkrod+corporate@caeliusconsutling.com</owner>
+    <owner>lsilvas@farwestdistributors.com</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -303,7 +303,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>mark.foulkrod+corporate@caeliusconsutling.com</runningUser>
+    <runningUser>lsilvas@farwestdistributors.com</runningUser>
     <textColor>#000000</textColor>
     <title>Adoption Dashboard</title>
     <titleColor>#000099</titleColor>

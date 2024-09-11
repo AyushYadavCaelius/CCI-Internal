@@ -28,14 +28,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>AutomaticActivityCapture</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>SalesforceIQInternal</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>ViewAllUsers</name>
     </userPermissions>
 </PermissionSet>

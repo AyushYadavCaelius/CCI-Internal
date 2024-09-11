@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Notify each task&apos;s assigned resource by this number of days before the task start date. Schedule the batch agent on the &quot;Milestones PM+ Help&quot; tab to enable this notification. The notifications are sent out per day at the batch agent&apos;s scheduled run time, exact timing dependent on this Salesforce instance&apos;s resource availability; the parent projects must also be in one of active statuses as defined in the &quot;Active Statuses&quot; setting. (Premium Edition Only) --></help>
-    <label><!-- Days to Notify Before Task Start --></label>
-    <name>MPM4_BASE__Days_to_Notify_Before_Task_Start__c</name>
-</CustomFieldTranslation>

@@ -7,9 +7,6 @@
     <columns>LEAD.COMPANY</columns>
     <columns>LEAD.STATUS</columns>
     <columns>LEAD.LEAD_SOURCE</columns>
-    <columns>ACTION_CADENCE</columns>
-    <columns>ACTION_CADENCE_ASSIGNEE</columns>
-    <columns>ACTION_CADENCE_STATE</columns>
     <filterScope>Mine</filterScope>
     <label>My Leads</label>
 </ListView>

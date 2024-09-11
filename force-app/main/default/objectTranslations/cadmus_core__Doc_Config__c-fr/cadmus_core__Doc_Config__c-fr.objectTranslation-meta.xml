@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Doc Config --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Doc Config --></value>
+    </caseValues>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Document Config Name --></nameFieldLabel>
+    <recordTypes>
+        <description><!-- Create CSV files directly from Salesforce data --></description>
+        <label><!-- Character-separated values (CSV) --></label>
+        <name>cadmus_core__CSV</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Creates an email from your MS Word document and sent it via SFDC --></description>
+        <label><!-- EMAIL --></label>
+        <name>cadmus_core__EMAIL</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Main document that can include multiple templates. --></description>
+        <label><!-- Main Word Document --></label>
+        <name>cadmus_core__MAIN</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Main Powerpoint Document --></label>
+        <name>cadmus_core__MAIN_PPTX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Main Excel document --></description>
+        <label><!-- Main Excel Document --></label>
+        <name>cadmus_core__MAIN_XLSX</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Add Static PDF documents --></description>
+        <label><!-- Static PDF --></label>
+        <name>cadmus_core__PDF</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Partial document that can be used on a &apos;Main Word Document&apos; --></description>
+        <label><!-- Template Word Document --></label>
+        <name>cadmus_core__TEMPLATE</name>
+    </recordTypes>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a valid RecordType. If none are presented, make sure you have done step 1 and 2 of the &quot;Get Started&quot; tab. The permissions on the Doc Config SObject are not correct and you must grant access to the Record Types. --></errorMessage>
+        <name>cadmus_core__RecordTypeCannotBeNull</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Open_PDF_Butler --></label>
+        <name>cadmus_core__Open_PDF_Butler</name>
+    </webLinks>
+</CustomObjectTranslation>

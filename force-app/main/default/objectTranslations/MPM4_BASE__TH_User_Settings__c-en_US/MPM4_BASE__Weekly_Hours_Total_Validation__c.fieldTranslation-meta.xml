@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Ensures resources weekly time entries add up to at least the value on their resource records weekly workday duration field on submission. Validated as a 40 hour workweek if no workweek duration is set. --></help>
-    <label><!-- Validate Weekly Total Hours --></label>
-    <name>MPM4_BASE__Weekly_Hours_Total_Validation__c</name>
-</CustomFieldTranslation>

@@ -13,7 +13,7 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
+    <tabs>CommercientSF__SalBranch__c</tabs>
+    <tabs>CommercientSF__TblArTerms__c</tabs>
     <tabs>standard-WaveHome</tabs>
-    <tabs>Technology__c</tabs>
-    <tabs>Salesforce_Certification__c</tabs>
 </CustomApplication>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Count_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISNEW(),OR(AND(Opportunity.Sales_Order_Count__c &gt; 0,RecordType.DeveloperName =&apos;Sales_Order&apos;), AND(Opportunity.Purchase_Order_Count__c &gt; 0,RecordType.DeveloperName =&apos;Purchase_Order&apos;)))</errorConditionFormula>
+    <errorMessage>You can create only One Purchase Order and One Sales Order for an Opportunity.</errorMessage>
+</ValidationRule>

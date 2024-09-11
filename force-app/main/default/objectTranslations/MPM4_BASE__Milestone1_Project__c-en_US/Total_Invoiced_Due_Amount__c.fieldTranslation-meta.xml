@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Summarizing Total Amount Due from related Invoice Headers --></help>
-    <label><!-- Total Invoiced Due Amount --></label>
-    <name>Total_Invoiced_Due_Amount__c</name>
-</CustomFieldTranslation>

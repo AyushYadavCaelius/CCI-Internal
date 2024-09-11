@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The field in which rollup results are sourced from. For example: Opportunity.Amount --></help>
-    <label><!-- Source Field --></label>
-    <name>rh2__sourceField__c</name>
-</CustomFieldTranslation>

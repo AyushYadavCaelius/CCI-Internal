@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Email_Target_Object__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Contact or User that will receive the email</inlineHelpText>
+    <label>Email Target Object</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (Email Target Object)</relationshipLabel>
+    <relationshipName>Actionables2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

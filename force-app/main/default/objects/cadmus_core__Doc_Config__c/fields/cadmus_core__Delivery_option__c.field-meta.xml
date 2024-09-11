@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Delivery_option__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Delivery option</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATTACHMENTS</fullName>
+                <default>false</default>
+                <label>ATTACHMENTS</label>
+            </value>
+            <value>
+                <fullName>ATTACHMENTS_OVERWRITE</fullName>
+                <default>false</default>
+                <label>ATTACHMENTS_OVERWRITE</label>
+            </value>
+            <value>
+                <fullName>FILES</fullName>
+                <default>true</default>
+                <label>FILES</label>
+            </value>
+            <value>
+                <fullName>FILES_OVERWRITE</fullName>
+                <default>false</default>
+                <label>FILES_OVERWRITE</label>
+            </value>
+            <value>
+                <fullName>FILES_ADD_VERSION</fullName>
+                <default>false</default>
+                <label>FILES_ADD_VERSION</label>
+            </value>
+            <value>
+                <fullName>BASE64</fullName>
+                <default>false</default>
+                <label>BASE64</label>
+            </value>
+            <value>
+                <fullName>FILES_ASYNC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FILES ASYNC</label>
+            </value>
+            <value>
+                <fullName>FILES_ADD_VERSION_ASYNC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FILES_ADD_VERSION ASYNC</label>
+            </value>
+            <value>
+                <fullName>FILES_OVERWRITE_ASYNC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FILES_OVERWRITE ASYNC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Describe to which merge &quot;group&quot; it belong. A merge group is create for each Merge Sequence. Document name is taken from the document with Order matching the Merge sequence. --></help>
+    <label><!-- Merge Sequence --></label>
+    <name>cadmus_core__Merge_Sequence__c</name>
+</CustomFieldTranslation>

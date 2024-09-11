@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__SOQL_Builder_Managed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>indicates to the user that this datasource was originally created with the SOQL Builder</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the SOQL was originally built via the SOQL Builder, then take care when you edit in the SOQL window directly! Best edit either in SOQL Builder or directly write your own SOQL</inlineHelpText>
+    <label>SOQL Builder Managed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The template types that are available when importing or exporting Projects. Expected values are &quot;Document&quot;, &quot;File&quot;, or &quot;Both&quot;. If empty, both Documents and Salesforce Files will be available. --></help>
-    <label><!-- Import/Export File Types --></label>
-    <name>MPM4_BASE__Import_Export_Template_Types__c</name>
-</CustomFieldTranslation>

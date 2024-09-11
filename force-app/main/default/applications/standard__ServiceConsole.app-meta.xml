@@ -181,14 +181,14 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
-    <tabs>Technology__c</tabs>
-    <tabs>Salesforce_Certification__c</tabs>
+    <tabs>CommercientSF__SalBranch__c</tabs>
+    <tabs>CommercientSF__TblArTerms__c</tabs>
     <workspaceConfig>
         <mappings>
-            <tab>Salesforce_Certification__c</tab>
+            <tab>CommercientSF__SalBranch__c</tab>
         </mappings>
         <mappings>
-            <tab>Technology__c</tab>
+            <tab>CommercientSF__TblArTerms__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NFDM</fullName>
+        <default>false</default>
+        <label>NFDM</label>
+    </customValue>
+    <customValue>
+        <fullName>Whey</fullName>
+        <default>false</default>
+        <label>Whey</label>
+    </customValue>
+    <customValue>
+        <fullName>Cream</fullName>
+        <default>false</default>
+        <label>Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>Blending</fullName>
+        <default>false</default>
+        <label>Blending</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehousing</fullName>
+        <default>false</default>
+        <label>Warehousing</label>
+    </customValue>
+    <customValue>
+        <fullName>CSM</fullName>
+        <default>false</default>
+        <label>CSM</label>
+    </customValue>
+    <masterLabel>Products</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

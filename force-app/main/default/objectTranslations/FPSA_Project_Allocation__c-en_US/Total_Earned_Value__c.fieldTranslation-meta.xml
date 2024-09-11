@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Total Number of earned hours from the Task for this allocation --></help>
-    <label><!-- Total Earned Value --></label>
-    <name>Total_Earned_Value__c</name>
-</CustomFieldTranslation>

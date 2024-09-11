@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>送信者が「私のメール設定」で署名を設定している場合、署名がメールに表示されます。署名が不要な場合は、チェックボックスにチェックを入れてください。</help>
+    <label><!-- Email Hide User Signature --></label>
+    <name>cadmus_core__Email_Hide_User_Signature__c</name>
+</CustomFieldTranslation>

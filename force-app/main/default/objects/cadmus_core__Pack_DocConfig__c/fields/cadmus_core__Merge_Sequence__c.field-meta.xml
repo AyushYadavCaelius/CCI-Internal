@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Merge_Sequence__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Describe to which merge &quot;group&quot; it belong</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe to which merge &quot;group&quot; it belong. A merge group is create for each Merge Sequence. Document name is taken from the document with Order matching the Merge sequence.</inlineHelpText>
+    <label>Merge Sequence</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

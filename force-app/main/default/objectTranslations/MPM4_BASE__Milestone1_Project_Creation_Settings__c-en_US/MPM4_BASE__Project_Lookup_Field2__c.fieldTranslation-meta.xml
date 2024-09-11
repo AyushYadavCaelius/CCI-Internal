@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Please note that if this field is used, there will have to be a value in the &apos;Secondary Lookup&apos; custom setting. --></help>
-    <label><!-- Project Lookup Field 2 --></label>
-    <name>MPM4_BASE__Project_Lookup_Field2__c</name>
-</CustomFieldTranslation>

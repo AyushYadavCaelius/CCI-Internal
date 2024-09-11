@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- By default, a new resource is automatically created with each new user. Enable this option to only create resources for users with the &quot;Standard&quot; user type shown on each user record and ignore other types such as community user types. --></help>
-    <label><!-- Only Create Resource For SF License --></label>
-    <name>MPM4_BASE__Only_Create_Resource_For_SF_License__c</name>
-</CustomFieldTranslation>

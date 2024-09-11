@@ -21,7 +21,6 @@
     <columns>
         <field>EMAIL</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>LAST_ACTIVITY</column>

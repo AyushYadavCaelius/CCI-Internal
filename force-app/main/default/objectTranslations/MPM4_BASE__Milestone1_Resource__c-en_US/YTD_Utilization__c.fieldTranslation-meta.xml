@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Ratio of current YTD actual hours and YTD total available hours. --></help>
-    <label><!-- YTD Utilization --></label>
-    <name>YTD_Utilization__c</name>
-</CustomFieldTranslation>

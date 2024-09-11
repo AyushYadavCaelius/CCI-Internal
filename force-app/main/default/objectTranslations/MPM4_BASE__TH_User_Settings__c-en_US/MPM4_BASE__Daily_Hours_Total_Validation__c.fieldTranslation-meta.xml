@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Ensures resources daily time entries add up to at least the value on their resource records daily workday duration field on submission. Validated as an 8 hour workday if no workday duration is set. --></help>
-    <label><!-- Validate Daily Total Hours --></label>
-    <name>MPM4_BASE__Daily_Hours_Total_Validation__c</name>
-</CustomFieldTranslation>

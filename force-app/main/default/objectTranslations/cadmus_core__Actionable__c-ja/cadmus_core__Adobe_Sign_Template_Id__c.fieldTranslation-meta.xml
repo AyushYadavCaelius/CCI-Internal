@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>使用するAdobe Signのテンプレートを設定します。URLからレコードIDをコピーしてください。</help>
+    <label><!-- Template Id --></label>
+    <name>cadmus_core__Adobe_Sign_Template_Id__c</name>
+</CustomFieldTranslation>

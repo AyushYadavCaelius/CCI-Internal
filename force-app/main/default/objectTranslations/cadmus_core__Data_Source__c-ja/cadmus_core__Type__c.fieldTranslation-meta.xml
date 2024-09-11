@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>データソースが取得するデータが単一レコードか複数レコードかを設定します。1件以上のレコードを取得する可能性がある場合は、必ずリストデータを設定してください。</help>
+    <label><!-- Type --></label>
+    <name>cadmus_core__Type__c</name>
+    <picklistValues>
+        <masterLabel>List of sObjects</masterLabel>
+        <translation>リストデータ（複数レコードを取得）</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single sObject</masterLabel>
+        <translation>シングルデータ（1レコードのみ取得）</translation>
+    </picklistValues>
+</CustomFieldTranslation>

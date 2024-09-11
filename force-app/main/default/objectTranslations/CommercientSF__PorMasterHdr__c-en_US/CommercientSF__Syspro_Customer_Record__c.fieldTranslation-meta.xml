@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Syspro Customer Record --></label>
+    <name>CommercientSF__Syspro_Customer_Record__c</name>
+    <relationshipLabel><!-- Syspro Purchase Order Headers --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Label for the rollup (the value that is displayed to the user, as opposed to the name value which is used internally) --></help>
-    <label><!-- Rollup Label --></label>
-    <name>rh2__RollupLabel__c</name>
-</CustomFieldTranslation>

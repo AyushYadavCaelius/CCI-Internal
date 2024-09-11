@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The number of days that exceptions should be saved for before being cleaned up by Rollup Helper.  The default value is 2 days. --></help>
-    <label><!-- Exception Lifespan --></label>
-    <name>rh2__Exception_Lifespan__c</name>
-</CustomFieldTranslation>

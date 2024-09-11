@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- What date should this project start? --></help>
-    <label><!-- Kickoff --></label>
-    <name>MPM4_BASE__Kickoff__c</name>
-</CustomFieldTranslation>

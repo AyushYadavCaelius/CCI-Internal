@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The API name of a Lookup field that is used to populate a value for the Lookup field used in the &apos;Project Lookup Field 1&apos; custom setting. --></help>
-    <label><!-- Primary Lookup --></label>
-    <name>MPM4_BASE__PrimaryLookup__c</name>
-</CustomFieldTranslation>

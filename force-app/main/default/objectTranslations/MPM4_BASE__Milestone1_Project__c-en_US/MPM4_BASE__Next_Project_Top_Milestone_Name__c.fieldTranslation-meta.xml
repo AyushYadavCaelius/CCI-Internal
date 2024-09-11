@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The next incomplete milestone name. This does not include sub-milestones. --></help>
-    <label><!-- Next Project Top Milestone Name --></label>
-    <name>MPM4_BASE__Next_Project_Top_Milestone_Name__c</name>
-</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__Syspro_Customer_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Syspro Customer Record</label>
+    <referenceTo>CommercientSF__ArCustomer__c</referenceTo>
+    <relationshipLabel>Syspro Multi Ship Addresses</relationshipLabel>
+    <relationshipName>Syspro_Multi_Ship_Addresses</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

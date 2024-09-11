@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The name of the grandparent Milestone. Please Note: This field will not have a value if the &apos;Parent Milestone&apos; lookup field is not used. --></help>
-    <label><!-- Milestone Grandparent --></label>
-    <name>MPM4_BASE__Milestone_Grandparent__c</name>
-</CustomFieldTranslation>

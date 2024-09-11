@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Delivery option --></label>
+    <name>cadmus_core__Delivery_option__c</name>
+    <picklistValues>
+        <masterLabel>ATTACHMENTS</masterLabel>
+        <translation><!-- ATTACHMENTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATTACHMENTS_OVERWRITE</masterLabel>
+        <translation><!-- ATTACHMENTS_OVERWRITE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BASE64</masterLabel>
+        <translation><!-- BASE64 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILES</masterLabel>
+        <translation><!-- FILES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILES_ADD_VERSION</masterLabel>
+        <translation><!-- FILES_ADD_VERSION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILES_OVERWRITE</masterLabel>
+        <translation><!-- FILES_OVERWRITE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

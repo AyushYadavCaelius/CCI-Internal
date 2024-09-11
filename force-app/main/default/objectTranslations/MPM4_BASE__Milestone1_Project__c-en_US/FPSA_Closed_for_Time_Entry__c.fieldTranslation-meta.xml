@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- This field once checked will not allow any resource to log time against the project. Is part of Project Closing process. Please make sure all future allocations are zeroed out before checking this box. Else resources will see the timesheet without project name and will get error during Time submission. --></help>
-    <label><!-- Closed for Time Entry --></label>
-    <name>FPSA_Closed_for_Time_Entry__c</name>
-</CustomFieldTranslation>

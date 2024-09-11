@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If checked, sort orders from child filters or a custom sort field can be used instead of the default max/min sort. If unchecked, max/min rollup will be sorted by the source field. --></help>
-    <label><!-- Disable Default Max/Min Sort --></label>
-    <name>rh2__disableDefaultMaxMinSort__c</name>
-</CustomFieldTranslation>

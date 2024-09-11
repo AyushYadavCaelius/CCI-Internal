@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- This field tell the PM how much budget has not be allocated. Please note, every week the batch job trues up the unused hours for each resource. Example resource was allocated 40 hrs but billed either 24 and 2 days of PTO or 56 hrs with overtime. As a result the previous weeks allocated hours get reset to actual time used by the resource. Based on usage the allocation can be either under allocated or over allocated. Helps PM know if they are leaving money on the table or not --></help>
-    <label><!-- Total Unallocated Budget --></label>
-    <name>Total_Unallocated_Budget__c</name>
-</CustomFieldTranslation>

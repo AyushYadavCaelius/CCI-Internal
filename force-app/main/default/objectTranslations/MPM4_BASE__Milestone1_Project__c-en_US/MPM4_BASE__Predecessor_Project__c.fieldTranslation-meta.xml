@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Predecessor Project --></label>
-    <lookupFilter>
-        <errorMessage><!-- Predecessor project must be in the same program as this project. --></errorMessage>
-    </lookupFilter>
-    <name>MPM4_BASE__Predecessor_Project__c</name>
-    <relationshipLabel><!-- Projects --></relationshipLabel>
-</CustomFieldTranslation>

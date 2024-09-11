@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__MAIN</fullName>
+    <active>true</active>
+    <description>Main document that can include multiple templates.</description>
+    <label>Main Word Document</label>
+    <picklistValues>
+        <picklist>cadmus_core__Delivery_option__c</picklist>
+        <values>
+            <fullName>ATTACHMENTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATTACHMENTS_OVERWRITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BASE64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FILES</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>FILES_ADD_VERSION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FILES_OVERWRITE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

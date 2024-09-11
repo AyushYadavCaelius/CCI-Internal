@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF6__QotMaster__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>ERP Quotation Header</label>
+    <referenceTo>CommercientSF6__QotMaster__c</referenceTo>
+    <relationshipLabel>ERP Quotation Details</relationshipLabel>
+    <relationshipName>ERP_Quotation_Details</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

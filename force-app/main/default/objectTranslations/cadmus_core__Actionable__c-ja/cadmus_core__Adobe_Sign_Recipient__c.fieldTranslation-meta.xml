@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>受信する方を設定してください。</help>
+    <label><!-- Recipient --></label>
+    <name>cadmus_core__Adobe_Sign_Recipient__c</name>
+    <relationshipLabel><!-- Actionables (Recipient) --></relationshipLabel>
+</CustomFieldTranslation>

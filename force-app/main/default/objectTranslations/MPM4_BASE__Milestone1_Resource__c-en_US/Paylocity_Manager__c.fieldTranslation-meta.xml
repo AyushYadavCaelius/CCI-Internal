@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- This field is enriched from the data that comes from Paylocity. --></help>
-    <label><!-- Paylocity Manager --></label>
-    <name>Paylocity_Manager__c</name>
-    <relationshipLabel><!-- Reportee&apos;s --></relationshipLabel>
-</CustomFieldTranslation>

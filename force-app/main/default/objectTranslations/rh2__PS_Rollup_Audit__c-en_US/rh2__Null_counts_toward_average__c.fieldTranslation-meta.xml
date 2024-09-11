@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Determines whether a null counts as a zero when calculating an AVG Rollup. --></help>
-    <label><!-- Nulls Count Toward Average --></label>
-    <name>rh2__Null_counts_toward_average__c</name>
-</CustomFieldTranslation>

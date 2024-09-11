@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Reference to the field in the parent Data Source. This field needs to be included in the SELECT of the Parents Data Source --></help>
+    <label><!-- Parent Query Field Name --></label>
+    <name>cadmus_core__Parent_Query_Field_Name__c</name>
+</CustomFieldTranslation>

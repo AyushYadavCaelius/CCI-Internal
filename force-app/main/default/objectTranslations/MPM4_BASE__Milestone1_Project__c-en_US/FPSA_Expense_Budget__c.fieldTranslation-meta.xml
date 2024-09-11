@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Manually Entered by PM. The amount the client agrees to pay for expenses (Travel, Hotel, Meals, etc.) --></help>
-    <label><!-- PD Expense Budget --></label>
-    <name>FPSA_Expense_Budget__c</name>
-</CustomFieldTranslation>

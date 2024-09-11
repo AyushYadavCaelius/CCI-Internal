@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Syspro AP Supplier Address --></label>
+    <name>CommercientSF__Syspro_AP_Supplier_Address__c</name>
+    <relationshipLabel><!-- Syspro AP Suppliers --></relationshipLabel>
+</CustomFieldTranslation>

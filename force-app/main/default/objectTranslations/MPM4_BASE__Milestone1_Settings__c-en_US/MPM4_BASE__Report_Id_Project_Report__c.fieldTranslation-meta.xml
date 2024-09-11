@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Please input the ID of the report that will be directed to when clicking the &apos;Project Report&apos; button on the project page. --></help>
-    <label><!-- Report Id: Project Report --></label>
-    <name>MPM4_BASE__Report_Id_Project_Report__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The sObject of the Intermediary Lookup Field --></help>
-    <label><!-- Intermediary Object Name --></label>
-    <name>rh2__intermediaryObjectName__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If checked, the realtime disable script may be used to temporarily turn off rollups.  For more details, please contact support@passagetech.com. --></help>
-    <label><!-- Allow Disable Realtime By Script --></label>
-    <name>rh2__Run_Realtime_Rollup__c</name>
-</CustomFieldTranslation>

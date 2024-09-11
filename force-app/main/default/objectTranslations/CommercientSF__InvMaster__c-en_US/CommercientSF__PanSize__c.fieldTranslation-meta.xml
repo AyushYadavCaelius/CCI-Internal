@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pan or container size --></label>
+    <name>CommercientSF__PanSize__c</name>
+</CustomFieldTranslation>

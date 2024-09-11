@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Org_Wide_Email_Address_Data_Source__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>If you choose a DataSource for a Dynamic OWA selection, the field &quot;Org Wide Email Address Display Name&quot; must be the API name of the field to use in the DataSource</inlineHelpText>
+    <label>Org Wide Email Address Data Source</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (Org Wide Email Address Data Source)</relationshipLabel>
+    <relationshipName>Org_Wide_Email_Address_Data_Sources</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

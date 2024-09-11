@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When Advance Payment feature is used, this field determines how much discount is to be applied for each subsequent invoice. Example Advance of 20% and apply 10% discount to future invoice. the left over is applied to the last and final invoice --></help>
-    <label><!-- Subsequent Discount Percentage --></label>
-    <name>Subsequent_Discount_Percentage__c</name>
-</CustomFieldTranslation>

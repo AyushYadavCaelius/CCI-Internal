@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>FPSA_Daily_Bill_Rate__c</fullName>
-    <defaultValue>false</defaultValue>
-    <externalId>false</externalId>
-    <label>Bill Rate is Daily Rate</label>
-    <trackTrending>false</trackTrending>
-    <type>Checkbox</type>
-</CustomField>

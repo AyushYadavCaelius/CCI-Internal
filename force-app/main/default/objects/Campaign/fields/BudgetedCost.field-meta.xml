@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>BudgetedCost</fullName>
-    <description>What is the Campaign Budget (It should include the planned activities and associated resource cost and any fixed costs) ?</description>
-    <inlineHelpText>What is the Campaign Budget (It should include the planned activities and associated resource cost and any fixed costs) ?</inlineHelpText>
-    <trackFeedHistory>false</trackFeedHistory>
 </CustomField>

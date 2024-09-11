@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Image source --></label>
+    <name>cadmus_core__Image_source__c</name>
+    <picklistValues>
+        <masterLabel>ATTACHMENTS</masterLabel>
+        <translation>添付ファイル</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOCUMENTS</masterLabel>
+        <translation>ドキュメント</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILES</masterLabel>
+        <translation>ファイル</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NONE</masterLabel>
+        <translation>なし</translation>
+    </picklistValues>
+</CustomFieldTranslation>

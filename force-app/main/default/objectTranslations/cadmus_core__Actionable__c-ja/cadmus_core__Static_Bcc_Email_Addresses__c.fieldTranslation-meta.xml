@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Static Bcc Email Addresses --></label>
+    <name>cadmus_core__Static_Bcc_Email_Addresses__c</name>
+</CustomFieldTranslation>

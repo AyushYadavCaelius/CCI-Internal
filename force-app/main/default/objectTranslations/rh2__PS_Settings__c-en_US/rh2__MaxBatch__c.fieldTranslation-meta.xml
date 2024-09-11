@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Number of batch jobs that Rollup Helper can initiate concurrently.  We recommend that the total number of jobs available between Batch, Future, and Queueable is at least 30 concurrent jobs available to Rollup Helper. --></help>
-    <label><!-- Max Concurrent Batch Processes --></label>
-    <name>rh2__MaxBatch__c</name>
-</CustomFieldTranslation>

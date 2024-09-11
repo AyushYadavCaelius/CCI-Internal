@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- API name of the formula field that has the parameter- or querystring for DocuSign. The SourceId does not have to be added and the querystring should start with &apos;&amp;&apos; --></help>
+    <label><!-- DocuSign Parameters For Url --></label>
+    <name>cadmus_core__DocuSign_Parameters_For_Url__c</name>
+</CustomFieldTranslation>

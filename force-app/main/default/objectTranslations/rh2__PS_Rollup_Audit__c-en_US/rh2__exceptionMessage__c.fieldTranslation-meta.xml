@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Contains any exceptions caused by this rollup --></help>
-    <label><!-- Exception Message --></label>
-    <name>rh2__exceptionMessage__c</name>
-</CustomFieldTranslation>

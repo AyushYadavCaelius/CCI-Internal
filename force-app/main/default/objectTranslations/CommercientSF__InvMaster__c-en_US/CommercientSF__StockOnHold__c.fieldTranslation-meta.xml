@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stock code on hold flag --></label>
+    <name>CommercientSF__StockOnHold__c</name>
+</CustomFieldTranslation>

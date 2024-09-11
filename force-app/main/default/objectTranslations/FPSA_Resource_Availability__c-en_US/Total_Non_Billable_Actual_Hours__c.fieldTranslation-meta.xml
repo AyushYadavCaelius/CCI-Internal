@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Total Hours minus total Billable Hours --></help>
-    <label><!-- Total Non-Billable Actual Hours --></label>
-    <name>Total_Non_Billable_Actual_Hours__c</name>
-</CustomFieldTranslation>

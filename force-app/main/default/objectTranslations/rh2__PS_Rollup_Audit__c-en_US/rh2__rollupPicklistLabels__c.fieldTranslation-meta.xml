@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Controls whether rollups from picklist source fields will rollup the label of the picklist value. --></help>
-    <label><!-- Rollup Picklist Labels --></label>
-    <name>rh2__rollupPicklistLabels__c</name>
-</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Email To Addresses --></label>
+    <name>cadmus_core__Email_To_Addresses__c</name>
+    <relationshipLabel><!-- Actionables (Email To Addresses) --></relationshipLabel>
+</CustomFieldTranslation>

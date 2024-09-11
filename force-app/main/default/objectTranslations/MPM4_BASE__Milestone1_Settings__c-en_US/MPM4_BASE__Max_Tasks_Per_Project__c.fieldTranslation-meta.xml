@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The maximum number of tasks that can belong to a project. If left blank no limit will be enforced. --></help>
-    <label><!-- Maximum Number Of Tasks Per Project --></label>
-    <name>MPM4_BASE__Max_Tasks_Per_Project__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Advance Payment does not apply to all Use cases. Use this feature only if the SOW has Advance payment as terms. This feature allows you to charge your client an advance payment and apply the %payment against future invoices --></help>
-    <label><!-- Advance Payment --></label>
-    <name>Advance_Payment__c</name>
-</CustomFieldTranslation>

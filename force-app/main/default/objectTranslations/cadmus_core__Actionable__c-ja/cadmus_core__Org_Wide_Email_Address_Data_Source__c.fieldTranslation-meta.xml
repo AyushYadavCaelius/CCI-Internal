@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>動的に組織のメールアドレスを設定するには、データソース設定用の項目「送信者に設定する組織のメールアドレス(データソース)」の設定が必要です。</help>
+    <label><!-- Org Wide Email Address Data Source --></label>
+    <name>cadmus_core__Org_Wide_Email_Address_Data_Source__c</name>
+    <relationshipLabel><!-- Actionables (Org Wide Email Address Data Source) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -62,7 +62,6 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <booleanFilter>1 OR 2</booleanFilter>
         <criteriaItems>

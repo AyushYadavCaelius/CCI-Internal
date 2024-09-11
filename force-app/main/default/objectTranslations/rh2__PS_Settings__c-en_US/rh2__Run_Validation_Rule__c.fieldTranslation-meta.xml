@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- LEAVE THIS OPTION CHECKED --></help>
-    <label><!-- Run Validation Rule --></label>
-    <name>rh2__Run_Validation_Rule__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If this is unchecked, scheduled jobs will only run at the top of the hour (HH:00).  If this is checked, scheduled jobs can be run at 5 minute intervals (HH:00, HH:05, HH:10, etc.). --></help>
-    <label><!-- Granular Scheduled Jobs --></label>
-    <name>rh2__Granular_Scheduled_Jobs__c</name>
-</CustomFieldTranslation>

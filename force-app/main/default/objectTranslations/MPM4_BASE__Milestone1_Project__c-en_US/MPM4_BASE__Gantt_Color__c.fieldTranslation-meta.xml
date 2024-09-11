@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- You may update this with HTML color code that the record should display as on the gantt chart. --></help>
-    <label><!-- Gantt Color --></label>
-    <name>MPM4_BASE__Gantt_Color__c</name>
-</CustomFieldTranslation>

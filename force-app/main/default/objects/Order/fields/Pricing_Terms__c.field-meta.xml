@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Terms__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricing Terms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PWA FOB</fullName>
+                <default>false</default>
+                <label>PWA FOB</label>
+            </value>
+            <value>
+                <fullName>PWA DEL</fullName>
+                <default>false</default>
+                <label>PWA DEL</label>
+            </value>
+            <value>
+                <fullName>DOS FOB</fullName>
+                <default>false</default>
+                <label>DOS FOB</label>
+            </value>
+            <value>
+                <fullName>DOS DEL</fullName>
+                <default>false</default>
+                <label>DOS DEL</label>
+            </value>
+            <value>
+                <fullName>PWA DOD</fullName>
+                <default>false</default>
+                <label>PWA DOD</label>
+            </value>
+            <value>
+                <fullName>DOD</fullName>
+                <default>false</default>
+                <label>DOD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

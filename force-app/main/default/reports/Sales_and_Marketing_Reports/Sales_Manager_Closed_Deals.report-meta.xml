@@ -67,7 +67,6 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <currency>USD</currency>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>

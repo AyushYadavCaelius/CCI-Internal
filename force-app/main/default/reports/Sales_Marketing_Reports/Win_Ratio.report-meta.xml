@@ -62,7 +62,6 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <currency>USD</currency>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

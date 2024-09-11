@@ -61,7 +61,6 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <currency>USD</currency>
     <filter>
         <criteriaItems>
             <column>WON</column>

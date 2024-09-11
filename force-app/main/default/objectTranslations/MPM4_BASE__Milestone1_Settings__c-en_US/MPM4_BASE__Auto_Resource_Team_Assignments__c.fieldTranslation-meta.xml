@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When the &apos;Resource Teams Assigned&apos; field is populated at the Project Task level, Milestones PM+ will automatically assign resources that belong to the assigned teams to the Project Task. (Premium Edition Only) --></help>
-    <label><!-- Auto Resource Team Assignments --></label>
-    <name>MPM4_BASE__Auto_Resource_Team_Assignments__c</name>
-</CustomFieldTranslation>

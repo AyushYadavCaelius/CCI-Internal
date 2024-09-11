@@ -5,7 +5,7 @@
     <label>Loss Reason</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <valueSetDefinition>
@@ -24,26 +24,6 @@
                 <fullName>No Decision / Non-Responsive</fullName>
                 <default>false</default>
                 <label>No Decision / Non-Responsive</label>
-            </value>
-            <value>
-                <fullName>Platform / Partner Portal Lost</fullName>
-                <default>false</default>
-                <label>Platform / Partner Portal Lost</label>
-            </value>
-            <value>
-                <fullName>Caelius Pre-Sales Work / Sent to $0 Partner</fullName>
-                <default>false</default>
-                <label>Caelius Pre-Sales Work / Sent to $0 Partner</label>
-            </value>
-            <value>
-                <fullName>Disqualified</fullName>
-                <default>false</default>
-                <label>Disqualified</label>
-            </value>
-            <value>
-                <fullName>Self Implementation</fullName>
-                <default>false</default>
-                <label>Self Implementation</label>
             </value>
             <value>
                 <fullName>Price</fullName>

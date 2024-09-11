@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The field that is used to populate the name of the project that will be created. --></help>
-    <label><!-- Project Naming Convention Field --></label>
-    <name>MPM4_BASE__ProjectNamingConventionField__c</name>
-</CustomFieldTranslation>

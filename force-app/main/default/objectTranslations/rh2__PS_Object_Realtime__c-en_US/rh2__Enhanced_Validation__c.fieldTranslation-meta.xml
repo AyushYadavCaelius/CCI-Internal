@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Runs rollups in additional trigger contexts on the specified object type when checked. Used to catch validation rules in delete contexts. --></help>
-    <label><!-- Enhanced Validation --></label>
-    <name>rh2__Enhanced_Validation__c</name>
-</CustomFieldTranslation>
