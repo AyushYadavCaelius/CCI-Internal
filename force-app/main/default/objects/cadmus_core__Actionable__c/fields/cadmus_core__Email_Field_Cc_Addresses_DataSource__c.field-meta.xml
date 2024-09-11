@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Email_Field_Cc_Addresses_DataSource__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Email Field Cc Addresses DataSource</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (Email Field Cc Addresses DataSource)</relationshipLabel>
+    <relationshipName>Email_Field_Cc_Addresses_DataSource</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

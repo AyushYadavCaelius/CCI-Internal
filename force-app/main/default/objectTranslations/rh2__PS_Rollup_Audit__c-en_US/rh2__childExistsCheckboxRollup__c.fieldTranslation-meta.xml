@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Checks the target checkbox if a source record exists --></help>
-    <label><!-- Child Exists Checkbox Rollup --></label>
-    <name>rh2__childExistsCheckboxRollup__c</name>
-</CustomFieldTranslation>

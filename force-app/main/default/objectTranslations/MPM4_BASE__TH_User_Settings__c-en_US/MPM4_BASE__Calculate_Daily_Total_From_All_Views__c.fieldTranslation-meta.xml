@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When enabled, daily totals on the time entry grid will be calculated from all time entries regardless of the selected list view. Disable to only calculate daily totals from time included in the selected view. --></help>
-    <label><!-- Calculate Daily Total From All Views --></label>
-    <name>MPM4_BASE__Calculate_Daily_Total_From_All_Views__c</name>
-</CustomFieldTranslation>

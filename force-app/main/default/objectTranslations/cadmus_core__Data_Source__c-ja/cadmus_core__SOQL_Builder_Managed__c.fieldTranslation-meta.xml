@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>SOQL Builderを利用せずSOQLを直接編集する場合は、必ずこの項目をオフにしてください。</help>
+    <label><!-- SOQL Builder Managed --></label>
+    <name>cadmus_core__SOQL_Builder_Managed__c</name>
+</CustomFieldTranslation>

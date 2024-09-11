@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The name of the list view you would like the time entry grid to default to (must be valid ListView name for default object) --></help>
-    <label><!-- Default Filter --></label>
-    <name>MPM4_BASE__Default_Filter__c</name>
-</CustomFieldTranslation>

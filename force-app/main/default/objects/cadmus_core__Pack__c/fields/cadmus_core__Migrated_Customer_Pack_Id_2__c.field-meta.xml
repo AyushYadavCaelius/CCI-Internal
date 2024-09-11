@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Migrated_Customer_Pack_Id_2__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>If you migrate a pack from another Org or a Sandbox, use this field to copy the Pack Id from that other Org/Sandbox</description>
+    <externalId>true</externalId>
+    <label>Migrated Customer Pack Id 2</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This links to the DataSource to use to get to the formula fiels that holds the parameter/querystring. Make sure the field is in the SOQL otherwise it will not be found. --></help>
+    <label><!-- DocuSign DataSource --></label>
+    <name>cadmus_core__DocuSign_DataSource__c</name>
+    <relationshipLabel><!-- Actionables (DocuSign DataSource) --></relationshipLabel>
+</CustomFieldTranslation>

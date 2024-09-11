@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If this setting is checked, Rollup Helper will update recurring Event and Task records individually through batch jobs. If this setting is unchecked, Rollup Helper will attempt to update recurring Event and Task records in bulk. Enable this setting if multiple Events or Tasks of the same recurrence type (e.g. Recurs Daily, Recurs Monthly, etc.) are targeted by a rollup. --></help>
-    <label><!-- Process Recurring Activities In Batches --></label>
-    <name>rh2__Batch_Process_Recurring_Activities__c</name>
-</CustomFieldTranslation>

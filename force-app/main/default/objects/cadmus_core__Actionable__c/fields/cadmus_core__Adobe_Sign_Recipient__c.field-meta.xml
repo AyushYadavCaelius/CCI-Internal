@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Adobe_Sign_Recipient__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Who will receive this</inlineHelpText>
+    <label>Recipient</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (Recipient)</relationshipLabel>
+    <relationshipName>Actionables4</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

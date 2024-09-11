@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>この子データソースをグルーピングして、正しい親データソースに紐づけるために使用されます。また、この項目は必ずSECELTで取得してください。</help>
+    <label><!-- Grouping Field Name --></label>
+    <name>cadmus_core__Grouping_Field_Name__c</name>
+</CustomFieldTranslation>

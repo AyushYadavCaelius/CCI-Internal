@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Hide Delete Checkbox on MPP --></label>
-    <name>MPM4_BASE__hide_delete_checkbox_on_mpp__c</name>
-</CustomFieldTranslation>

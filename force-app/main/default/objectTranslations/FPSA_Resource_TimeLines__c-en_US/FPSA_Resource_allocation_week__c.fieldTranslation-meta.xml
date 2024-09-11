@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Project allocation unique num --></label>
-    <name>FPSA_Resource_allocation_week__c</name>
-</CustomFieldTranslation>

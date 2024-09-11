@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- All Total Hours --></label>
-    <name>FPSA_ALL_Total_Hours__c</name>
-</CustomFieldTranslation>

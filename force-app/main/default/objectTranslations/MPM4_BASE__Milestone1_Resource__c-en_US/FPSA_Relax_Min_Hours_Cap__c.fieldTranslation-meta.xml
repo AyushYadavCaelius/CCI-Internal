@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Relax Min. Hours Cap --></label>
-    <name>FPSA_Relax_Min_Hours_Cap__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When checked resources assigned to tasks will not receive notifications when they have been assigned to a task (Premium Edition Only) --></help>
-    <label><!-- Disable Resource Assignment Notification --></label>
-    <name>MPM4_BASE__Disable_Resource_Assignment_Notification__c</name>
-</CustomFieldTranslation>

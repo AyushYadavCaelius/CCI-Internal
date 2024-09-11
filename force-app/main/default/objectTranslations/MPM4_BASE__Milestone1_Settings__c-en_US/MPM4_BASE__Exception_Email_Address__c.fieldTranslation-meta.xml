@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- If an error occurs, an email will be sent to these email addresses with the details of what caused the issue. Multiple Email addresses may be seperated by a comma (ex: test1@email.com, test2@email.com). --></help>
-    <label><!-- Exception Email Address --></label>
-    <name>MPM4_BASE__Exception_Email_Address__c</name>
-</CustomFieldTranslation>

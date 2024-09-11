@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Total of hours from Resource Timelines which have invoiced. --></help>
-    <label><!-- PD Project Hours Invoices --></label>
-    <name>Project_Hours_Invoices__c</name>
-</CustomFieldTranslation>

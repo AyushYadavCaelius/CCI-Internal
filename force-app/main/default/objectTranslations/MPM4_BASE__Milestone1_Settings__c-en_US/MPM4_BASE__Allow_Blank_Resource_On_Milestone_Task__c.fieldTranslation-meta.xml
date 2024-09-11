@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When checked, users gain the ability to populate a blank value for the Resource__c field on Milestone_Task__c. Leave this unchecked if using Auto_Resource_Assignment__c. --></help>
-    <label><!-- Allow Blank Resource on Milestone Task --></label>
-    <name>MPM4_BASE__Allow_Blank_Resource_On_Milestone_Task__c</name>
-</CustomFieldTranslation>

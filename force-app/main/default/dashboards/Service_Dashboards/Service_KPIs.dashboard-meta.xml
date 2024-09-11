@@ -121,7 +121,7 @@
             <title>Case Resolution Time MTD (Days)</title>
         </components>
     </middleSection>
-    <owner>mark.foulkrod+corporate@caeliusconsutling.com</owner>
+    <owner>lsilvas@farwestdistributors.com</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -179,7 +179,7 @@
             <title>Case Resolution Time MTD by Priority</title>
         </components>
     </rightSection>
-    <runningUser>mark.foulkrod+corporate@caeliusconsutling.com</runningUser>
+    <runningUser>lsilvas@farwestdistributors.com</runningUser>
     <textColor>#000000</textColor>
     <title>Service KPIs</title>
     <titleColor>#000000</titleColor>

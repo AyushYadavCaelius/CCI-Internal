@@ -33,11 +33,11 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Sales_Leader</name>
+        <name>Sales_Leadership</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Inside_Sales</name>
+        <name>Lead_Generation</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -45,7 +45,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Success_Manager</name>
+        <name>Relationship_Management</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -81,115 +81,27 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__HVSConsole</name>
+        <name>Far_West_Distributors</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Dataloader_Bulk</name>
+        <name>SalesforceIQ</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Dataloader_Partner</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Forcecom_IDE</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Forcecom_Migration_Tool</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Salesforce_Mobile_Dashboards</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Salesforce_Touch</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Salesforce_for_Outlook</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Workbench</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>MPM4_BASE__Milestones_PM_Plus_CE</name>
+        <name>CommercientSF__Commercient_SYSPRO</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>MPM4_BASE__Milestones_PM_Plus_CE_Lightning</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>BrillioFC__ForceClinic</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>MC4SF__MailChimp_for_Salesforce</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>kanbanDev__Kanban_Configuration</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>rh2__PS_Rollup_Helper</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>rh2__Rollup_Helper_Lightning</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Caelius_Consulting_Executives</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Caelius_PM</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Caelius_Sales</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Caelius_Delivery_Management</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Caelius_Enhancements</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Chatter_Desktop</name>
+        <name>Commercient_Sync_Connected_App</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Chatter_for_Android</name>
+        <name>Commercient_Sync_Connected_App2</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Chatter_for_BlackBerry</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Chatter_for_iOS</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Salesforce1_for_Windows</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>SalesforceA</name>
-        <type>ConnectedApp</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>Salesforce_Chatterbox</name>
+        <name>Commercient_Sync_Connected_Apps</name>
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
@@ -207,5 +119,41 @@
     <appMenuItems>
         <name>standard__FlowsApp</name>
         <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>cadmus_core__CadmusClassic</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>cadmus_core__PDFButler</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_APAC1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_CA1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_EU1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_MV_APAC1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_MV_EU1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_MV_US1</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PDF_Butler_US1</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
 </AppMenu>

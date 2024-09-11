@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__RecordTypeCannotBeNull</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordTypeId = null</errorConditionFormula>
+    <errorMessage>Please select a valid RecordType. If none are presented, make sure you have done step 1 and 2 of the &quot;Get Started&quot; tab. The permissions on the Doc Config SObject are not correct and you must grant access to the Record Types.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>DocuSignのパラメータまたは文字列を持つ項目のAPI参照名。Source IDを追加する必要はなく、文字列は&apos;&amp;&apos;で始まる必要があります。</help>
+    <label><!-- DocuSign Parameters For Url --></label>
+    <name>cadmus_core__DocuSign_Parameters_For_Url__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>グルーピング項目が常に&apos;Id&apos;の場合はIdを指定し、それ以外の場合は&apos;Object&apos;を選択します。</help>
+    <label><!-- Grouping Field Type --></label>
+    <name>cadmus_core__Grouping_Field_Type__c</name>
+    <picklistValues>
+        <masterLabel>Date</masterLabel>
+        <translation>日付（Date）</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DateTime</masterLabel>
+        <translation>日時（DateTime）</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Id</masterLabel>
+        <translation>ID</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object</masterLabel>
+        <translation>オブジェクト</translation>
+    </picklistValues>
+</CustomFieldTranslation>

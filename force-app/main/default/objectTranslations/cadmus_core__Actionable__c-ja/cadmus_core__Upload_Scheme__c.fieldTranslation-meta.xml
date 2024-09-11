@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>SFTPとFTPSは全く異なるものです。どちらを選ぶかわからない場合は、IT部門の担当者に相談してください。</help>
+    <label><!-- Upload Scheme --></label>
+    <name>cadmus_core__Upload_Scheme__c</name>
+    <picklistValues>
+        <masterLabel>ftp</masterLabel>
+        <translation><!-- ftp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ftps</masterLabel>
+        <translation><!-- ftps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sftp</masterLabel>
+        <translation><!-- sftp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

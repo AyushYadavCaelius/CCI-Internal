@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>ドキュメント変数を使って動的なファイル名を設定することも可能です。[[!変数!]] の形式で値を設定して、変数型：タイトル の変数をファイル名用に作成してください！</help>
+    <label><!-- Document Title --></label>
+    <name>cadmus_core__Document_Title__c</name>
+</CustomFieldTranslation>

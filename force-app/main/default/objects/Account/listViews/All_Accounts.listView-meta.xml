@@ -2,10 +2,14 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All_Accounts</fullName>
     <columns>ACCOUNT.NAME</columns>
-    <columns>ACCOUNT.SITE</columns>
-    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Syspro_Code__c</columns>
+    <columns>syspro_inactive__c</columns>
+    <columns>CommercientSF__Commercient_ArCustomerCode__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
     <columns>ACCOUNT.PHONE1</columns>
+    <columns>Payment_Terms__c</columns>
     <columns>ACCOUNT.TYPE</columns>
+    <columns>Syspro_Branch__c</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <filterScope>Everything</filterScope>
     <label>All Accounts</label>

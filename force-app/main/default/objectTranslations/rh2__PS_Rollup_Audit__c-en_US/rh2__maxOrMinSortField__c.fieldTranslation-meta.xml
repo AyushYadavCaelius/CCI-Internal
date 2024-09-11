@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The field on the source object being sorted on in a MAX or MIN String rollup --></help>
-    <label><!-- Max / Min Sort Field --></label>
-    <name>rh2__maxOrMinSortField__c</name>
-</CustomFieldTranslation>

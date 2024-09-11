@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When checked, the program gantt chart will display Projects, Milestones, and Tasks. --></help>
-    <label><!-- Display Tasks On Program Gantt Chart --></label>
-    <name>MPM4_BASE__Display_Tasks_On_Program_Gantt_Chart__c</name>
-</CustomFieldTranslation>

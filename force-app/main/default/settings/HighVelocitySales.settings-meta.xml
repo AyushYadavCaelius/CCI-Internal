@@ -3,14 +3,14 @@
     <enableACAutoSendEmail>false</enableACAutoSendEmail>
     <enableACChangeTargetAssignee>false</enableACChangeTargetAssignee>
     <enableACSkipWeekends>false</enableACSkipWeekends>
-    <enableBusinessHours>true</enableBusinessHours>
+    <enableBusinessHours>false</enableBusinessHours>
     <enableCadenceVariantTestingPref>false</enableCadenceVariantTestingPref>
     <enableChgTgtAssigneeUsrPermPref>false</enableChgTgtAssigneeUsrPermPref>
     <enableEngagementWaveAnalyticsPref>false</enableEngagementWaveAnalyticsPref>
     <enableHighVelocitySales>false</enableHighVelocitySales>
     <enableHighVelocitySalesSetup>false</enableHighVelocitySalesSetup>
     <enableLogACallForCTIPref>false</enableLogACallForCTIPref>
-    <enableLogTasksForLinkedInPref>true</enableLogTasksForLinkedInPref>
-    <enableOpportunityAttributionPermPref>true</enableOpportunityAttributionPermPref>
-    <enableTaskLoggingPref>true</enableTaskLoggingPref>
+    <enableLogTasksForLinkedInPref>false</enableLogTasksForLinkedInPref>
+    <enableOpportunityAttributionPermPref>false</enableOpportunityAttributionPermPref>
+    <enableTaskLoggingPref>false</enableTaskLoggingPref>
 </HighVelocitySalesSettings>

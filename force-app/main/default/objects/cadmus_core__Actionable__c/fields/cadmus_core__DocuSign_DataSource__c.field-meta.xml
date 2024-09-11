@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__DocuSign_DataSource__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>This links to the DataSource to use to get to the formula fiels that holds the parameter/querystring. Make sure the field is in the SOQL otherwise it will not be found.</inlineHelpText>
+    <label>DocuSign DataSource</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (DocuSign DataSource)</relationshipLabel>
+    <relationshipName>Actionables5</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use Id when the Grouping Field is always of type &apos;Id&apos;, otherwise choose &apos;Object&apos; --></help>
+    <label><!-- Grouping Field Type --></label>
+    <name>cadmus_core__Grouping_Field_Type__c</name>
+    <picklistValues>
+        <masterLabel>Date</masterLabel>
+        <translation><!-- Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DateTime</masterLabel>
+        <translation><!-- DateTime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Id</masterLabel>
+        <translation><!-- Id --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object</masterLabel>
+        <translation><!-- Object --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

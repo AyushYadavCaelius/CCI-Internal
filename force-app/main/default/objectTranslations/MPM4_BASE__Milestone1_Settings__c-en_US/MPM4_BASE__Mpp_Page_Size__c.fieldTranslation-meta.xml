@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The number of records to display per page on the Manage Project Plan. If left blank or set to 0, all records will display on one page. --></help>
-    <label><!-- Manage Project Plan Page Size --></label>
-    <name>MPM4_BASE__Mpp_Page_Size__c</name>
-</CustomFieldTranslation>

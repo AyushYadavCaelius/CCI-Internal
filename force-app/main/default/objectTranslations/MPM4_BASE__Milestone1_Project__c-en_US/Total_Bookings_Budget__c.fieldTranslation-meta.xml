@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Budget from Total Bookings. Updated by Roll up helper (read only for end users) --></help>
-    <label><!-- PD Total Bookings Budget --></label>
-    <name>Total_Bookings_Budget__c</name>
-</CustomFieldTranslation>

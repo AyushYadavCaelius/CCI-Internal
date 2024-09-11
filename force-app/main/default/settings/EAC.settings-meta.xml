@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EACSettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <autoPopulateGoogleMeetLinks>true</autoPopulateGoogleMeetLinks>
+    <addRcCompToFlexiPages>false</addRcCompToFlexiPages>
+    <autoPopulateGoogleMeetLinks>false</autoPopulateGoogleMeetLinks>
     <automatedEmailFilter>true</automatedEmailFilter>
-    <dSThresholdNotification>false</dSThresholdNotification>
+    <dSThresholdNotification>true</dSThresholdNotification>
     <enableActivityAnalyticsPref>true</enableActivityAnalyticsPref>
     <enableActivityCapture>true</enableActivityCapture>
+    <enableActivityMetrics>false</enableActivityMetrics>
     <enableActivitySyncEngine>true</enableActivitySyncEngine>
     <enableEACForEveryonePref>true</enableEACForEveryonePref>
     <enableEnforceEacSharingPref>false</enableEnforceEacSharingPref>
     <enableInboxActivitySharing>true</enableInboxActivitySharing>
-    <enableInsightsInTimeline>false</enableInsightsInTimeline>
-    <enableInsightsInTimelineEacStd>true</enableInsightsInTimelineEacStd>
-    <provisionProductivityFeatures>false</provisionProductivityFeatures>
+    <enableInsightsInTimeline>true</enableInsightsInTimeline>
+    <enableInsightsInTimelineEacStd>false</enableInsightsInTimelineEacStd>
+    <enableUnifiedActivitiesPref>false</enableUnifiedActivitiesPref>
+    <provisionProductivityFeatures>true</provisionProductivityFeatures>
     <salesforceEventsOnlyPref>true</salesforceEventsOnlyPref>
     <sensitiveEmailFilter>true</sensitiveEmailFilter>
     <showEACCalendarPref>true</showEACCalendarPref>
-    <syncInternalEvents>true</syncInternalEvents>
+    <syncInternalEvents>false</syncInternalEvents>
 </EACSettings>

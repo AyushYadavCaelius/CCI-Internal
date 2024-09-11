@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- When disabled the delete column will not be displayed on the manage project plan page. (Premium Edition Only) --></help>
-    <label><!-- Disable Deletion On Project Plan Page --></label>
-    <name>MPM4_BASE__Disable_Deletion_Plan_Page__c</name>
-</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>データはPDF Butlerのデータ形式に変換されず、Salesforceのオブジェクトモデルが使用されます。このため、データをPDF Butler形式に変換する必要がなく、すべてのレコードを処理する必要がないため、処理の手間が省けます。このように、レコードをループしてフォーマットする時間が節約できます。</help>
+    <label><!-- Use Salesforce Data Formatting --></label>
+    <name>cadmus_core__Use_Salesforce_Data_Formatting__c</name>
+</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- This field populates the Sum of Closed Won Opportunity Amounts Linked to Project - If there are no Opportunities associated with a Project then it populates the Total Budget Allocated for a Project --></help>
-    <label><!-- Total Project Budget --></label>
-    <name>Total_Project_Budget_revenue__c</name>
-</CustomFieldTranslation>

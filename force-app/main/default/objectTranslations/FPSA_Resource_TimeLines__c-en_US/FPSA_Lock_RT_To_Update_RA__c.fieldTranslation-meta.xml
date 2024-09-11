@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Lock RT To Update RA? --></label>
-    <name>FPSA_Lock_RT_To_Update_RA__c</name>
-</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__Commercient_ArCustomerCode__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>This contains an alternative customer code from an external ERP package. This is a code you can index on in addition to the Commercient CustomerGUID. If the ERP package is Syspro this will typically be the ArCustomer.Customer code.</description>
+    <externalId>true</externalId>
+    <label>Commercient ArCustomerCode</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

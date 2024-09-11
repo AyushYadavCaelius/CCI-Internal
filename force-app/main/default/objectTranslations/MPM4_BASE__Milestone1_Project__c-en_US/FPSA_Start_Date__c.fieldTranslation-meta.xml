@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Enter the Date the project is going to start. Allocation changes automatically with change in start date. Start date cannot be changed once even one timecard is submitted for the project --></help>
-    <label><!-- Start Date as per SoW --></label>
-    <name>FPSA_Start_Date__c</name>
-</CustomFieldTranslation>

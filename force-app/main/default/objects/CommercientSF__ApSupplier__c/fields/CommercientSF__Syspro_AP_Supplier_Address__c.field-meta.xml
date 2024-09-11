@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__Syspro_AP_Supplier_Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Syspro AP Supplier Address</label>
+    <referenceTo>CommercientSF__ApSupplierAddr__c</referenceTo>
+    <relationshipLabel>Syspro AP Suppliers</relationshipLabel>
+    <relationshipName>Syspro_AP_Suppliers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

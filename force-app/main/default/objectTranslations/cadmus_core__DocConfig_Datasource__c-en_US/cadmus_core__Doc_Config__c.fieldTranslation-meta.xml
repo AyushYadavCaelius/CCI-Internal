@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Doc Config --></label>
+    <name>cadmus_core__Doc_Config__c</name>
+    <relationshipLabel><!-- DocConfig Datasources --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This has to be a DataSource that selects a User, Contact or Lead. 
+Leave empty to not use -->
+    </help>
+    <label><!-- Reply To --></label>
+    <name>cadmus_core__Reply_To__c</name>
+    <relationshipLabel><!-- Actionables (Reply To) --></relationshipLabel>
+</CustomFieldTranslation>

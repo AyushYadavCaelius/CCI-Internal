@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Display name of the Org Wide Email Address
+Leave empty to use the current user as sender -->
+    </help>
+    <label><!-- Org Wide Email Address Display Name --></label>
+    <name>cadmus_core__Org_Wide_Email_Address__c</name>
+</CustomFieldTranslation>

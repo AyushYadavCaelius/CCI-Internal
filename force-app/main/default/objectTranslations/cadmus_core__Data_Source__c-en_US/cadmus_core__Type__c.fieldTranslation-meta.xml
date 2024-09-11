@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the correct type the SOQL will return. E.g. When using LIMIT 1 at the end of the SOQL it should always be &apos;Single sObject&apos;, otherwise select &apos;List of sObjects&apos;. --></help>
+    <label><!-- Type --></label>
+    <name>cadmus_core__Type__c</name>
+    <picklistValues>
+        <masterLabel>List of sObjects</masterLabel>
+        <translation><!-- List of sObjects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single sObject</masterLabel>
+        <translation><!-- Single sObject --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

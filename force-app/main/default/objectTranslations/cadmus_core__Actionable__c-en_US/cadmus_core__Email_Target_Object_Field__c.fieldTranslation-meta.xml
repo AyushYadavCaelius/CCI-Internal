@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- API name of the field to use from the Email Target Object DataSource. This field should be the Id of a User/Lead/Contact!
+If left empty, it will assume that the DataSource returns a User/Lead/Contact record.
+If the DataSource does not return a User/Lead/Contact record and this field is empty. The Email Target Object will be ignored if possible. If not possible to ignore, an error is thrown. -->
+    </help>
+    <label><!-- Email Target Object Field --></label>
+    <name>cadmus_core__Email_Target_Object_Field__c</name>
+</CustomFieldTranslation>

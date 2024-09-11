@@ -4,7 +4,7 @@
     <doesEnforceApexCpuTimeLimit>true</doesEnforceApexCpuTimeLimit>
     <doesFormulaEnforceDataAccess>false</doesFormulaEnforceDataAccess>
     <doesFormulaGenerateHtmlOutput>true</doesFormulaGenerateHtmlOutput>
-    <enableEmailSimpleRespectProfiles>true</enableEmailSimpleRespectProfiles>
+    <enableEmailSimpleRespectProfiles>false</enableEmailSimpleRespectProfiles>
     <enableEmailsimpleSecureProfiles>false</enableEmailsimpleSecureProfiles>
     <enableFlowBREncodedFixEnabled>true</enableFlowBREncodedFixEnabled>
     <enableFlowCustomPropertyEditor>false</enableFlowCustomPropertyEditor>

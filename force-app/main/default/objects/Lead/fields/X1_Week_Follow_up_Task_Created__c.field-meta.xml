@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>X1_Week_Follow_up_Task_Created__c</fullName>
-    <defaultValue>false</defaultValue>
-    <externalId>false</externalId>
-    <label>1 Week Follow-up Task Created</label>
-    <trackFeedHistory>false</trackFeedHistory>
-    <type>Checkbox</type>
-</CustomField>

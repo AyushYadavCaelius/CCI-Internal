@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- The name of the image you want to include. This is dependent of the image source.
+Attachment: Title (File Name)
+Document: Unique name
+Files: Name -->
+    </help>
+    <label><!-- Image Name --></label>
+    <name>cadmus_core__Image_Name__c</name>
+</CustomFieldTranslation>

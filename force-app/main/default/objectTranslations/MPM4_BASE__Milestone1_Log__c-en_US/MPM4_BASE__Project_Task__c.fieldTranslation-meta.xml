@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Project Task --></label>
-    <lookupFilter>
-        <errorMessage><!-- Issue must be part of the same project and milestone as the selected task. --></errorMessage>
-    </lookupFilter>
-    <name>MPM4_BASE__Project_Task__c</name>
-    <relationshipLabel><!-- Issues --></relationshipLabel>
-</CustomFieldTranslation>

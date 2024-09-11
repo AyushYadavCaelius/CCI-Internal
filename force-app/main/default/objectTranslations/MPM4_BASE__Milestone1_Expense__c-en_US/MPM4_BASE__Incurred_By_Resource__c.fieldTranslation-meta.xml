@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- The resource who charged the expense. --></help>
-    <label><!-- Incurred By Resource --></label>
-    <name>MPM4_BASE__Incurred_By_Resource__c</name>
-    <relationshipLabel><!-- Expenses --></relationshipLabel>
-</CustomFieldTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Upload_Scheme__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Scheme to be used</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFTP and FTPS are tw very different things. Consult your IT department if you don&apos;t know which to chose.</inlineHelpText>
+    <label>Upload Scheme</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ftp</fullName>
+                <default>false</default>
+                <label>ftp</label>
+            </value>
+            <value>
+                <fullName>ftps</fullName>
+                <default>false</default>
+                <label>ftps</label>
+            </value>
+            <value>
+                <fullName>sftp</fullName>
+                <default>false</default>
+                <label>sftp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

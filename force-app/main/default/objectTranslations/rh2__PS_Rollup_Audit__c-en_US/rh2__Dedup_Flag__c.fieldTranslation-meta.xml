@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Controls whether Rollup Helper will deduplicate multipicklist values when rolling them up --></help>
-    <label><!-- Dedup Flag --></label>
-    <name>rh2__Dedup_Flag__c</name>
-</CustomFieldTranslation>

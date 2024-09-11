@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MulDiv --></label>
+    <name>CommercientSF6__MulDiv__c</name>
+</CustomFieldTranslation>

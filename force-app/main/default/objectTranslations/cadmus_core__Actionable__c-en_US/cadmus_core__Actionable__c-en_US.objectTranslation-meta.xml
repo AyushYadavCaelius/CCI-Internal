@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <description><!-- Send document via AdobeSign --></description>
+        <label><!-- AdobeSign --></label>
+        <name>cadmus_core__AdobeSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Sends out your documents created by PDF Butler via mail. Uses a SFDC Template --></description>
+        <label><!-- Auto Email --></label>
+        <name>cadmus_core__Auto_Email</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This actionable should be used with a Lightning Email Template. This action will open the Email Activity and prefill this with the Actionable data. --></description>
+        <label><!-- Auto Email for Quick Action --></label>
+        <name>cadmus_core__Auto_Email_for_Quick_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Send document via DocuSign --></description>
+        <label><!-- DocuSign --></label>
+        <name>cadmus_core__DocuSign</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This actionable should be used when the DocConfig is of type EMAIL. This action will send out the resulting email. --></description>
+        <label><!-- Email DocConfig --></label>
+        <name>cadmus_core__Email_DocConfig</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This actionable should be used when the DocConfig is of type EMAIL. This action will open the Email Activity and prefill this with the Actionable data. --></description>
+        <label><!-- Email DocConfig for Quick Action --></label>
+        <name>cadmus_core__Email_DocConfig_for_Quick_Action</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Run a class that is inherits AbstractAfterActionable or AbstractBeforeActionable --></description>
+        <label><!-- Run Class --></label>
+        <name>cadmus_core__Run_Class</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Run a Lightning Flow with your custom logic --></description>
+        <label><!-- Run Lightning Flow --></label>
+        <name>cadmus_core__Run_Lightning_Flow</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Upload file --></description>
+        <label><!-- Upload --></label>
+        <name>cadmus_core__Upload</name>
+    </recordTypes>
+</CustomObjectTranslation>

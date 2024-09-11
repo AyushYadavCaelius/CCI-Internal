@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Migrated_Customer_Data_Source_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>THIS FIELD IS DEPRECATED AS THE UNIQUENESS WAS CASE INSENSITIVE
+If you migrate a datasource from another Org or a Sandbox, use this field to copy the Datasource Id from that other Org/Sandbox</description>
+    <externalId>false</externalId>
+    <label>DEPRECATED-Migrated Cust Data Source Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

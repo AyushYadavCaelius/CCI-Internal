@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Controls whether the rollup is active. --></help>
-    <label><!-- Active --></label>
-    <name>rh2__conditional__c</name>
-</CustomFieldTranslation>

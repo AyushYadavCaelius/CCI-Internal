@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Check this field to remove non-essential processing such as filtering out fields that don&apos;t need to be updated. Leave this unchecked to have rollups only process when a change is made to the source field and no fields used in the rollup were updated. --></help>
-    <label><!-- Limit Pre Processing --></label>
-    <name>rh2__Limit_Pre_Processing__c</name>
-</CustomFieldTranslation>

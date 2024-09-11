@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Pack__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>PDF Butler Pack</label>
+    <referenceTo>cadmus_core__Pack__c</referenceTo>
+    <relationshipLabel>Pack DocConfigs</relationshipLabel>
+    <relationshipName>Pack_DocConfigs</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__EMAIL</fullName>
+    <active>true</active>
+    <description>Creates an email from your MS Word document and sent it via SFDC</description>
+    <label>EMAIL</label>
+    <picklistValues>
+        <picklist>cadmus_core__Delivery_option__c</picklist>
+        <values>
+            <fullName>ATTACHMENTS</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>BASE64</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FILES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

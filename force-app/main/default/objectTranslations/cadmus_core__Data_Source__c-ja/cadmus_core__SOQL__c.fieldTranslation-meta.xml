@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>テンプレートで使用されるデータを取得するためのSOQLクエリが表示されます。SOQLでSUM等の関数を利用したい場合は、この項目でSOQLを直接作成してください。</help>
+    <label><!-- SOQL --></label>
+    <name>cadmus_core__SOQL__c</name>
+</CustomFieldTranslation>

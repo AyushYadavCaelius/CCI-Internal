@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__CustomerDataSourceId__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(cadmus_core__Migrated_Customer_Data_Source_Id__c)
+,IF(
+    ISBLANK(cadmus_core__Migrated_Customer_Data_Source_Id_2__c)
+    , $Organization.Id + &apos;_&apos; + Id
+    , cadmus_core__Migrated_Customer_Data_Source_Id_2__c 
+  )
+, cadmus_core__Migrated_Customer_Data_Source_Id__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Data Source Id</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Disables realtime processing on the specified object type when checked. --></help>
-    <label><!-- Disable Realtime Processing --></label>
-    <name>rh2__Disable_realtime__c</name>
-</CustomFieldTranslation>

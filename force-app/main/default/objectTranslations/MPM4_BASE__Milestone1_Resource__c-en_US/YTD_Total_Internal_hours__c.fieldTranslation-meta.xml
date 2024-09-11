@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Total Hrs from Resource Timeline for current year where status = Approved and Project.billable = false --></help>
-    <label><!-- YTD Total Internal hours --></label>
-    <name>YTD_Total_Internal_hours__c</name>
-</CustomFieldTranslation>

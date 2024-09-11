@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- When --></label>
+    <name>cadmus_core__When__c</name>
+    <picklistValues>
+        <masterLabel>AFTER GENERATION</masterLabel>
+        <translation><!-- AFTER GENERATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEFORE BUT AFTER DATASOURCES</masterLabel>
+        <translation><!-- BEFORE BUT AFTER DATASOURCES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEGIN</masterLabel>
+        <translation><!-- BEGIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ON DATA SOURCE</masterLabel>
+        <translation><!-- ON DATA SOURCE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

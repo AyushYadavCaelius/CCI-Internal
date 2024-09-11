@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Amount_required_for_Solution_Pricing</fullName>
-    <active>true</active>
-    <errorConditionFormula>AND(ISCHANGED(StageName), ISPICKVAL(StageName, &quot;Solution &amp; Pricing / Proposal&quot;), ISBLANK( Amount))</errorConditionFormula>
-    <errorMessage>Please enter an amount for this opportunity before advancing to Solution &amp; Pricing / Proposal</errorMessage>
-</ValidationRule>

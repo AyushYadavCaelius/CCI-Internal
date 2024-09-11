@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>データソース</value>
+    </caseValues>
+    <nameFieldLabel>データソース名</nameFieldLabel>
+    <recordTypes>
+        <label><!-- KEYVALUE --></label>
+        <name>cadmus_core__KEYVALUE</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- PICKLIST TRANSLATION --></label>
+        <name>cadmus_core__PICKLIST_TRANSLATION</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Type for adding sending dynamic pictures to PDF Butler --></description>
+        <label><!-- PICTURE LIST --></label>
+        <name>cadmus_core__PICTURE_LIST</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- REPORT --></label>
+        <name>cadmus_core__REPORT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SOQL --></label>
+        <name>cadmus_core__SOQL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- STATIC VALUES --></label>
+        <name>cadmus_core__STATIC_VALUES</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please select a valid RecordType. If none are presented, make sure you have done step 1 and 2 of the &quot;Get Started&quot; tab. The permissions on the Data Source SObject are not correct and you must grant access to the Record Types. --></errorMessage>
+        <name>cadmus_core__RecordTypeCannotBeNull</name>
+    </validationRules>
+</CustomObjectTranslation>

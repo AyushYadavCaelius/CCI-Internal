@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__Syspro_Sales_Order__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Syspro Sales Order</label>
+    <referenceTo>CommercientSF__SorMasterRep__c</referenceTo>
+    <relationshipLabel>Syspro Customer SO Master Pluss</relationshipLabel>
+    <relationshipName>Syspro_Customer_SO_Master_Pluss</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__Reply_To__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>This has to be a DataSource that selects a User, Contact or Lead. 
+Leave empty to not use</inlineHelpText>
+    <label>Reply To</label>
+    <referenceTo>cadmus_core__Data_Source__c</referenceTo>
+    <relationshipLabel>Actionables (Reply To)</relationshipLabel>
+    <relationshipName>Actionables6</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

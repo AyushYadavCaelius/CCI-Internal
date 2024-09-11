@@ -52,7 +52,6 @@
     <columns>
         <field>CONVERTED</field>
     </columns>
-    <currency>USD</currency>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>

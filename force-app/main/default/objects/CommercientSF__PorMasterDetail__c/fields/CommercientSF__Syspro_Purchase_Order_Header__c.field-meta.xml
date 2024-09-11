@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__Syspro_Purchase_Order_Header__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Syspro Purchase Order Header</label>
+    <referenceTo>CommercientSF__PorMasterHdr__c</referenceTo>
+    <relationshipLabel>Syspro Purchase Order Details</relationshipLabel>
+    <relationshipName>Syspro_Purchase_Order_Details</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

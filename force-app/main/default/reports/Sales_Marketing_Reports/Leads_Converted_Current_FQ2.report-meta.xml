@@ -34,7 +34,6 @@
     <columns>
         <field>CLOSE_DATE</field>
     </columns>
-    <currency>USD</currency>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>

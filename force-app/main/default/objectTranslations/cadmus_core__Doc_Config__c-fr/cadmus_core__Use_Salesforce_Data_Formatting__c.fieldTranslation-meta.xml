@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Data will not be transformed into PDF Butler data format but the Salesforce object model will be used. This saves processing as the data does not have to be transformed in PDF Butler format which would mean that we have to run through all records. This time it takes for looping through the records and formatting is now saved! --></help>
+    <label><!-- Use Salesforce Data Formatting --></label>
+    <name>cadmus_core__Use_Salesforce_Data_Formatting__c</name>
+</CustomFieldTranslation>

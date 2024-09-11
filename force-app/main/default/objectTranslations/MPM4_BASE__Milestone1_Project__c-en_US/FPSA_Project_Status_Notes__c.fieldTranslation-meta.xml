@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- PM summary of project status notes. This shows up in the system generated status report of the project --></help>
-    <label><!-- Project Status Notes --></label>
-    <name>FPSA_Project_Status_Notes__c</name>
-</CustomFieldTranslation>

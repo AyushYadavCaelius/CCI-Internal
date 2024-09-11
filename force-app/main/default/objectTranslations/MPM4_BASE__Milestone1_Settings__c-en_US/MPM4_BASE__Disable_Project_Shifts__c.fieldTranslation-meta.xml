@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- This setting disables the shifting performed to Projects when Milestone dates are changed. --></help>
-    <label><!-- Disable Project Shifts Caused By MS --></label>
-    <name>MPM4_BASE__Disable_Project_Shifts__c</name>
-</CustomFieldTranslation>

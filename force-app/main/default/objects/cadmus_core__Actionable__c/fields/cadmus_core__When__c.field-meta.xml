@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__When__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When to execute this action. Before or after the document is generated</description>
+    <externalId>false</externalId>
+    <label>When</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BEFORE</fullName>
+                <default>true</default>
+                <label>BEGIN</label>
+            </value>
+            <value>
+                <fullName>DATA_SOURCE</fullName>
+                <default>false</default>
+                <label>ON DATA SOURCE</label>
+            </value>
+            <value>
+                <fullName>BEFORE_BUT_AFTER_DATASOURCES</fullName>
+                <default>false</default>
+                <label>BEFORE BUT AFTER DATASOURCES</label>
+            </value>
+            <value>
+                <fullName>AFTER</fullName>
+                <default>false</default>
+                <label>AFTER GENERATION</label>
+            </value>
+            <value>
+                <fullName>AFTER_ASYNC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AFTER GENERATION BUT ASYNC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

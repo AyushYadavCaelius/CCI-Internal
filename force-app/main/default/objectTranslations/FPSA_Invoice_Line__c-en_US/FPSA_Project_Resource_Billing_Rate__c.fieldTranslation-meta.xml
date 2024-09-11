@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- Project Resource Billing Rate --></label>
-    <name>FPSA_Project_Resource_Billing_Rate__c</name>
-</CustomFieldTranslation>

@@ -12,12 +12,12 @@
     <enableShareBrowserSessionIOSForAuth>false</enableShareBrowserSessionIOSForAuth>
     <instancedUrlRedirectHandling>NoRedirect</instancedUrlRedirectHandling>
     <logRedirections>false</logRedirections>
-    <myDomainName>caelius-consulting</myDomainName>
+    <myDomainName>farwestdistributors2022</myDomainName>
     <myDomainSuffix>MySalesforce</myDomainSuffix>
     <redirectForceComSiteUrls>true</redirectForceComSiteUrls>
     <redirectPriorMyDomain>true</redirectPriorMyDomain>
     <use3rdPartyCookieBlockingCompatibleHostnames>true</use3rdPartyCookieBlockingCompatibleHostnames>
-    <useEdge>false</useEdge>
+    <useEdge>true</useEdge>
     <useEnhancedDomainsInSandbox>true</useEnhancedDomainsInSandbox>
     <useStabilizedMyDomainHostnames>true</useStabilizedMyDomainHostnames>
     <useStabilizedSandboxMyDomainHostnames>true</useStabilizedSandboxMyDomainHostnames>

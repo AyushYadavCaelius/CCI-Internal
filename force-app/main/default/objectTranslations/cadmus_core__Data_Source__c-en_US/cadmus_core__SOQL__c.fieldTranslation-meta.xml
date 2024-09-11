@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Write a SOQL query to retrieve the data that will be used in the templates. You can make use of :recordId to have the starting Id. E.g. SELECT Id, Name FROM Opportunity WHERE Id = :recordId --></help>
+    <label><!-- SOQL --></label>
+    <name>cadmus_core__SOQL__c</name>
+</CustomFieldTranslation>

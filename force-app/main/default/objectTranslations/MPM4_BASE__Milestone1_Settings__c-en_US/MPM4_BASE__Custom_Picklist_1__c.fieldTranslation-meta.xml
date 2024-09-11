@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Enter single field&apos;s API name on the project object. Field must be a picklist field. --></help>
-    <label><!-- zDeprecated --></label>
-    <name>MPM4_BASE__Custom_Picklist_1__c</name>
-</CustomFieldTranslation>

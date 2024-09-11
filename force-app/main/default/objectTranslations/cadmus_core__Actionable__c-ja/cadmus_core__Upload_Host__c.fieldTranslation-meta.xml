@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>「ftp://foo:bar@abcd.ef.com:21」では、ホストは「abcd.ef.com」です。</help>
+    <label><!-- Upload Host --></label>
+    <name>cadmus_core__Upload_Host__c</name>
+</CustomFieldTranslation>

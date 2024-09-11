@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Rollup Helper will send an email to the specified email address daily with a summary of exceptions that have occurred (no emails will be sent if this field is not populated). --></help>
-    <label><!-- Email To Send Exceptions --></label>
-    <name>rh2__emailToSendExceptions__c</name>
-</CustomFieldTranslation>

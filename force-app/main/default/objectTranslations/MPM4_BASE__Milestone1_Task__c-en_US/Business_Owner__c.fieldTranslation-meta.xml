@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Who is this requirement for?  this person has a need and will help them with their job. The demo and UAT sign off happens with this person --></help>
-    <label><!-- Business Owner --></label>
-    <name>Business_Owner__c</name>
-    <relationshipLabel><!-- Tasks (Business Owner) --></relationshipLabel>
-</CustomFieldTranslation>

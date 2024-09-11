@@ -9,67 +9,76 @@
     <dashboardColorPalette>justice</dashboardColorPalette>
     <dashboardGridLayout>
         <dashboardGridComponents>
-            <colSpan>3</colSpan>
+            <colSpan>2</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>AMOUNT</column>
+                </chartSummary>
+                <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Enter your Month goal and adjust dial thresholds</footer>
+                <gaugeMax>30000.0</gaugeMax>
+                <gaugeMin>0.0</gaugeMin>
+                <groupingSortProperties/>
+                <header>MTD Your Revenue</header>
+                <indicatorBreakpoint1>10000.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>20000.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <report>Getting_Started_Sales_Representative/SR_Closed_Won_MTD</report>
+                <showPercentage>true</showPercentage>
+                <showRange>false</showRange>
+                <showTotal>true</showTotal>
+                <showValues>false</showValues>
+                <title>MTD Closed Won Opptys</title>
+            </dashboardComponent>
+            <rowIndex>0</rowIndex>
+            <rowSpan>5</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>2</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>AMOUNT</column>
+                </chartSummary>
+                <componentType>Funnel</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
-                <header>Mark Opportunity Status Report</header>
-                <report>unfiled$public/Mark_Opportunity_Status_Report_Puh</report>
-                <showPercentage>false</showPercentage>
-                <showPicturesOnCharts>false</showPicturesOnCharts>
-                <showValues>false</showValues>
-                <sortBy>RowLabelAscending</sortBy>
-                <useReportChart>true</useReportChart>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <flexComponentProperties>
-                    <decimalPrecision>-1</decimalPrecision>
-                    <flexTableColumn>
-                        <reportColumn>OPPORTUNITY_NAME</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>s!AMOUNT</reportColumn>
-                        <showSubTotal>false</showSubTotal>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
+                <expandOthers>true</expandOthers>
                 <footer>Drill into report to see details</footer>
+                <groupingColumn>STAGE_NAME</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
-                        <sortOrder>a</sortOrder>
+                        <sortColumn>s!AMOUNT</sortColumn>
+                        <sortOrder>d</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Your Opportunities with Past Due Activities</header>
-                <report>Getting_Started_Sales_Representative/SR_Clean_your_Room</report>
-                <title>Past Due Activities on Open Opptys</title>
+                <header>FYTD Your Opportunity Pipeline</header>
+                <legendPosition>Right</legendPosition>
+                <report>Getting_Started_Sales_Representative/SR_Open_Opportunities_in_the_Pipeline</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <title>FYTD Open Opptys by Stage by Close Date</title>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -113,78 +122,6 @@
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>AMOUNT</column>
-                </chartSummary>
-                <componentType>Gauge</componentType>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <footer>Enter your Month goal and adjust dial thresholds</footer>
-                <gaugeMax>30000.0</gaugeMax>
-                <gaugeMin>0.0</gaugeMin>
-                <groupingSortProperties/>
-                <header>MTD Your Revenue</header>
-                <indicatorBreakpoint1>10000.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>20000.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>Getting_Started_Sales_Representative/SR_Closed_Won_MTD</report>
-                <showPercentage>true</showPercentage>
-                <showRange>false</showRange>
-                <showTotal>true</showTotal>
-                <showValues>false</showValues>
-                <title>MTD Closed Won Opptys</title>
-            </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>2</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>AMOUNT</column>
-                </chartSummary>
-                <componentType>Funnel</componentType>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>true</expandOthers>
-                <footer>Drill into report to see details</footer>
-                <groupingColumn>STAGE_NAME</groupingColumn>
-                <groupingSortProperties>
-                    <groupingSorts>
-                        <groupingLevel>g1</groupingLevel>
-                        <sortColumn>s!AMOUNT</sortColumn>
-                        <sortOrder>d</sortOrder>
-                    </groupingSorts>
-                </groupingSortProperties>
-                <header>FYTD Your Opportunity Pipeline</header>
-                <legendPosition>Right</legendPosition>
-                <report>Getting_Started_Sales_Representative/SR_Open_Opportunities_in_the_Pipeline</report>
-                <showPercentage>false</showPercentage>
-                <showValues>true</showValues>
-                <sortBy>RowValueDescending</sortBy>
-                <title>FYTD Open Opptys by Stage by Close Date</title>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
@@ -219,7 +156,7 @@
                 <title>Accounts with Past Due Activities</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>9</rowIndex>
+            <rowIndex>5</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -258,12 +195,105 @@
                 <title>Open Opptys w/ Stage Duration &gt; 90 Days</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <componentType>FlexTable</componentType>
+                <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
+                    <flexTableColumn>
+                        <reportColumn>OPPORTUNITY_NAME</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>s!AMOUNT</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableSortInfo>
+                        <sortOrder>1</sortOrder>
+                    </flexTableSortInfo>
+                    <hideChatterPhotos>true</hideChatterPhotos>
+                </flexComponentProperties>
+                <footer>Drill into report to see details</footer>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Your Opportunities with Past Due Activities</header>
+                <report>Getting_Started_Sales_Representative/SR_Clean_your_Room</report>
+                <title>Past Due Activities on Open Opptys</title>
+            </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>AMOUNT</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Adjust thresholds</footer>
+                <groupingSortProperties/>
+                <header>FYTD Your Revenue</header>
+                <indicatorBreakpoint1>60000.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>120000.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>FYTD Closed Won Opptys</metricLabel>
+                <report>Getting_Started_Sales_Representative/SR_Closed_Won_By_FYMonth_MdW</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>9</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>2</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>AMOUNT</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Adjust thresholds</footer>
+                <groupingSortProperties/>
+                <header>QTD Your Revenue</header>
+                <indicatorBreakpoint1>45000.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>90000.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
+                <metricLabel>QTD Closed Won Opptys</metricLabel>
+                <report>Getting_Started_Sales_Representative/SR_Closed_Won_This_Q_by_Type_dCK</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
             <rowIndex>9</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>4</colSpan>
-            <columnIndex>0</columnIndex>
+            <columnIndex>4</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -298,61 +328,7 @@
                 <title>All Time Closed Won Oppty Amt by Account</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>13</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <column>AMOUNT</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <footer>Adjust thresholds</footer>
-                <groupingSortProperties/>
-                <header>FYTD Your Revenue</header>
-                <indicatorBreakpoint1>60000.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>120000.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <metricLabel>FYTD Closed Won Opptys</metricLabel>
-                <report>Getting_Started_Sales_Representative/SR_Closed_Won_By_FYMonth_MdW</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>17</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>2</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <column>AMOUNT</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <decimalPrecision>-1</decimalPrecision>
-                <displayUnits>Auto</displayUnits>
-                <footer>Adjust thresholds</footer>
-                <groupingSortProperties/>
-                <header>QTD Your Revenue</header>
-                <indicatorBreakpoint1>45000.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>90000.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <metricLabel>QTD Closed Won Opptys</metricLabel>
-                <report>Getting_Started_Sales_Representative/SR_Closed_Won_This_Q_by_Type_dCK</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>17</rowIndex>
+            <rowIndex>9</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
@@ -361,8 +337,8 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Track how individual reps are making progress toward revenue goals and what deals need attention.</description>
     <isGridLayout>true</isGridLayout>
-    <owner>mark.foulkrod+corporate@caeliusconsutling.com</owner>
-    <runningUser>mark.foulkrod+corporate@caeliusconsutling.com</runningUser>
+    <owner>lsilvas@farwestdistributors.com</owner>
+    <runningUser>lsilvas@farwestdistributors.com</runningUser>
     <textColor>#000000</textColor>
     <title>Sales Representative: Clean Your Room</title>
     <titleColor>#000000</titleColor>

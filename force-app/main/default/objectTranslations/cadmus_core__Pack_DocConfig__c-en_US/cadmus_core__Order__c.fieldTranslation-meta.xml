@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- the order of the docconfigs to process. This is important when glueing PDF&apos;s together --></help>
+    <label><!-- Order --></label>
+    <name>cadmus_core__Order__c</name>
+</CustomFieldTranslation>

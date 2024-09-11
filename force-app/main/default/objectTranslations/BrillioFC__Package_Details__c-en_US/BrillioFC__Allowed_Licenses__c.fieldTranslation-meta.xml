@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Packages which have free licenses shows value as -1. --></help>
-    <label><!-- Allowed Licenses --></label>
-    <name>BrillioFC__Allowed_Licenses__c</name>
-</CustomFieldTranslation>

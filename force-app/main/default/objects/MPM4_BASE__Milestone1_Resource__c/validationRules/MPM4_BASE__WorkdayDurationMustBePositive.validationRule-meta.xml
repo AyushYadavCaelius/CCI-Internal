@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>MPM4_BASE__WorkdayDurationMustBePositive</fullName>
-    <active>true</active>
-    <description>If not blank, workday duration must be greater than zero.</description>
-    <errorConditionFormula>OR(MPM4_BASE__Resource_Workday_Duration__c = 0, MPM4_BASE__Resource_Workday_Duration__c &lt; 0)</errorConditionFormula>
-    <errorMessage>Workday duration must be greater than 0.</errorMessage>
-</ValidationRule>

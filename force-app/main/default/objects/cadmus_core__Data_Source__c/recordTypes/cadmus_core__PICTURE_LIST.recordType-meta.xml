@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cadmus_core__PICTURE_LIST</fullName>
+    <active>true</active>
+    <description>Type for adding sending dynamic pictures to PDF Butler</description>
+    <label>PICTURE LIST</label>
+    <picklistValues>
+        <picklist>cadmus_core__Grouping_Field_Type__c</picklist>
+        <values>
+            <fullName>Id</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Object</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cadmus_core__Image_source__c</picklist>
+        <values>
+            <fullName>ATTACHMENTS</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>DOCUMENTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FILES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cadmus_core__Type__c</picklist>
+        <values>
+            <fullName>List of sObjects</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Syspro_Area__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Syspro Area</label>
+    <referenceTo>CommercientSF__SalArea__c</referenceTo>
+    <relationshipLabel>Syspro AP Suppliers</relationshipLabel>
+    <relationshipName>Syspro_AP_Suppliers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

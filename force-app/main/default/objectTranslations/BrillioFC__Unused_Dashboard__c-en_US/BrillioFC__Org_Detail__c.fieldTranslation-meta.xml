@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label><!-- ForceClinic Org Detail --></label>
-    <name>BrillioFC__Org_Detail__c</name>
-    <relationshipLabel><!-- Unused Dashboards --></relationshipLabel>
-</CustomFieldTranslation>

@@ -18,15 +18,10 @@
                 <behavior>Edit</behavior>
                 <field>WhoId</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>TaskSubtype</field>
+                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -171,6 +166,18 @@
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
+        <quickActionListItems>
+            <quickActionName>Task.EditDescription_12</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Task.Defer_12</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Task.UpdateStatus_12</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Task.UpdatePriority_12</quickActionName>
+        </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Task.EditDescription_11</quickActionName>
         </quickActionListItems>
@@ -372,7 +379,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hHn00000diPWz</masterLabel>
+        <masterLabel>00h36000003jARj</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

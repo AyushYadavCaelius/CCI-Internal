@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Custom conversion date for multicurrency orgs. --></help>
-    <label><!-- Conversion Date --></label>
-    <name>rh2__conversionDate__c</name>
-</CustomFieldTranslation>

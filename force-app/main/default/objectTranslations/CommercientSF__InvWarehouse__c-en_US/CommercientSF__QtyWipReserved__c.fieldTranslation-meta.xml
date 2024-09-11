@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quantity reserved by jobs --></label>
+    <name>CommercientSF__QtyWipReserved__c</name>
+</CustomFieldTranslation>

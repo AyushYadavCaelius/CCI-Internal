@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help><!-- Sum of Hours for completed Tasks --></help>
-    <label><!-- PD Total Earned Hours --></label>
-    <name>Total_Earned_Hours__c</name>
-</CustomFieldTranslation>

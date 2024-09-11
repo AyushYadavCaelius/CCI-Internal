@@ -2,8 +2,8 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>View</actionName>
-        <comment>Action override updated by Lightning App Builder during activation.</comment>
-        <content>Account_Record_Page_Three_Column</content>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page2</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -12,16 +12,7 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Account_Record_Page_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override updated by Lightning App Builder during activation.</comment>
-        <content>Contact_Record_Page_Three_Column</content>
+        <content>Contact_Record_Page1</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -30,16 +21,7 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Contact_Record_Page_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override updated by Lightning App Builder during activation.</comment>
-        <content>Lead_Record_Page_Three_Column</content>
+        <content>Lead_Record_Page1</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
@@ -48,17 +30,8 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Opportunity_Record_Page</content>
+        <content>Opportunity_Record_Page1</content>
         <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Opportunity_Record_Page</content>
-        <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -71,366 +44,6 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>Sales Console</label>
     <navType>Console</navType>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Security User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Analytics Cloud Security User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Caelius Internal User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Caelius Internal User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter External User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter External User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Free User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Free User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Moderator User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Chatter Moderator User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>ContractManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>ContractManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>CPQ Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>CPQ Integration User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>End User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>End User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Guest License User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Guest License User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Executive Sponsor</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Executive Sponsor</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Identity User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Identity User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>MarketingProfile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>MarketingProfile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Minimum Access - API Only Integrations</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Minimum Access - API Only Integrations</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Minimum Access - Salesforce</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Minimum Access - Salesforce</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Read Only</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Read Only</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Salesforce API Only System Integrations</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Salesforce API Only System Integrations</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>SolutionManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>SolutionManager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Standard</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Standard</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page_Salesforce_Employee_Three_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Salesforce</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
@@ -445,16 +58,16 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
-    <tabs>Technology__c</tabs>
-    <tabs>Salesforce_Certification__c</tabs>
+    <tabs>CommercientSF__SalBranch__c</tabs>
+    <tabs>CommercientSF__TblArTerms__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>Salesforce_Certification__c</tab>
+            <tab>CommercientSF__SalBranch__c</tab>
         </mappings>
         <mappings>
-            <tab>Technology__c</tab>
+            <tab>CommercientSF__TblArTerms__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>

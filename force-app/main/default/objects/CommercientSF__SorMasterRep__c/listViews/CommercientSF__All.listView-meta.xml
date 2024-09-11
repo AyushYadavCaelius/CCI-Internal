@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommercientSF__All</fullName>
+    <columns>NAME</columns>
+    <columns>CommercientSF__OrderDate__c</columns>
+    <columns>CommercientSF__Account__c</columns>
+    <columns>CommercientSF__Branch__c</columns>
+    <columns>CommercientSF__DocumentType__c</columns>
+    <columns>CommercientSF__InvoiceNumber__c</columns>
+    <columns>CommercientSF__OrderType__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>
