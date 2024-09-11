@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Project_Health__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IMAGE
+(
+IF( OR(ISPICKVAL(MPM4_BASE__Project_Health_Status__c, &quot;Green&quot;), ISPICKVAL(MPM4_BASE__Project_Health_Status__c, &quot;&quot;)),
+&quot;/img/samples/flag_green.gif&quot;,
+IF( ISPICKVAL(MPM4_BASE__Project_Health_Status__c, &quot;Yellow&quot;),
+&quot;/img/samples/flag_yellow.gif&quot;,
+&quot;/img/samples/flag_red.gif&quot;
+
+)
+),
+&quot;&quot;, 20, 20
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Health</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

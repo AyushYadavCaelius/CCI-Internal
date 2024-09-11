@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- You have been stopped from changing Test Integer by a validation rule. --></errorMessage>
+        <name>rh2__Block_Test_Int_Changes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Test error for PS_Error_Handler --></errorMessage>
+        <name>rh2__Test_Rollup_Exception_Error_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Test error for PS_Error_Handler Second --></errorMessage>
+        <name>rh2__Test_Rollup_Exception_Error_2</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- View_All_Rollup_Settings --></label>
+        <name>rh2__View_All_Rollup_Settings</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This checkbox allows creation of Global Projects. A Global Project allows users to enter time against the project without being allocated to the project. Create Global Project and Milestones for tracking time against PTO, Sick Days, Holidays ... --></help>
+    <label><!-- Allow Timecards Without Assignment --></label>
+    <name>FPSA_Allow_Timecards_Without_Assignment__c</name>
+</CustomFieldTranslation>

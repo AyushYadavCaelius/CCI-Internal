@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Controls whether TXT rollups will append a space at the end of each delimiter. --></help>
+    <label><!-- Append Trailing Whitespace --></label>
+    <name>rh2__appendTrailingWhitespace__c</name>
+</CustomFieldTranslation>

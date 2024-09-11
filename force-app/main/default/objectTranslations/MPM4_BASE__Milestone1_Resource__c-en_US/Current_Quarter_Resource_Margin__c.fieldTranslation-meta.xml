@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Difference b/w Current Quarter Planned Billable Revenue and Current Quarter planned Cost --></help>
+    <label><!-- Current Quarter Resource Margin --></label>
+    <name>Current_Quarter_Resource_Margin__c</name>
+</CustomFieldTranslation>

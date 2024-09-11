@@ -1,0 +1,56 @@
+<aura:component>
+
+    <aura:attribute name="approvalRequestsTitle" type="String" default="Timecard Approval Requests" />
+
+    <aura:attribute name="projectList" type="List" />
+    <aura:attribute name="selectedProject" type="String" />
+    <aura:attribute name="approvalRequestsCount" type="Integer" default="0" />
+
+    <aura:method name="filterProjectSelection" action="{!c.handleProjectSelectionFilter}" access="public">
+        <aura:attribute name="selectedProject" type="String" />
+        <aura:attribute name="approvalRequestsCount" type="Integer" />
+    </aura:method>
+
+    <aura:method name="setupProjectList" action="{!c.handleProjectListSetup}" access="public">
+        <aura:attribute name="projectList" type="List" />
+    </aura:method>
+
+    <aura:registerEvent name="filterApprovalRequests" type="c:FPSA_FilterApprovalRequestsEvent" />
+    <aura:registerEvent name="processMultipleApprovalRequests" type="c:FPSA_ProcessMultipleApprovalRequestsEvent" />
+
+    <div class="slds-media__figure slds-avatar slds-avatar_medium">
+        <lightning:icon iconName="standard:approval" size="medium" alternativeText="Check" title="Approval" class="icon-style" />
+    </div>
+
+    <div class="slds-media__body">
+        <h2>
+            <a class="slds-card__header-link" title="{! v.approvalRequestsTitle + ' (' + v.approvalRequestsCount + ')'}">
+                <span class="slds-card__header-title slds-truncate">
+                    {! v.approvalRequestsTitle + ' (' + v.approvalRequestsCount + ')'}
+                </span>
+            </a>
+        </h2>
+    </div>
+
+    <lightning:layout multipleRows="true" class="slds-no-flex">
+        <lightning:layoutItem class="slds-size_1-of-2 slds-p-right_xx-small">
+            <lightning:button label="Reject" title="Reject" class="button-style" onclick="{!c.handleRejection}" />
+        </lightning:layoutItem>
+
+        <lightning:layoutItem class="slds-size_1-of-2 slds-p-left_xx-small">
+            <lightning:button variant="brand" label="Approve" class="button-style" title="Approve" onclick="{!c.handleApproval}" />
+        </lightning:layoutItem>
+
+        <lightning:layoutItem class="slds-size_1-of-1 slds-m-top_xx-small label-padding">
+            <lightning:select label="" variant="label-hidden" name="projectList" value="{#v.selectedProject}" 
+                                aura:id="projectList" onchange="{!c.onChangeProject}" 
+                                class="slds-align_absolute-center label-hidden">
+                
+                <aura:iteration items="{!v.projectList}" var="project" >
+                    <option text="{!project.projectName}" value="{!project.projectValue}" selected="{!project.isSelected}" />
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+    </lightning:layout>
+
+</aura:component>

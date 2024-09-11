@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Disable_Ownership_Cascade__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked this setting will prevent ownership assignment cascading. This means when the owner of a project or milestone changes, all child milestones or tasks assigned to the previous owner will not change to the new owner.</inlineHelpText>
+    <label>Disable Ownership Cascading</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

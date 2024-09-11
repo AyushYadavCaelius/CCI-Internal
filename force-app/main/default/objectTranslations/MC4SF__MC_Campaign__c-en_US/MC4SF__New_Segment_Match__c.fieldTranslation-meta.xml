@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- New Segment Match --></label>
+    <name>MC4SF__New_Segment_Match__c</name>
+    <picklistValues>
+        <masterLabel>all</masterLabel>
+        <translation><!-- all --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>any</masterLabel>
+        <translation><!-- any --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

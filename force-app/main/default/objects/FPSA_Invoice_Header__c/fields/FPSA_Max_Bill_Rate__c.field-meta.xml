@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FPSA_Max_Bill_Rate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Maximum Bill rate</inlineHelpText>
+    <label>Max Bill Rate</label>
+    <summarizedField>FPSA_Invoice_Line__c.FPSA_Project_Resource_Billing_Rate__c</summarizedField>
+    <summaryForeignKey>FPSA_Invoice_Line__c.FPSA_Invoice__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

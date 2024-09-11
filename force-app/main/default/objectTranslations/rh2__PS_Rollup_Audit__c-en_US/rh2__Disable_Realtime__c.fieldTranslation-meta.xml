@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Controls whether the Rollup can be triggered in real-time. --></help>
+    <label><!-- Disable Realtime Flag --></label>
+    <name>rh2__Disable_Realtime__c</name>
+</CustomFieldTranslation>

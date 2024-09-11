@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of billable hours and internal hours till today in the current year. --></help>
+    <label><!-- Current YTD Actuals --></label>
+    <name>Current_YTD_Actuals__c</name>
+</CustomFieldTranslation>

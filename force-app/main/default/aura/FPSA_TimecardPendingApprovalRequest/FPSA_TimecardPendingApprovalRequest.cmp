@@ -1,0 +1,104 @@
+<aura:component>
+
+    <aura:attribute name="approvalRequest" type="Map" />
+    <aura:attribute name="approvalRequestIndex" type="Integer" />
+
+    <aura:attribute name="projectURL" type="String" />
+    <aura:attribute name="resourceURL" type="String" />
+    <aura:attribute name="timecardURL" type="String" />
+    <aura:attribute name="milestoneURL" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <lightning:navigation aura:id="navigationService" />
+
+    <aura:registerEvent name="processApprovalRequest" type="c:FPSA_ProcessApprovalRequestEvent" />
+
+    <tr class="slds-hint-parent row-style">
+        <td role="gridcell">
+            <div class="slds-truncate row-count-style">
+                {!(v.approvalRequestIndex + 1)}
+            </div>
+        </td>
+
+        <td role="gridcell" class="checkbox-style">
+            <div class="slds-float_right slds-truncate">
+                <lightning:input type="checkbox" checked="{!v.approvalRequest.isSelected}" />
+            </div>
+        </td>
+
+        <th scope="row">
+            <div class="slds-truncate" title="{!v.approvalRequest.timecardName}">
+                <a href="{!v.timecardURL}" id="{!v.approvalRequest.timecardId}" class="name-style" title="{!v.approvalRequest.timecardName}" target="_blank">
+                    {!v.approvalRequest.timecardName}
+                </a>
+            </div>
+        </th>
+
+        <th scope="row">
+            <div class="slds-truncate" title="{!v.approvalRequest.projectName}">
+                <a href="{!v.projectURL}" id="{!v.approvalRequest.projectId}" class="name-style" title="{!v.approvalRequest.projectName}" target="_blank">
+                    {!v.approvalRequest.projectName }
+                </a>
+            </div>
+        </th>
+
+        <th scope="row">
+            <div class="slds-truncate" title="{!v.approvalRequest.milestoneName}">
+                <a href="{!v.milestoneURL}" id="{!v.approvalRequest.milestoneId}" class="name-style" title="{!v.approvalRequest.milestoneName}" target="_blank">
+                    {!v.approvalRequest.milestoneName}
+                </a>
+            </div>
+        </th>
+
+        <th scope="row">
+            <div class="slds-truncate" title="{!v.approvalRequest.resourceName}">
+                <a href="{!v.resourceURL}" id="{!v.approvalRequest.resourceId}" class="name-style" title="{!v.approvalRequest.resourceName}" target="_blank">
+                    {!v.approvalRequest.resourceName}
+                </a>
+            </div>
+        </th>
+
+        <td role="gridcell">
+            <div class="slds-truncate" title="{!v.approvalRequest.weekStartDate}">
+                {!v.approvalRequest.weekStartDate}
+            </div>
+        </td>
+
+        <td role="gridcell">
+            <div class="slds-truncate" title="{!v.approvalRequest.plannedHours}">
+                <lightning:formattedNumber value="{!v.approvalRequest.plannedHours}" />
+            </div>
+        </td>
+
+        <td role="gridcell">
+            <div class="slds-truncate" title="{!v.approvalRequest.totalHours}">
+                <lightning:formattedNumber value="{!v.approvalRequest.totalHours}" 
+                                           minimumFractionDigits="2" maximumFractionDigits="2" />
+            </div>
+        </td>
+
+        <td role="gridcell">
+            <div class="slds-truncate" title="{!v.approvalRequest.totalBillableAmount}">
+                <lightning:formattedNumber value="{!v.approvalRequest.totalBillableAmount}" 
+                                           style="currency" currencyCode="USD" currencyDisplayAs="code" />
+            </div>
+        </td>
+
+        <td role="gridcell">
+            <div class="slds-truncate" title="{!v.approvalRequest.weeklyNotes}">
+                <lightning:formattedText value="{!v.approvalRequest.weeklyNotes}" />
+            </div>
+        </td>
+
+        <td role="gridcell">
+            <lightning:buttonMenu alternativeText="Approval Actions" menuAlignment="right" 
+                                  class="float-right button-menu-style" onselect="{!c.onSelectApprovalAction}">
+                <lightning:menuItem value="Reject" label="Reject" />
+                <lightning:menuItem value="Approve" label="Approve" />
+            </lightning:buttonMenu>
+        </td>
+
+    </tr>
+
+</aura:component>

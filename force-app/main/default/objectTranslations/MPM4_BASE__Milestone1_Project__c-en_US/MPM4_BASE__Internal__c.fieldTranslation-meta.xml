@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to make it not visible when displaying external only on the gantt chart --></help>
+    <label><!-- Internal --></label>
+    <name>MPM4_BASE__Internal__c</name>
+</CustomFieldTranslation>

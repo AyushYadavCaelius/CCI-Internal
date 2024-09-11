@@ -1,0 +1,4 @@
+<apex:page standardController="Account" sidebar="false" standardStylesheets="true" docType="html-5.0">
+<apex:iframe src="https://us-east-1.online.tableau.com/t/fusionconsultinginc/views/SalesandMarketingOperations/SalesDashboard?:iid=2?:display_count=y&publish=yes&:origin=viz_share_link?:embed=y&:showShareOptions=false&:toolbar=false&:display_count=no&:showVizHome=no&Id%20(Account)={! Account.Id }" height="900px" width="100%" scrolling="true">
+</apex:iframe>
+ </apex:page>

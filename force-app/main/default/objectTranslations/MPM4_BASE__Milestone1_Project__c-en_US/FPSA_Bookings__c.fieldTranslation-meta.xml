@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Roll up for all opportunities – Bookings is the amount a customer commits to spend on the Project. --></help>
+    <label><!-- PD Bookings --></label>
+    <name>FPSA_Bookings__c</name>
+</CustomFieldTranslation>

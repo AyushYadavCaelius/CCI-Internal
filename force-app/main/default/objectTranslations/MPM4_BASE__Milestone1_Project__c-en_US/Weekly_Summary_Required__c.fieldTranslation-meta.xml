@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This checkbox ensure that during timesheet entry the Weekly notes are not left Blank. This is the default option and considered best practice. The weekly Summary team members enter shows up in the Status report. --></help>
+    <label><!-- Weekly Summary Required --></label>
+    <name>Weekly_Summary_Required__c</name>
+</CustomFieldTranslation>

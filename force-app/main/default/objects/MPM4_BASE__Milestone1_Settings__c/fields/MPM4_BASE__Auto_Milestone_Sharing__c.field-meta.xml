@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Auto_Milestone_Sharing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Given the Milestone objects sharing settings are setup to be private or public read only, when tasks are created for a milestone read access will be provided to that milestone for the resource assigned to the new tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Given the Milestone objects sharing settings are setup to be private or public read only, when tasks are created for a milestone read access will be provided to that milestone for the resource assigned to the new tasks.</inlineHelpText>
+    <label>Automatic Task Resource Sharing</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

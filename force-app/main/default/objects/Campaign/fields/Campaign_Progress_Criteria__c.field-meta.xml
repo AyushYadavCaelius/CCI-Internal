@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Progress_Criteria__c</fullName>
+    <description>How will we measure progress this Campaign?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How will we measure progress this Campaign?</inlineHelpText>
+    <label>Campaign Progress Criteria</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

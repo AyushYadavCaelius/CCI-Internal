@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Merges all time records for an individual day that belong to a user. This setting affects time records created in the future; existing time records will not merge upon activation of this setting. --></help>
+    <label><!-- Merge Time Records --></label>
+    <name>MPM4_BASE__Merge_Time_Records__c</name>
+</CustomFieldTranslation>

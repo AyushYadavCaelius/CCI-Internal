@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is computed as Total Allocated Hrs Remaining Minus Effort Hrs Remaining 
+– Negative number implies a Deficit or Shortage, 
+- - Positive number implies a buffer -->
+    </help>
+    <label><!-- Total Allocation Deficit/Buffer (Hrs) --></label>
+    <name>Total_Allocation_Deficit_Buffer_Hrs__c</name>
+</CustomFieldTranslation>

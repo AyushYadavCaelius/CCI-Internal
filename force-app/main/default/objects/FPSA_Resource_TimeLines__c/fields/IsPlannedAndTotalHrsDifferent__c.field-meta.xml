@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPlannedAndTotalHrsDifferent__c</fullName>
+    <externalId>false</externalId>
+    <formula>FPSA_Project_Planned_hrs__c != FPSA_ALL_Total_Hours__c ||
+FPSA_Project_Planned_hrs__c != FPSA_Total_Hours__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsPlannedAndTotalHrsDifferent</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

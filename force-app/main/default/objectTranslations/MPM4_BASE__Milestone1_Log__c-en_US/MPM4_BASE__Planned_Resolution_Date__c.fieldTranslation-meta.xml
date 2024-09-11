@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When is it required to resolve the issue? --></help>
+    <label><!-- Planned Resolution Date --></label>
+    <name>MPM4_BASE__Planned_Resolution_Date__c</name>
+</CustomFieldTranslation>

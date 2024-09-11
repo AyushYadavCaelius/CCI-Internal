@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Show the resource of the task on the gantt chart (Premium Edition Only) --></help>
+    <label><!-- Show Resource on Gantt Chart --></label>
+    <name>MPM4_BASE__Show_Resource_on_Gantt_Chart__c</name>
+</CustomFieldTranslation>

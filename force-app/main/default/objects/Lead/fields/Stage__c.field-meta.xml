@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01 - Identifying an Opportunity</fullName>
+                <default>false</default>
+                <label>01 - Identifying an Opportunity</label>
+            </value>
+            <value>
+                <fullName>02 - Determining Problem, Impact, Ideal</fullName>
+                <default>false</default>
+                <label>02 - Determining Problem, Impact, Ideal</label>
+            </value>
+            <value>
+                <fullName>03 - Validating Benefits &amp; Value</fullName>
+                <default>false</default>
+                <label>03 - Validating Benefits &amp; Value</label>
+            </value>
+            <value>
+                <fullName>04 - Confirming Value With Power</fullName>
+                <default>false</default>
+                <label>04 - Confirming Value With Power</label>
+            </value>
+            <value>
+                <fullName>05 - Negotiating $$ &amp; Mutual Plan</fullName>
+                <default>false</default>
+                <label>05 - Negotiating $$ &amp; Mutual Plan</label>
+            </value>
+            <value>
+                <fullName>06 - Finalizing Closure</fullName>
+                <default>false</default>
+                <label>06 - Finalizing Closure</label>
+            </value>
+            <value>
+                <fullName>07 - Pending</fullName>
+                <default>false</default>
+                <label>07 - Pending</label>
+            </value>
+            <value>
+                <fullName>08 - Closed</fullName>
+                <default>false</default>
+                <label>08 - Closed</label>
+            </value>
+            <value>
+                <fullName>Dead</fullName>
+                <default>false</default>
+                <label>Dead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

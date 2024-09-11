@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Whether or not this field is visible to list subscribers --></help>
+    <label><!-- Public --></label>
+    <name>MC4SF__Public__c</name>
+</CustomFieldTranslation>

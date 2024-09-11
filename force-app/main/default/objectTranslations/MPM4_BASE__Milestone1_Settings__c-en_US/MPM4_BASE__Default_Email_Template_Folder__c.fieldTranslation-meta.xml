@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Email template folder used by default (please paste in the email template folder ID from the URL) (Premium Edition Only) --></help>
+    <label><!-- Default Email Template Folder --></label>
+    <name>MPM4_BASE__Default_Email_Template_Folder__c</name>
+</CustomFieldTranslation>

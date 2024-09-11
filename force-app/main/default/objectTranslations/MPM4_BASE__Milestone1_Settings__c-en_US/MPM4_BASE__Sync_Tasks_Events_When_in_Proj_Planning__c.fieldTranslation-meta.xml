@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When unchecked: Projects with a status of ???Planning??? will not sync Tasks to SFDC Tasks/Events. But when the Project status is changed to ???Active??? all of the Tasks will then be synced to SFDC Tasks/Events (Premium Edition Only) --></help>
+    <label><!-- Sync Tasks Events When in Proj Planning --></label>
+    <name>MPM4_BASE__Sync_Tasks_Events_When_in_Proj_Planning__c</name>
+</CustomFieldTranslation>

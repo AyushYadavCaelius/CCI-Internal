@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Did Caelius Implement this technology? --></help>
+    <label><!-- Caelius Implemented --></label>
+    <name>Caelius_Implemented__c</name>
+</CustomFieldTranslation>

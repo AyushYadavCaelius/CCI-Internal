@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Planned Revenue from Resource Timeline for resource for current Quarter --></help>
+    <label><!-- Current Quarter Planned Billable Revenue --></label>
+    <name>Current_Quarter_Planned_Billable_Revenue__c</name>
+</CustomFieldTranslation>

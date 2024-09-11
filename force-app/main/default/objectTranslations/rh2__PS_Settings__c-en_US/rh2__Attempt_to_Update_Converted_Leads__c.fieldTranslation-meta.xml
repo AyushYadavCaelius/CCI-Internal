@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- When checked, Rollup Helper will attempt to update converted leads (the update may or may not succeed depending this org&apos;s configurations). This option is off by default.
+The converted leads are identified by the &quot;isConverted&quot; system field. -->
+    </help>
+    <label><!-- Attempt to Update Converted Leads --></label>
+    <name>rh2__Attempt_to_Update_Converted_Leads__c</name>
+</CustomFieldTranslation>

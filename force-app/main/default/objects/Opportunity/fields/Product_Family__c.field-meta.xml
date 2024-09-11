@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Family__c</fullName>
+    <description>Custom Field to be shown on New Opportunity</description>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-- Please Select --</fullName>
+                <default>false</default>
+                <label>-- Please Select --</label>
+            </value>
+            <value>
+                <fullName>Enabled Analytics</fullName>
+                <default>false</default>
+                <label>Enabled Analytics</label>
+            </value>
+            <value>
+                <fullName>SAP License Re-sale</fullName>
+                <default>false</default>
+                <label>SAP License Re-sale</label>
+            </value>
+            <value>
+                <fullName>Data and Analytics</fullName>
+                <default>false</default>
+                <label>Data and Analytics</label>
+            </value>
+            <value>
+                <fullName>Sub-contracting</fullName>
+                <default>false</default>
+                <label>Sub-contracting</label>
+            </value>
+            <value>
+                <fullName>Federal Work</fullName>
+                <default>false</default>
+                <label>Federal Work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

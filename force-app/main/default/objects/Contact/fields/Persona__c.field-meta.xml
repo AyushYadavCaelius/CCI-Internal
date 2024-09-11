@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Persona__c</fullName>
+    <description>A contact&apos;s persona</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A contact&apos;s persona</inlineHelpText>
+    <label>Persona</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CMO</fullName>
+                <default>false</default>
+                <label>CMO - Chief Medical Officer</label>
+            </value>
+            <value>
+                <fullName>No Persona</fullName>
+                <default>false</default>
+                <label>No Persona</label>
+            </value>
+            <value>
+                <fullName>CIO</fullName>
+                <default>false</default>
+                <label>CIO</label>
+            </value>
+            <value>
+                <fullName>CTO</fullName>
+                <default>false</default>
+                <label>CTO</label>
+            </value>
+            <value>
+                <fullName>CEO</fullName>
+                <default>false</default>
+                <label>CEO</label>
+            </value>
+            <value>
+                <fullName>COO</fullName>
+                <default>false</default>
+                <label>COO</label>
+            </value>
+            <value>
+                <fullName>VP - Sales and Marketing</fullName>
+                <default>false</default>
+                <label>VP - Sales and Marketing</label>
+            </value>
+            <value>
+                <fullName>Operation Sales</fullName>
+                <default>false</default>
+                <label>Operation Sales</label>
+            </value>
+            <value>
+                <fullName>Manager Sales and Marketing</fullName>
+                <default>false</default>
+                <label>Manager Sales and Marketing</label>
+            </value>
+            <value>
+                <fullName>User Sales and Marketing</fullName>
+                <default>false</default>
+                <label>User Sales and Marketing</label>
+            </value>
+            <value>
+                <fullName>Head of Sales and Marketing</fullName>
+                <default>false</default>
+                <label>Head of Sales and Marketing</label>
+            </value>
+            <value>
+                <fullName>Human Resources Information Systems</fullName>
+                <default>false</default>
+                <label>Human Resources Information Systems</label>
+            </value>
+            <value>
+                <fullName>Salesforce Consulting Partner</fullName>
+                <default>false</default>
+                <label>Salesforce Consulting Partner</label>
+            </value>
+            <value>
+                <fullName>EPIC and IT Leader</fullName>
+                <default>false</default>
+                <label>EPIC and IT Leader</label>
+            </value>
+            <value>
+                <fullName>CFO</fullName>
+                <default>false</default>
+                <label>CFO</label>
+            </value>
+            <value>
+                <fullName>Zuora</fullName>
+                <default>false</default>
+                <label>Zuora</label>
+            </value>
+            <value>
+                <fullName>Business Users</fullName>
+                <default>false</default>
+                <label>Business Users</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

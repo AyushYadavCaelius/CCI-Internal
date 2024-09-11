@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_missing_closing_data__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISBLANK(SOW__c) || ISBLANK(Resource_Plan__c) || ISBLANK(Proposal__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opportunity missing closing data</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

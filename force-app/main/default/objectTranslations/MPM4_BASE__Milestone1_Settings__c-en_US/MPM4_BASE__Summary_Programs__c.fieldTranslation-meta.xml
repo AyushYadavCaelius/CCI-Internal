@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Summary tab will display Programs instead of Projects when this setting is checked. --></help>
+    <label><!-- Summary Programs --></label>
+    <name>MPM4_BASE__Summary_Programs__c</name>
+</CustomFieldTranslation>

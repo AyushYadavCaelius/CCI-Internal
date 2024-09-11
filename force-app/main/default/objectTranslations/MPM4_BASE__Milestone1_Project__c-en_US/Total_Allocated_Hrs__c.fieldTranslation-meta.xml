@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of Total Allocated Hours from Project Allocation. --></help>
+    <label><!-- Total Allocated Hours --></label>
+    <name>Total_Allocated_Hrs__c</name>
+</CustomFieldTranslation>

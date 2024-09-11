@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Auto_Resource_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When Tasks are created or updated with no resource assignment, they will asynchronously be assigned to a Resource with the least amount of Tasks assigned and the same skills as what is required on the Task. Tasks must have a populated Due Date in order to be automatically assigned to a Resource. (Premium Edition Only)</inlineHelpText>
+    <label>Auto Assign Task Resource</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

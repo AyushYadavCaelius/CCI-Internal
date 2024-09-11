@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- No of Email Alerts not refer in WF --></label>
+    <name>BrillioFC__No_of_Email_Alerts_not_refer_in_WF__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Average_Hourly_Cost__c</fullName>
+    <description>The Average Hourly Cost for a Project.
+Note: Goal is to ensure the higher cost resource spend less hours compared to junior team. If ratio is not maintained, this variable is influenced</description>
+    <externalId>false</externalId>
+    <formula>Total_Budget_Allocated_Cost__c /  Total_Allocated_Hrs__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The Average Hourly Cost for a Project.
+Note: Goal is to ensure the higher cost resource spend less hours compared to junior team. If ratio is not maintained, this variable is influenced.</inlineHelpText>
+    <label>Average Hourly Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

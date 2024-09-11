@@ -1,0 +1,18 @@
+.THIS .icon-style {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(220, 216, 97)
+}
+
+.THIS .button-style {
+    width: 100%;
+}
+
+.THIS .label-hidden label {
+    display: none;
+}

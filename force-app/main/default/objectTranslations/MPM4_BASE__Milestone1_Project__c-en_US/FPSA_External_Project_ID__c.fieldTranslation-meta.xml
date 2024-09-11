@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ID of project from Previous data Source --></help>
+    <label><!-- PD FPSA External Project ID --></label>
+    <name>FPSA_External_Project_ID__c</name>
+</CustomFieldTranslation>

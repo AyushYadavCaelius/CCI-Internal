@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of available hours from Resource Availability for each Resource till today in current quarter. --></help>
+    <label><!-- QTD Total Available Hours --></label>
+    <name>QTD_Total_Available_Hours__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Name of the filter on this rollups, if one exists. --></help>
+    <label><!-- Condition --></label>
+    <name>rh2__condition__c</name>
+</CustomFieldTranslation>

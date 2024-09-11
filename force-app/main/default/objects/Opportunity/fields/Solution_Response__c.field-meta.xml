@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Response__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>“Yes” on the solution, If we meet final financial and legal terms</description>
+    <externalId>false</externalId>
+    <inlineHelpText>“Yes” on the solution, If we meet final financial and legal terms</inlineHelpText>
+    <label>Solution Response</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

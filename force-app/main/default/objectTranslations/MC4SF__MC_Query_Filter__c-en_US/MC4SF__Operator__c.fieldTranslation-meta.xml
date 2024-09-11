@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Operator --></label>
+    <name>MC4SF__Operator__c</name>
+    <picklistValues>
+        <masterLabel>Contains</masterLabel>
+        <translation><!-- Contains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Does Not Contain</masterLabel>
+        <translation><!-- Does Not Contain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equals</masterLabel>
+        <translation><!-- Equals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excludes</masterLabel>
+        <translation><!-- Excludes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greater Than</masterLabel>
+        <translation><!-- Greater Than --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greater or Equal</masterLabel>
+        <translation><!-- Greater or Equal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Includes</masterLabel>
+        <translation><!-- Includes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less Than</masterLabel>
+        <translation><!-- Less Than --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less or Equal</masterLabel>
+        <translation><!-- Less or Equal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Equal To</masterLabel>
+        <translation><!-- Not Equal To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Starts With</masterLabel>
+        <translation><!-- Starts With --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Within</masterLabel>
+        <translation><!-- Within --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

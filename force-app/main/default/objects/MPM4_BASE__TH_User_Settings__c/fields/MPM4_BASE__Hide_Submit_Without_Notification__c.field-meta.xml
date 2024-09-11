@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Hide_Submit_Without_Notification__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Enable this to hide the Submit Without Notification button on the time submission page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enable this to hide the Submit Without Notification button on the time submission page.</inlineHelpText>
+    <label>Hide Submit Without Notification Button</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

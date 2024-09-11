@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_One_Month_Activity__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+(TODAY() &gt;= DATEVALUE(CreatedDate) + 30),
+FPSA_Lead_Score__c &lt;= VALUE($Label.Unqualified_Lead_Score)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>No One Month Activity</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Status --></label>
+    <name>File_Status__c</name>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed Successfully</masterLabel>
+        <translation><!-- Processed Successfully --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed With Errors</masterLabel>
+        <translation><!-- Processed With Errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed With Staging Errors</masterLabel>
+        <translation><!-- Processed With Staging Errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processing</masterLabel>
+        <translation><!-- Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staging</masterLabel>
+        <translation><!-- Staging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staging Completed</masterLabel>
+        <translation><!-- Staging Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uploaded</masterLabel>
+        <translation><!-- Uploaded --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

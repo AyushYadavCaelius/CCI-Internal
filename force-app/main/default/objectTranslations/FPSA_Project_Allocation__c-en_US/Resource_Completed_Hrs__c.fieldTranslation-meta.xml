@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Roll Up Summary for task earned hours --></help>
+    <label><!-- Resource Completed Hrs --></label>
+    <name>Resource_Completed_Hrs__c</name>
+</CustomFieldTranslation>

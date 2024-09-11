@@ -1,0 +1,571 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,lightning:isUrlAddressable" access="global" controller="FPSA_ResourceTimeEntry">
+    <aura:html tag="style">
+        div.uiContainerManager button.slds-button.slds-button_brand.saveBtn {display: none;}
+        div:not(.dirtyStateModal) > .slds-modal__container{
+        width: 1500px;
+        max-width: 70rem;
+        }
+        
+        div:not(.dirtyStateModal) > .slds-modal__container .modal-body{
+        height : 1200px !important;
+        max-height: 550px !important;
+        overflow: scroll !important;
+        } 
+        .slds-input{
+        padding:0px;
+        text-align:center;
+        }
+        :root {
+        --lwc-tableCellSpacing:1px;
+        }
+        
+        
+        .slds-input{
+        padding:0px;
+        }
+        
+        
+    </aura:html>
+    
+    <aura:attribute name="showFetchButton" type="Boolean" Default="True"/>
+    <aura:attribute name="timeEntry" type="List"/>
+    <aura:attribute name="disableTimeEntry" type="List" />
+    <aura:attribute name="showSpinner" type="Boolean"/>
+    <aura:attribute name="showConfirmDialog" type="Boolean" default="false"/>
+    <aura:attribute name="customUnsavedChanges" type="Boolean" default="false"/>
+    <aura:attribute name="dayWiseTotalHr" type="Integer[]"/>
+    <aura:attribute name="projWithRole" type="String[]"/>
+    <aura:attribute name="projWithMilestone" type="String[]"/>
+    <aura:attribute name="openNoteDay" type="String" default="" />
+    <aura:attribute name="weekStart" type="Date"/>
+    <aura:attribute name="weekEnd" type="Date"/>
+    <aura:attribute name="resourceName" type="String"/>
+    <aura:attribute name="resourceId" type="String"/>
+    <aura:attribute name="projectList" type="List"/>
+    <aura:attribute name="roleList" type="Map"/>
+    <aura:attribute name="milestoneList" type="Map"/>
+    <aura:attribute name="grandTotal" type="Decimal"/>
+    <aura:attribute name="totalAllocations" type="Integer" default="0"/>
+    <aura:attribute name="days" type="String[]" default="['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']" />
+    <aura:attribute name="daysForTotal" type="String[]" default="['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']" />
+    <aura:attribute name="isChecked" type="Boolean" default="false" />
+    <aura:attribute name="isDisabled" type="boolean"/>
+	<aura:attribute name="showPopUp" type="boolean" default="false"/>
+    <aura:attribute name="checkboxValues" type="Object[]" default="[]" />
+    <aura:attribute name="timeEntryIndexForRole" type="Integer" /> 
+    <aura:attribute name="relaxMinHoursCap" type="Boolean"/>
+    <aura:attribute name="weeklySummaryRequired" type="Boolean" default="false"/>
+
+    <aura:attribute name="ShowRetrieveConfirmDialog" type="Boolean" default="false"/>
+    <aura:attribute name="HoursEditAlert" type="Boolean" default="false"/>
+    <aura:attribute name="HoursEditAlertOnlyOnce" type="Boolean" default="true"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.doInit}" />
+    <lightning:unsavedChanges aura:id="unsaved"
+                              onsave="{!c.handleSaveMethod}"
+                              ondiscard="{!c.handleDiscardMethod}"/>
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner alternativeText="Loading" />
+        <aura:set attribute="else">
+            <div class="slds-tabs_card">
+                <div class="slds-page-header slds-grid slds-gutters slds-wrap slds-grid_align-spread slds-var-p-bottom_medium">
+                    <div class="slds-col slds-size_1-of-5">
+                        <p class="slds-form-element__label">Resource Name</p>
+                        <p class="slds-page-header__title slds-truncate">{!v.resourceName}</p>
+                    </div>
+                    <div class="slds-col slds-size_2-of-5">
+                                             
+                        <div class="slds-grid slds-gutters slds-wrap">
+                            <div class="slds-truncate slds-col slds-size_1-of-8">
+                                                <a onclick="{!c.weekChange}" name="back">
+                                                    <lightning:icon iconName="utility:back" size="xx-small" title="Previous"/>
+                                                    <span class="slds-assistive-text">Previous</span>
+                                                </a>
+                                            </div>
+                            <div class="slds-col slds-size_3-of-8">
+                                <lightning:input onchange="{!c.askForConfirmation}" label="Week Starting (Sunday)" type="date" name="start_date" value="{!v.weekStart}" dateStyle="medium"/>
+                            </div>
+                            <div class="slds-truncate slds-col slds-size_1-of-8">
+                                                <a onclick="{!c.weekChange}" name="forward">
+                                                    <lightning:icon iconName="utility:forward" size="xx-small" title="Next"/>
+                                                    <span class="slds-assistive-text">Next</span>
+                                                </a>
+                                            </div>
+                            <div class="slds-col slds-size_3-of-8">
+                                
+                                <p class="slds-form-element__label">Week Ending</p><br/>
+                                <lightning:formattedDateTime value="{!v.weekEnd}" title="Week Ending" timeZone="UTC"/>
+                                <!--<lightning:input label="Week Ending" type="date" name="end_date" value="{!v.weekEnd}" timeZone="UTC" readonly="true"/>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-no-row-hover" >
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <th class="" scope="col">
+                                <div style="word-wrap: break-word;">Project</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate">Role</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate">Milestone</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate">No Hours</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" style="text-align:center;">Hrs Allocated</div>
+                            </th>
+                            <aura:iteration items = "{!v.days}" var = "day" indexVar = "index">
+                                <th class="" scope="col">
+                                    <div class="slds-truncate" style="text-align:center;">{!day}</div>
+                                </th>                    
+                            </aura:iteration>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" style="text-align:center;">Total Hrs</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate">Weekly Summary</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <aura:iteration items = "{!v.timeEntry}" var ="timeEntryRow" indexVar = "index">
+                            <aura:if isTrue="{!not(empty(timeEntryRow))}">
+                                <tr class="slds-hint-parent" id="{!'tr'+accountKey}">
+                                    <aura:if isTrue="{!timeEntryRow.Id != null}">
+                                        <td>
+                                            <div class="slds-truncate">
+                                                <a onclick="{!c.cloneRow}" name="{!index}">
+                                                    <lightning:icon iconName="action:clone" size="xx-small" title="Clone"/>
+                                                    <span class="slds-assistive-text">Clone</span>
+                                                </a>
+                                            </div>
+                                        </td>   
+                                        <!-- </aura:if>-->
+                                        <aura:set attribute="else">
+                                            <td class="" scope="col">
+                                                <div class="slds-truncate" title=""></div>
+                                            </td>
+                                            
+                                        </aura:set> 
+                                    </aura:if>
+                                    <aura:if isTrue="{!timeEntryRow.FPSA_Status__c == 'Saved' || timeEntryRow.FPSA_Status__c == 'Rejected'}">
+                                        <td>
+                                            <div class="slds-truncate">
+                                                <a onclick="{!c.removeRow}" name="{!timeEntryRow.Id+'-'+index}">
+                                                    <lightning:icon iconName="action:delete" size="xx-small" title="Delete" />
+                                                    <span class="slds-assistive-text">Delete</span>
+                                                </a>
+                                            </div>
+                                        </td>   
+                                        <!-- </aura:if>-->
+                                        <aura:set attribute="else">
+                                            <td class="" scope="col">
+                                                <div class="slds-truncate" title=""></div>
+                                            </td>
+                                            
+                                        </aura:set> 
+                                    </aura:if>
+                                    <td>
+                                        <div class="slds-truncate" style="white-space: initial">
+                                            <aura:if isTrue="{!not(empty(timeEntryRow.Id))}">
+                                                <lightning:formattedText value="{!timeEntryRow.FPSA_Project__r.Name}" />
+                                                <aura:set attribute="else">    
+                                                    <!--<lightning:select name="projectNames" label="" aura:id="projId" value="{!timeEntryRow.FPSA_Project__r.Name}" disabled="{!not(empty(timeEntryRow.Id))}" onchange="{!c.onProjectChange}">-->
+                                                    <lightning:select name="{!index}" label="" aura:id="projId"  value="{!timeEntryRow.FPSA_Project__c}" onchange="{!c.onProjectChange}">
+                                                        <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.Name != null}">
+                                                            <option text="{!timeEntryRow.FPSA_Project__r.Name}" value="{!timeEntryRow.FPSA_Project__c}"/>
+                                                            <aura:set attribute="else">
+                                                                <option value="">Select...</option>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                        <aura:iteration items="{!v.projectList}" var="option">
+                                                            <option text="{!option.Name}" value="{!option.Id}"/>
+                                                        </aura:iteration>
+                                                    </lightning:select>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td>
+                                  	 	<div class="slds-truncate" style="width:150px;">
+                                    		<aura:if isTrue="{!not(empty(timeEntryRow.Id))}">
+                                                <lightning:formattedText value="{!timeEntryRow.FPSA_Assignment__r.FPSA_Role__c}" />
+                                                <aura:set attribute="else">    
+                                                    <!--<lightning:select name="projectNames" label="" aura:id="projId" value="{!timeEntryRow.FPSA_Project__r.Name}" disabled="{!not(empty(timeEntryRow.Id))}" onchange="{!c.onProjectChange}">-->
+                                                    <lightning:select name="{!index}" label="" aura:id="roleId" value="{!timeEntryRow.FPSA_Role__c}" onchange="{!c.onRoleChange}">
+                                                         <aura:if isTrue="{!timeEntryRow.FPSA_Assignment__r.FPSA_Role__c != null}">
+                                                            <option text="{!timeEntryRow.FPSA_Assignment__r.FPSA_Role__c}" value="{!timeEntryRow.FPSA_Role__c}"/>
+                                                            <!--<aura:set attribute="else">
+                                                                <option value="">Select...</option>
+                                                            </aura:set>-->
+                                                        </aura:if> 
+                                                        <aura:iteration items="{!timeEntryRow.rolesAvailable}" var="option" indexVar="key">
+                                                            <option text="{!option.value}" value="{!option.key}"/>
+                                                        </aura:iteration>
+                                                    </lightning:select>
+                                                </aura:set>
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <!--<td>
+                                        <div class="slds-truncate" style="width:150px;">
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Milestone__c != null}">
+                                            	<lightning:formattedText value="{!timeEntryRow.FPSA_Milestone__r.Name}" />
+                                            </aura:if>    
+                                        </div>
+                                    </td>-->
+                                    <td>
+                                        <aura:if isTrue="{!not(empty(timeEntryRow.Id))}">
+                                                <lightning:formattedText value="{!timeEntryRow.FPSA_Milestone__r.Name}" />
+                                                <aura:set attribute="else">    
+                                                    <!--<lightning:select name="projectNames" label="" aura:id="projId" value="{!timeEntryRow.FPSA_Project__r.Name}" disabled="{!not(empty(timeEntryRow.Id))}" onchange="{!c.onProjectChange}">-->
+                                                    <lightning:select label="" name="{!index}" aura:id="milestoneId" value="{!timeEntryRow.FPSA_Milestone__c}" onchange="{!c.onMilestoneSelection}">
+                                                        <aura:if isTrue="{!timeEntryRow.FPSA_Milestone__r.Name != null}">
+                                                            <option text="{!timeEntryRow.FPSA_Milestone__r.Name}" value="{!timeEntryRow.FPSA_Milestone__c}"/>
+                                                            <aura:set attribute="else">
+                                                                <option value="">Select...</option>
+                                                            </aura:set>
+                                                        </aura:if> 
+                                                        
+                                                           <!-- <aura:iteration items="{!timeEntryRow.FPSA_Project__r.MPM4_BASE__Project_Milestones__r}" var="option">
+                                                                <aura:if isTrue="{!option.Name != timeEntryRow.FPSA_Milestone__r.Name}">
+                                                                	<option text="{!option.Name}" value="{!option.Id}"/>
+                                                                </aura:if>
+                                                            </aura:iteration> -->
+                                                        	<aura:iteration items="{!timeEntryRow.milesStoneAvailable}" var="option" indexVar="key">
+                                                            <option text="{!option.value}" value="{!option.key}"/>
+                                                        	</aura:iteration>
+                                                    </lightning:select>
+                                                </aura:set>
+                                            </aura:if>
+                                    </td>
+                                    <td>			   
+										<div class="slds-truncate" style="margin-left:20px;text-align:center;">
+                                          <!--  <aura:if isTrue="{!not(empty(timeEntryRow.Id))}">
+                                                <ui:inputCheckbox aura:id="output" value="{!timeEntryRow.FPSA_No_Hours__c}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false)}" />
+                                                <aura:set attribute="else">  
+                                            		<ui:inputCheckbox name="{!index}" aura:id="index" change="{!c.handleCheckboxChange}" value="{!timeEntryRow.isChecked}"/>
+                                             	</aura:set>
+                                            </aura:if>    -->  
+                                            <ui:inputCheckbox name="{!index}" aura:id="index" change="{!c.handleCheckboxChange}" value="{!timeEntryRow.FPSA_No_Hours__c}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false)}"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="slds-truncate" style="text-align:center">
+                                            <lightning:formattedNumber value="{!timeEntryRow.FPSA_Project_Planned_hrs__c}" />
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative" style="text-align:center;padding:0px;">
+                                            <lightning:input style="width:50px;" aura:id="testSunday" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Sunday_Hours__c}" max="24.0" min="0" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Sunday_Hours__c'+ v.disableTimeEntry.index}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false) || timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <!--<aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">-->
+                                            <!--
+                                            <div><lightning:buttonIcon class="inputIcon" name="Sunday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Sunday Note" title="Sunday Note" value="{!index}"/>                                  
+                                            <section class="{!v.openNoteDay=='Sunday_'+index ?'slds-popover slds-nubbin_top custom sunday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Sunday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Sunday" variant="label-hidden" value="{!timeEntryRow.FPSA_Sunday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>
+                                                </div>-->
+                                            <!--</aura:if>-->
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testMonday_{!index.Id}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Monday_Hours__c}" max="24" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Monday_Hours__c'}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false)||(timeEntryRow.disableTimeEntry)|| timeEntryRow.FPSA_No_Hours__c==true }"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            
+											<lightning:buttonIcon class="inputIcon" name="Monday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Monday Note" title="Monday Note" value="{!index}"/> 
+                                            <section class="{!v.openNoteDay=='Monday_'+index?'slds-popover slds-nubbin_top custom monday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Monday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Monday" variant="label-hidden" value="{!timeEntryRow.FPSA_Monday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testTuesday_{!index.Id}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Tuesday_Hours__c}" max="24" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Tuesday_Hours__c'}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false)||timeEntryRow.disableTimeEntry || timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            <lightning:buttonIcon class="inputIcon" name="Tuesday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Tuesday Note" title="Tuesday Note" value="{!index}"/>                          
+                                            
+                                            <section class="{!v.openNoteDay=='Tuesday_'+index?'slds-popover slds-nubbin_top custom tuesday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Tuesday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Tuesday" variant="label-hidden" value="{!timeEntryRow.FPSA_Tuesday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>
+                                           </aura:if>
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testWednesday_{!index}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Wednesday_Hours__c}" max="24" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Wednesday_Hours__c'}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false) ||timeEntryRow.disableTimeEntry ||  timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            <lightning:buttonIcon class="inputIcon" name="Wednesday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Wednesday Note" title="Wednesday Note" value="{!index}"/>                          
+                                            
+                                            <section class="{!v.openNoteDay=='Wednesday_'+index?'slds-popover slds-nubbin_top custom wednesday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Wednesday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Wednesday" variant="label-hidden" value="{!timeEntryRow.FPSA_Wednesday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section> 
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testThursday_{!index.Id}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Thursday_Hours__c}" max="24" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Thursday_Hours__c'}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false)||timeEntryRow.disableTimeEntry ||  timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            <lightning:buttonIcon class="inputIcon" name="Thursday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Thursday Note" title="Thursday Note" value="{!index}"/>                          
+                                            
+                                            <section class="{!v.openNoteDay=='Thursday_'+index?'slds-popover slds-nubbin_top custom thursday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Thursday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Thursday" variant="label-hidden" value="{!timeEntryRow.FPSA_Thursday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>  
+                                            </aura:if>
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;">
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testFriday_{!index.Id}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Friday_Hours__c}" max="24" oncommit="{!c.hrschange}" name="{!index+'-FPSA_Friday_Hours__c'}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false) || timeEntryRow.disableTimeEntry ||  timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            <lightning:buttonIcon class="inputIcon" name="Friday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Friday Note" title="Friday Note" value="{!index}"/>                          
+                                            
+                                            <section class="{!v.openNoteDay=='Friday_'+index?'slds-popover slds-nubbin_top custom friday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Friday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Friday" variant="label-hidden" value="{!timeEntryRow.FPSA_Friday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>  
+                                             </aura:if>
+                                        </div>
+                                    </td>
+                                    <td class="" scope="col" style="width:10px;"> 
+                                        <div class="slds-truncate makeRelative">
+                                            <lightning:input style="width:50px;" aura:id="testSatday_{!index.Id}" variant="label-hidden" type="decimal" value="{!timeEntryRow.FPSA_Saturday_Hours__c}" max="24" oncommit="{!c.hrschange}" onchange="{!c.CantEditHours}" name="{!index+'-FPSA_Saturday_Hours__c'}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false) || timeEntryRow.disableTimeEntry ||  timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                            <aura:if isTrue="{!timeEntryRow.FPSA_Project__r.FPSA_Daily_Timecard_Notes_Required__c}">
+                                            <lightning:buttonIcon class="inputIcon" name="Saturday" iconName="utility:note" variant="bare" onclick="{!c.showNote}" alternativeText="Saturday Note" title="Saturday Note" value="{!index}"/>                          
+                                            
+                                            <section class="{!v.openNoteDay=='Saturday_'+index?'slds-popover slds-nubbin_top custom saturday':'hide'}" role="dialog">
+                                                <lightning:buttonIcon class="slds-float_right slds-popover__close" name="Saturday" iconName="utility:close" variant="bare" onclick="{!c.closeNote}" title="Close Note" />
+                                                <div class="slds-popover__body">
+                                                    <lightning:textarea name="Saturday" variant="label-hidden" value="{!timeEntryRow.FPSA_Saturday_Notes__c}" disabled="{!timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false}"/>
+                                                </div>
+                                            </section>
+                                           </aura:if>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="slds-truncate" style="text-align:center;">
+                                            <ui:outputNumber value="{!timeEntryRow.FPSA_Total_Hours__c}" format=".00"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="slds-truncate" >
+                                            <lightning:textarea name="Summary" variant="label-hidden" value="{!timeEntryRow.FPSA_Weekly_Notes__c}" required="{!v.weeklySummaryRequired}" onchange="{!c.CantEditHours}" disabled="{!(timeEntryRow.FPSA_Status__c == 'Submitted' || timeEntryRow.FPSA_Status__c == 'Approved' ? true : false) || timeEntryRow.disableTimeEntry ||  timeEntryRow.FPSA_No_Hours__c==true}"/>
+                                        </div>
+                                    </td>                    
+                                </tr>
+                            </aura:if>
+                        </aura:iteration>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <div class="slds-truncate">
+                                    <ui:outputText value="Total">Total</ui:outputText>
+                                </div>                                
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate" title=""></div>
+                            </td>
+                            <td>
+                                
+                                <div class="slds-truncate" style="text-align:center;">
+                                    <ui:outputNumber value="{!v.totalAllocations}" format=".00"/>
+                                </div>
+                            </td>                
+                            <aura:iteration items = "{!v.dayWiseTotalHr}" var = "totalHr" indexVar = "index">
+                                <td>
+                                    <div class="slds-truncate" style="text-align:center;">
+                                        <ui:outputNumber value="{!totalHr}" format=".00"/>
+                                    </div>
+                                    
+                                </td> <!--if index is last grand total add karo-->
+                                <aura:if isTrue="{!index == 6}" >
+                                    <td>
+                                        <div class="slds-truncate" style="margin-left:20px;text-align:center;">
+                                            <ui:outputNumber value="{!v.grandTotal}" format=".00"/>
+                                        </div>
+                                    </td>
+                                </aura:if>
+                            </aura:iteration>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <div aura:id="actionbtnDiv">
+                    <lightning:button aura:id="refresh" variant="brand" label="Refresh" title="Refresh" onclick="{!c.handleStartDateChange}" />
+                    <lightning:button aura:id="addrow" variant="brand" label="Add New Time Entry" title="Add New Time Entry" onclick="{!c.handleAdd}" />
+                    <lightning:button aura:id="savebtn" variant="brand" label="Save" title="Save" onclick="{!c.handleSave}" />
+                    <lightning:button aura:id="saveNadd" variant="brand" label="Save and Submit" title="Save and Submit" onclick="{!c.handleSaveAndSubmit}" />
+                    <aura:iteration items = "{!v.timeEntry}" var ="timeEntryRow" indexVar = "testIndex" end = "1">
+                        
+                        <aura:if isTrue="{!v.showFetchButton}">
+                            <lightning:button aura:id="RetriveHrs" variant="brand" label="Retrieve Hours from tasks" title="Retrive Hours from task" onclick="{!c.ShowretriveHoursFromTasksModal}" />
+                           </aura:if>
+                    </aura:iteration>
+                </div>
+            </div>
+        </aura:set>
+    </aura:if>
+    
+    <!--Sushil-->
+    
+    <aura:if isTrue="{!v.HoursEditAlert == true}">
+        <!--Modal Box Start-->
+        <div role="dialog" class="slds-modal slds-fade-in-open" >
+            <div class="slds-modal__container" style="width:800px;">
+                <!--Modal Box Header Start-->
+                <header class="slds-modal__header">
+                    <h1 class="slds-text-heading--medium">Alert.!</h1>
+                </header>
+                <!--Modal Box Header End-->
+                
+                <!--Modal Box Content Start-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <center>Please fill out time and other details through tasks via log time feature. <br/>Instructions: Go to your assigned tasks -> click "Log Time" -> Enter time and description for date that falls under current week. </center>
+                </div>
+                <!--Modal Box Content End-->
+                
+                <!--Modal Box Button Start-->
+                <footer class="slds-modal__footer" style="text-align:center">
+                   
+                    <lightning:button variant="neutral" name='Discard Changes' label='OK' onclick='{!c.CancelCantEditHours}' />
+                </footer>
+                <!--Modal Box Button End-->
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>            
+    </aura:if>
+
+    <aura:if isTrue="{!v.ShowRetrieveConfirmDialog == true}">
+        <!--Modal Box Start-->
+        <div role="dialog" class="slds-modal slds-fade-in-open" >
+            <div class="slds-modal__container" style="width:800px;">
+                <!--Modal Box Header Start-->
+                <header class="slds-modal__header">
+                    <h1 class="slds-text-heading--medium">Fetch details?</h1>
+                </header>
+                <!--Modal Box Header End-->
+                
+                <!--Modal Box Content Start-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <center>All unsaved details will be lost.<br/> Make sure to Save before proceeding.  </center>
+                </div>
+                <!--Modal Box Content End-->
+                
+                <!--Modal Box Button Start-->
+                <footer class="slds-modal__footer" style="text-align:center">
+                    <lightning:button variant="neutral" name='Continue Editing' label='Continue' onclick='{!c.YESretriveHoursFromTasks}'/>
+                    <lightning:button variant="neutral" name='Discard Changes' label='Cancel' onclick='{!c.NOretriveHoursFromTasks}' />
+                </footer>
+                <!--Modal Box Button End-->
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>            
+    </aura:if>
+    <!--Sushil-->
+    
+    <aura:if isTrue="{!and(v.showConfirmDialog == true,v.customUnsavedChanges == true)}">
+        <!--Modal Box Start-->
+        <div role="dialog" class="slds-modal slds-fade-in-open" >
+            <div class="slds-modal__container" style="width:800px;">
+                <!--Modal Box Header Start-->
+                <header class="slds-modal__header">
+                    <h1 class="slds-text-heading--medium">Save Changes?</h1>
+                </header>
+                <!--Modal Box Header End-->
+                
+                <!--Modal Box Content Start-->
+                <div class="slds-modal__content slds-p-around--medium">
+                    <center>There are unsaved changes.<br/>If you leave this page, you'll lose your changes.</center>
+                </div>
+                <!--Modal Box Content End-->
+                
+                <!--Modal Box Button Start-->
+                <footer class="slds-modal__footer" style="text-align:center">
+                    <lightning:button variant="neutral" name='Continue Editing' label='Continue Editing' onclick='{!c.handleCustomSaveMethod}'/>
+                    <lightning:button variant="neutral" name='Discard Changes' label='Discard Changes' onclick='{!c.handleCustomDiscardMethod}'/>
+                </footer>
+                <!--Modal Box Button End-->
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>            
+    </aura:if>
+    <aura:if isTrue="{!v.showPopUp}">
+             
+            <!-- Modal/Popup Box starts here-->
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <!-- Modal/Popup Box Header Starts here-->
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"></h2>
+                    </header>
+                    <!--Modal/Popup Box Body Starts here-->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <p><b style="text-align: center;">Are you sure you want to Submit current week's Timesheet without Submitting previous week's Timesheet?</b>
+                        </p>
+                    </div>
+                    <!--Modal/Popup Box Footer Starts here-->
+                    <footer class="slds-modal__footer">
+                        <div class="slds-grid slds-grid_align-center">
+                           
+                                <lightning:button variant="brand"
+                                                  label="Yes"
+                                                  title="Yes"
+                                                  onclick="{! c.yesbutton }"/>
+                                <lightning:button variant="brand"
+                                                  label="No"
+                                                  title="No"
+                                                  onclick="{!c.nobutton}"/>
+                           
+                       </div>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </aura:if>
+</aura:component>

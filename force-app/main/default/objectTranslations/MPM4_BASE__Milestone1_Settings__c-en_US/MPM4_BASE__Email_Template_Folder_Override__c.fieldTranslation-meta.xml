@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Overides the Default Email Template Folder custom setting by allowing you to enter the field name that will be used to source the ID of the email template folder where you will store your project email templates. (Premium Edition Only) --></help>
+    <label><!-- Email Template Folder Override --></label>
+    <name>MPM4_BASE__Email_Template_Folder_Override__c</name>
+</CustomFieldTranslation>

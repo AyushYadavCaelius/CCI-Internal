@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When exclude weekend work is enabled and dates are shifted, if the start date and end dates are shifted the same number of days, then weekday duration of the item will be kept. Weekday duration may be reduced if not checked. --></help>
+    <label><!-- Keep Weekday Duration When Shifting --></label>
+    <name>MPM4_BASE__Keep_Weekday_Duration__c</name>
+</CustomFieldTranslation>

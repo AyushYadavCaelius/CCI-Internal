@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACV_Salesforce__c</fullName>
+    <description>How much ACV is logged in the Salesforce Partner Portal for this deal (Salesforce)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How much ACV is logged in the Salesforce Partner Portal for this deal (MuleSoft)</inlineHelpText>
+    <label>ACV: Salesforce</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

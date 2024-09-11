@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- View Subscriber in MC --></label>
+    <name>MC4SF__View_Subscriber_in_MC__c</name>
+</CustomFieldTranslation>

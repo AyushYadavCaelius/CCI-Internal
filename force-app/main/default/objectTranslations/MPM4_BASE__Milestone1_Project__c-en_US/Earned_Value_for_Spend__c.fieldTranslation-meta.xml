@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Total Earned Value at Average Cost with respect to Total Budget Spent --></help>
+    <label><!-- Earned Value for Spend --></label>
+    <name>Earned_Value_for_Spend__c</name>
+</CustomFieldTranslation>

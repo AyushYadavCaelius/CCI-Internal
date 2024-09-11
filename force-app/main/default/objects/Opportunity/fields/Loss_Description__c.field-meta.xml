@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Description__c</fullName>
+    <description>Description of why this opportunity was lost</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Description of why this opportunity was lost</inlineHelpText>
+    <label>Loss Description</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

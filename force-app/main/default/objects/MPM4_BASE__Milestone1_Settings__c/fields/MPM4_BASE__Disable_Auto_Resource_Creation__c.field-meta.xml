@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Disable_Auto_Resource_Creation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This setting is used to prevent the creation of a resource record when a new user is created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This setting is used to prevent the creation of a resource record when a new user is created.</inlineHelpText>
+    <label>Disable Automatic Resource Creation</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

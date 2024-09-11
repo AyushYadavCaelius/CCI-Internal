@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Technology</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Technologies</value>
+    </caseValues>
+    <layouts>
+        <layout>Technology Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- NEW_Tech --></label>
+        <name>NEW_Tech</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Technology_Summary --></label>
+        <name>Technology_Summary</name>
+    </webLinks>
+</CustomObjectTranslation>

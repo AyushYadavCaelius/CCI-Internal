@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Planned Hrs from Resource time for resource for current year where Allocation.billable = true --></help>
+    <label><!-- Current Year Planned Billable Hours --></label>
+    <name>Current_Year_Planned_Billable_Hours__c</name>
+</CustomFieldTranslation>

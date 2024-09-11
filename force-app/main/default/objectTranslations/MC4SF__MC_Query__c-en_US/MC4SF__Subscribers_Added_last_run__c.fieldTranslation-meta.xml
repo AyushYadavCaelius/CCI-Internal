@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subscribers Added(last run) --></label>
+    <name>MC4SF__Subscribers_Added_last_run__c</name>
+</CustomFieldTranslation>

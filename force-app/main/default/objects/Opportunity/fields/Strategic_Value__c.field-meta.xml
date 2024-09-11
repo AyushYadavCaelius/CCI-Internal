@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Value__c</fullName>
+    <description>What is the strategic value of this opportunity? Strategic = proves a new capability, a new industry, a new offering.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the strategic value of this opportunity? 
+Strategic = proves a new capability, a new industry, a new offering.
+Commodity = we do these projects all the time and this helps build that story
+Non-strategic = Does not provide a reference for a new capability, industry, technology</inlineHelpText>
+    <label>Strategic Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strategic &amp; Margin+</fullName>
+                <default>false</default>
+                <label>Strategic &amp; Margin+</label>
+            </value>
+            <value>
+                <fullName>Strategic &amp; Margin Neutral</fullName>
+                <default>false</default>
+                <label>Strategic &amp; Margin Neutral</label>
+            </value>
+            <value>
+                <fullName>Strategic &amp; Margin Neg (Investment)</fullName>
+                <default>false</default>
+                <label>Strategic &amp; Margin Neg (Investment)</label>
+            </value>
+            <value>
+                <fullName>Commodity &amp; Margin +</fullName>
+                <default>false</default>
+                <label>Commodity &amp; Margin +</label>
+            </value>
+            <value>
+                <fullName>Commodity &amp; Margin Neutral</fullName>
+                <default>false</default>
+                <label>Commodity &amp; Margin Neutral</label>
+            </value>
+            <value>
+                <fullName>Commodity &amp; Margin Negative</fullName>
+                <default>false</default>
+                <label>Commodity &amp; Margin Negative</label>
+            </value>
+            <value>
+                <fullName>Non-Strategic &amp; Margin +</fullName>
+                <default>false</default>
+                <label>Non-Strategic &amp; Margin +</label>
+            </value>
+            <value>
+                <fullName>Non-Strategic &amp; Margin Neutral</fullName>
+                <default>false</default>
+                <label>Non-Strategic &amp; Margin Neutral</label>
+            </value>
+            <value>
+                <fullName>Non-Strategic &amp; Margin Negative</fullName>
+                <default>false</default>
+                <label>Non-Strategic &amp; Margin Negative</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

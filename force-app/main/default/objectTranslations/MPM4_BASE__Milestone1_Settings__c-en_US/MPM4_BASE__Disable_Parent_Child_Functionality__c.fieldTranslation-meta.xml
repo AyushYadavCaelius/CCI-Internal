@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This setting is used to prevent unnecessary queries from being run when parent/child relationships are not being used. --></help>
+    <label><!-- Disable Parent/Child Functionality --></label>
+    <name>MPM4_BASE__Disable_Parent_Child_Functionality__c</name>
+</CustomFieldTranslation>

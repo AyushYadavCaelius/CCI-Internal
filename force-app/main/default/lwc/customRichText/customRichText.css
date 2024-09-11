@@ -1,0 +1,22 @@
+.custom-rich-text-bg-green {
+    background-color: #78c953;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.custom-rich-text-bg-red {
+    background-color: #cc0000;
+    /* BA0517 */
+    
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.custom-rich-text-bg-yellow {
+    background-color: #f3d904;
+    
+    /* DD7A01 */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

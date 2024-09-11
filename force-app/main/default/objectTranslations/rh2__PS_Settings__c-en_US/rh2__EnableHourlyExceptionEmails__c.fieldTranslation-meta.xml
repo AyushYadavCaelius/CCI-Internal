@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, the Rollup Helper Exception Monitor will send hourly emails containing exceptions generated within the last hour. If unchecked, the Rollup Helper Exception Monitor will send an email once daily containing exceptions generated within the last day. --></help>
+    <label><!-- Enable Hourly Exception Emails --></label>
+    <name>rh2__EnableHourlyExceptionEmails__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field populates the Total Allocated cost for each Project --></help>
+    <label><!-- PD Total Budget Allocated --></label>
+    <name>Total_Budget_Allocated__c</name>
+</CustomFieldTranslation>

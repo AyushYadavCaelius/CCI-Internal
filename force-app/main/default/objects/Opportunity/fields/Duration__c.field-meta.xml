@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <formula>/* Calculate total months */
+TEXT(FLOOR((YEAR(End_Date__c) - YEAR(Start_Date__c)) * 12 + (MONTH(End_Date__c) - MONTH(Start_Date__c)) - 
+    IF(DAY(End_Date__c) &lt; DAY(Start_Date__c), 1, 0))
+) &amp; &quot; months &quot; &amp;
+
+/* Calculate remaining days */
+
+TEXT(IF(DAY(End_Date__c) &gt;= DAY(Start_Date__c), 
+    DAY(End_Date__c) - DAY(Start_Date__c), 
+    DAY(End_Date__c) + CASE(MONTH(End_Date__c), 
+        1, 31, 2, IF(MOD(YEAR(End_Date__c), 4) = 0, 29, 28), 3, 31, 
+        4, 30, 5, 31, 6, 30, 7, 31, 8, 31, 9, 30, 10, 31, 11, 30, 12, 31, 31) - DAY(Start_Date__c)
+))
+&amp; &quot; days&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

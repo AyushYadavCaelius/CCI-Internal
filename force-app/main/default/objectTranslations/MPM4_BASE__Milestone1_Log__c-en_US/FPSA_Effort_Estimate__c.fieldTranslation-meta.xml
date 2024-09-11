@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the effort estimated to complete this in hours --></help>
+    <label><!-- Effort Estimate (Hrs) --></label>
+    <name>FPSA_Effort_Estimate__c</name>
+</CustomFieldTranslation>

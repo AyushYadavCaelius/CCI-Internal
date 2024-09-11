@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_List__c</fullName>
+    <externalId>false</externalId>
+    <label>Marketing List</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ambulatory Scheduling</fullName>
+                <default>false</default>
+                <label>Ambulatory Scheduling</label>
+            </value>
+            <value>
+                <fullName>Congestive Heart Failure</fullName>
+                <default>false</default>
+                <label>Congestive Heart Failure</label>
+            </value>
+            <value>
+                <fullName>Critical Care</fullName>
+                <default>false</default>
+                <label>Critical Care</label>
+            </value>
+            <value>
+                <fullName>Emergency Department</fullName>
+                <default>false</default>
+                <label>Emergency Department</label>
+            </value>
+            <value>
+                <fullName>Emergency Dept</fullName>
+                <default>false</default>
+                <label>Emergency Dept</label>
+            </value>
+            <value>
+                <fullName>ERAS</fullName>
+                <default>false</default>
+                <label>ERAS</label>
+            </value>
+            <value>
+                <fullName>Operating Room Efficiency</fullName>
+                <default>false</default>
+                <label>Operating Room Efficiency</label>
+            </value>
+            <value>
+                <fullName>Operational Excellence</fullName>
+                <default>false</default>
+                <label>Operational Excellence</label>
+            </value>
+            <value>
+                <fullName>Pediatric Respiratory And Sepsis</fullName>
+                <default>false</default>
+                <label>Pediatric Respiratory And Sepsis</label>
+            </value>
+            <value>
+                <fullName>Physician Practice Management</fullName>
+                <default>false</default>
+                <label>Physician Practice Management</label>
+            </value>
+            <value>
+                <fullName>Quality and Safety</fullName>
+                <default>false</default>
+                <label>Quality and Safety</label>
+            </value>
+            <value>
+                <fullName>Sickle Cell</fullName>
+                <default>false</default>
+                <label>Sickle Cell</label>
+            </value>
+            <value>
+                <fullName>Talent Management</fullName>
+                <default>false</default>
+                <label>Talent Management</label>
+            </value>
+            <value>
+                <fullName>Vancomycin</fullName>
+                <default>false</default>
+                <label>Vancomycin</label>
+            </value>
+            <value>
+                <fullName>CIO - HIMMS</fullName>
+                <default>false</default>
+                <label>CIO - HIMMS</label>
+            </value>
+            <value>
+                <fullName>CIO</fullName>
+                <default>false</default>
+                <label>CIO</label>
+            </value>
+            <value>
+                <fullName>ED</fullName>
+                <default>false</default>
+                <label>ED</label>
+            </value>
+            <value>
+                <fullName>COVID ED List</fullName>
+                <default>false</default>
+                <label>COVID ED List</label>
+            </value>
+            <value>
+                <fullName>COVID Re-Entry</fullName>
+                <default>false</default>
+                <label>COVID Re-Entry</label>
+            </value>
+            <value>
+                <fullName>ICU</fullName>
+                <default>false</default>
+                <label>ICU</label>
+            </value>
+            <value>
+                <fullName>COO</fullName>
+                <default>false</default>
+                <label>COO</label>
+            </value>
+            <value>
+                <fullName>SDR COVID Re-Entry Amb</fullName>
+                <default>false</default>
+                <label>SDR COVID Re-Entry Amb</label>
+            </value>
+            <value>
+                <fullName>Call Campaign – Ambulatory</fullName>
+                <default>false</default>
+                <label>Call Campaign – Ambulatory</label>
+            </value>
+            <value>
+                <fullName>Call Campaign Ambulatory</fullName>
+                <default>false</default>
+                <label>Call Campaign Ambulatory</label>
+            </value>
+            <value>
+                <fullName>Salesforce AE</fullName>
+                <default>false</default>
+                <label>Salesforce AE</label>
+            </value>
+            <value>
+                <fullName>SDRAMBULATORY</fullName>
+                <default>false</default>
+                <label>SDRAMBULATORY</label>
+            </value>
+            <value>
+                <fullName>SDR SFDC Musto Amb</fullName>
+                <default>false</default>
+                <label>SDR SFDC Musto Amb</label>
+            </value>
+            <value>
+                <fullName>St Luke Health System Executives</fullName>
+                <default>false</default>
+                <label>St Luke Health System Executives</label>
+            </value>
+            <value>
+                <fullName>PG Lead</fullName>
+                <default>false</default>
+                <label>PG Lead</label>
+            </value>
+            <value>
+                <fullName>Practice Admin</fullName>
+                <default>false</default>
+                <label>Practice Admin</label>
+            </value>
+            <value>
+                <fullName>SDR_DEF_PHY_GRP</fullName>
+                <default>false</default>
+                <label>SDR_DEF_PHY_GRP</label>
+            </value>
+            <value>
+                <fullName>Jeremy Campaign</fullName>
+                <default>false</default>
+                <label>Jeremy Campaign</label>
+            </value>
+            <value>
+                <fullName>SDR_ICU_Directors</fullName>
+                <default>false</default>
+                <label>SDR_ICU_Directors</label>
+            </value>
+            <value>
+                <fullName>SDR_icu_meddirector</fullName>
+                <default>false</default>
+                <label>SDR_icu_meddirector</label>
+            </value>
+            <value>
+                <fullName>SDR_robert_brownd</fullName>
+                <default>false</default>
+                <label>SDR_robert_brownd</label>
+            </value>
+            <value>
+                <fullName>SDR_ryan_yockey</fullName>
+                <default>false</default>
+                <label>SDR_ryan_yockey</label>
+            </value>
+            <value>
+                <fullName>SDR_Tableau_lanzalotto</fullName>
+                <default>false</default>
+                <label>SDR_Tableau_lanzalotto</label>
+            </value>
+            <value>
+                <fullName>OR_LIST_ASC</fullName>
+                <default>false</default>
+                <label>OR_LIST_ASC</label>
+            </value>
+            <value>
+                <fullName>Imaging_Center_Burn_List</fullName>
+                <default>false</default>
+                <label>Imaging_Center_Burn_List</label>
+            </value>
+            <value>
+                <fullName>CMO</fullName>
+                <default>false</default>
+                <label>CMO</label>
+            </value>
+            <value>
+                <fullName>SDR_CNO</fullName>
+                <default>false</default>
+                <label>SDR_CNO</label>
+            </value>
+            <value>
+                <fullName>salesforce-grb-2020q4-greenfeild</fullName>
+                <default>false</default>
+                <label>salesforce-grb-2020q4-greenfeild</label>
+            </value>
+            <value>
+                <fullName>salesforce-grb-2020q4-petertopa</fullName>
+                <default>false</default>
+                <label>salesforce-grb-2020q4-petertopa</label>
+            </value>
+            <value>
+                <fullName>salesforce-midcommercial-2020q4-jamilatrapps</fullName>
+                <default>false</default>
+                <label>salesforce-midcommercial-2020q4-jamilatrapps</label>
+            </value>
+            <value>
+                <fullName>salesforce-midcommercial-2020q4-ryanyockey1</fullName>
+                <default>false</default>
+                <label>salesforce-midcommercial-2020q4-ryanyockey1</label>
+            </value>
+            <value>
+                <fullName>salesforce-smb-2020q4-carlyrashoff</fullName>
+                <default>false</default>
+                <label>salesforce-smb-2020q4-carlyrashoff</label>
+            </value>
+            <value>
+                <fullName>salesforce-smb-2020q4-patricknew</fullName>
+                <default>false</default>
+                <label>salesforce-smb-2020q4-patricknew</label>
+            </value>
+            <value>
+                <fullName>SDR_Salesforce_reps</fullName>
+                <default>false</default>
+                <label>SDR_Salesforce_reps</label>
+            </value>
+            <value>
+                <fullName>SF_Oct202_Webinar</fullName>
+                <default>false</default>
+                <label>SF_Oct202_Webinar</label>
+            </value>
+            <value>
+                <fullName>SDR_OTM_talenttitle-LM</fullName>
+                <default>false</default>
+                <label>SDR_OTM_talenttitle-LM</label>
+            </value>
+            <value>
+                <fullName>SDR_OR_webinar</fullName>
+                <default>false</default>
+                <label>SDR_OR_webinar</label>
+            </value>
+            <value>
+                <fullName>salesforce-commercial-2020-benlaetz</fullName>
+                <default>false</default>
+                <label>salesforce-commercial-2020-benlaetz</label>
+            </value>
+            <value>
+                <fullName>Epic BI - Definitive</fullName>
+                <default>false</default>
+                <label>Epic BI - Definitive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

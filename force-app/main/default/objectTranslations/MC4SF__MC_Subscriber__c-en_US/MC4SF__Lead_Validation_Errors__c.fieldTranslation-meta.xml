@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If there was an MC4SF application error with this record, it will be captured here. --></help>
+    <label><!-- Validation/Sync Errors --></label>
+    <name>MC4SF__Lead_Validation_Errors__c</name>
+</CustomFieldTranslation>

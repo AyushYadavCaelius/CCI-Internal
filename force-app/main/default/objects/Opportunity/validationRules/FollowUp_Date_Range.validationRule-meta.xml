@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FollowUp_Date_Range</fullName>
+    <active>true</active>
+    <description>Follow-Up date has to be less than Opportunity Close Date</description>
+    <errorConditionFormula>AND( 
+     Follow_up_Date__c != null,
+     Follow_up_Date__c &gt;= CloseDate
+   )</errorConditionFormula>
+    <errorMessage>Follow-Up Date cannot exceed the Close Date. Either keep it in range or push the close date ahead</errorMessage>
+</ValidationRule>

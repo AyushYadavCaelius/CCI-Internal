@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sync Setting --></label>
+    <name>MC4SF__Sync_Setting__c</name>
+    <picklistValues>
+        <masterLabel>Do Not Sync</masterLabel>
+        <translation><!-- Do Not Sync --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 1 Months</masterLabel>
+        <translation><!-- Keep Activity for 1 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 1 Year</masterLabel>
+        <translation><!-- Keep Activity for 1 Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 14 Days</masterLabel>
+        <translation><!-- Keep Activity for 14 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 3 Months</masterLabel>
+        <translation><!-- Keep Activity for 3 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 6 Months</masterLabel>
+        <translation><!-- Keep Activity for 6 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep Activity for 7 Days</masterLabel>
+        <translation><!-- Keep Activity for 7 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keep All Activity</masterLabel>
+        <translation><!-- Keep All Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sync Subscribers Only</masterLabel>
+        <translation><!-- Sync Subscribers Only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

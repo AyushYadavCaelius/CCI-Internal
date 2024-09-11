@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Designation --></label>
+    <name>Designationn__c</name>
+    <picklistValues>
+        <masterLabel>Application Developer</masterLabel>
+        <translation><!-- Application Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intern</masterLabel>
+        <translation><!-- Intern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offshore Project Manager</masterLabel>
+        <translation><!-- Offshore Project Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onshore Project Manager</masterLabel>
+        <translation><!-- Onshore Project Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shadow Resource</masterLabel>
+        <translation><!-- Shadow Resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Architect</masterLabel>
+        <translation><!-- Solution Architect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Consultant</masterLabel>
+        <translation><!-- Solution Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Application Developer</masterLabel>
+        <translation><!-- Sr. Application Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Solution Architect</masterLabel>
+        <translation><!-- Sr. Solution Architect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sr. Solution Consultant</masterLabel>
+        <translation><!-- Sr. Solution Consultant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

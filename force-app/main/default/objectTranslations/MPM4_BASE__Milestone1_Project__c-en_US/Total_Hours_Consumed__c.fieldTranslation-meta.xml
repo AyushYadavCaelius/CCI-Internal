@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of Time submitted --></help>
+    <label><!-- PD Total Hours Consumed --></label>
+    <name>Total_Hours_Consumed__c</name>
+</CustomFieldTranslation>

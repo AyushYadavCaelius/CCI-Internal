@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field prevents dates from being shifted for the current milestone record. --></help>
+    <label><!-- Disable Date Shifting --></label>
+    <name>MPM4_BASE__Disable_Date_Shifting__c</name>
+</CustomFieldTranslation>

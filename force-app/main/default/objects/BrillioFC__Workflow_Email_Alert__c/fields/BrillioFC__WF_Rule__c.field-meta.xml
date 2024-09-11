@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BrillioFC__WF_Rule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>WF Rule</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>BrillioFC__Automation_Rule_Detail__c.BrillioFC__Type__c</field>
+            <operation>equals</operation>
+            <value>Workflow Rule</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>BrillioFC__Automation_Rule_Detail__c</referenceTo>
+    <relationshipLabel>Workflow Email Alerts</relationshipLabel>
+    <relationshipName>Workflow_Email_Alerts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

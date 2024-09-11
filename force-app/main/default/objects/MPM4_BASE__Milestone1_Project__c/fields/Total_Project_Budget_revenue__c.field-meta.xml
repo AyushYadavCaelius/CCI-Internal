@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Project_Budget_revenue__c</fullName>
+    <description>This field populates the Sum of Closed Won Opportunity Amounts Linked to Project - If there are no Opportunities associated with a Project then it populates the Total Budget Allocated for a Project</description>
+    <externalId>false</externalId>
+    <formula>IF(Total_Budget__c = 0, Total_Budget_Allocated_Cost__c
+, Total_Budget__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field populates the Sum of Closed Won Opportunity Amounts Linked to Project - If there are no Opportunities associated with a Project then it populates the Total Budget Allocated for a Project</inlineHelpText>
+    <label>Total Project Budget</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

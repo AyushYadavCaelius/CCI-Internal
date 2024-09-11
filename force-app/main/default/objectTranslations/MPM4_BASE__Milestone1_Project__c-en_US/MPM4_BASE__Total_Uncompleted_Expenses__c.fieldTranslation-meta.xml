@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Total Uncompleted Expenses --></label>
+    <name>MPM4_BASE__Total_Uncompleted_Expenses__c</name>
+</CustomFieldTranslation>

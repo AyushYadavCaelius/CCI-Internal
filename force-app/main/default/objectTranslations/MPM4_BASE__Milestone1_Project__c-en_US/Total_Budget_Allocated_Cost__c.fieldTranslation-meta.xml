@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sum of  Total Planned Cost from Project Allocation. --></help>
+    <label><!-- Total Budget Allocated ($) --></label>
+    <name>Total_Budget_Allocated_Cost__c</name>
+</CustomFieldTranslation>

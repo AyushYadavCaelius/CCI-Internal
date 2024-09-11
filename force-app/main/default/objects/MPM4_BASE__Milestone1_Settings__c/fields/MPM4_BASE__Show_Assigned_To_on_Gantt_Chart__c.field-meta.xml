@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Show_Assigned_To_on_Gantt_Chart__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Shows the assigned to value on the gantt chart</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Shows the assigned to value on the gantt chart (Premium Edition Only)</inlineHelpText>
+    <label>zDeprecated</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

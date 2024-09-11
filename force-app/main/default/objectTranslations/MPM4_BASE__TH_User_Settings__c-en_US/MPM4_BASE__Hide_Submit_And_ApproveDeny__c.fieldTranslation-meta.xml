@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enable this to hide the Submit and Approve/Deny columns on the Time Grid --></help>
+    <label><!-- Hide Submit and Approve/Deny --></label>
+    <name>MPM4_BASE__Hide_Submit_And_ApproveDeny__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Email Type --></label>
+    <name>MC4SF__Email_Type__c</name>
+    <picklistValues>
+        <masterLabel>html</masterLabel>
+        <translation><!-- html --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>text</masterLabel>
+        <translation><!-- text --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

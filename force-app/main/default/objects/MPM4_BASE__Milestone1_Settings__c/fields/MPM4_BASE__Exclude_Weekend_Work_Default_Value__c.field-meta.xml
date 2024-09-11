@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Exclude_Weekend_Work_Default_Value__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The value of this setting will be used to automatically populate the Exclude Weekend Work field when creating Projects, Milestones, and Tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The value of this setting will be used to automatically populate the Exclude Weekend Work field when creating Projects, Milestones, and Tasks.</inlineHelpText>
+    <label>Exclude Weekend Work Default Value</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

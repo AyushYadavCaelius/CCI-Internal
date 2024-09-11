@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Default_Folder_for_Imports__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Setting where users type in the folder name for the default folder when importing a template</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this setting is blank or the folder is empty the import template page will default to the &apos;My Personal Documents&apos;</inlineHelpText>
+    <label>Default Folder For Imports</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

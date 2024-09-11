@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Allocation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Allocations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Allocation Fields --></label>
+        <name>Allocation_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FPSA Week Fields --></label>
+        <name>FPSA_Week_Fields</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

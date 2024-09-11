@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Task_Estimated_Hrs__c</fullName>
+    <description>Total of Task estimated hours from Project Allocation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total of Task estimated hours from Project Allocation.</inlineHelpText>
+    <label>Total Task Estimated Hours</label>
+    <summarizedField>FPSA_Project_Allocation__c.Task_Assigned_Hours__c</summarizedField>
+    <summaryForeignKey>FPSA_Project_Allocation__c.FPSA_Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

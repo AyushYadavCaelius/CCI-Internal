@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- String of the date and time the rollup was last modified. --></help>
+    <label><!-- Rollup Last Modified Date --></label>
+    <name>rh2__lastModifiedDate__c</name>
+</CustomFieldTranslation>

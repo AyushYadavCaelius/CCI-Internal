@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Mpp_Page_Size__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The number of records to display per page on the Manage Project Plan. Use this setting for large projects that hit Apex CPU time limit errors when updating through the Manage Project Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of records to display per page on the Manage Project Plan. If left blank or set to 0, all records will display on one page.</inlineHelpText>
+    <label>Manage Project Plan Page Size</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

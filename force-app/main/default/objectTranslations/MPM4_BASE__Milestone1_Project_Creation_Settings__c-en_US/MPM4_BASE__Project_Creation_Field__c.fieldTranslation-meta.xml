@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The value in the field populated in this setting will be used to find the correct project template. --></help>
+    <label><!-- Project Creation Field --></label>
+    <name>MPM4_BASE__Project_Creation_Field__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- You may customize what Tasks display on the gantt chart by populating a custom filter in this field. (ex: MPM4_BASE__Complete__c != true AND MPM4_BASE__Internal__c != true) --></help>
+    <label><!-- Custom Task Gantt Filter --></label>
+    <name>MPM4_BASE__Task_Gant_Filter__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Email_Alert__c.BrillioFC__DeveloperName__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Email_Alert__c.BrillioFC__Description__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Email_Alert__c.BrillioFC__Email_Template_Id__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Email_Alert__c.BrillioFC__Namespace__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>BrillioFC__Email_Alert__c.BrillioFC__Number_of_WF_Rules__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Email Alerts not refer in any WF Rule</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$BrillioFC__Org_Details__c$BrillioFC__Email_Alert__c@BrillioFC__Email_Alert__c.BrillioFC__Object_Detail__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_On_Target__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When will we know if this campaign is not working or it is working?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When will we know if this campaign is not working or it is working?</inlineHelpText>
+    <label>Campaign On Target ?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

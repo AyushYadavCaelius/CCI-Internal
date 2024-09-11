@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Lookup Relationship field on the source object which points to the target object. For example: Opportunity.AccountId --></help>
+    <label><!-- Relationship Field --></label>
+    <name>rh2__relationshipField__c</name>
+</CustomFieldTranslation>

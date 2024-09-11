@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Display_Tasks_On_Program_Gantt_Chart__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, the program gantt chart will display Projects, Milestones, and Tasks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, the program gantt chart will display Projects, Milestones, and Tasks.</inlineHelpText>
+    <label>Display Tasks On Program Gantt Chart</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

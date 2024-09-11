@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Hours_Consumed__c</fullName>
+    <description>Sum of Time submitted
+RM - Duplicate field. Created rollup field for same purpose.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Time submitted</inlineHelpText>
+    <label>PD Total Hours Consumed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,32 @@
+.THIS.row-style th {
+    padding-left: 0;
+}
+
+.THIS.row-style td {
+    padding-left: 0;
+}
+
+.THIS .row-count-style {
+    font-size : 90%;
+}
+
+.THIS .checkbox-style {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.THIS .name-style {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.THIS .float-right {
+    float : right;
+}
+
+.THIS .button-menu-style button {
+    width : 1.5rem;
+    height : 1.5rem;
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- User Leads Only --></label>
+    <name>MC4SF__User_Leads_Only__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Campaign</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Campaign Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Event (Conference) is happening&lt;/p&gt;</info>
+        <picklistValueName>Event</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

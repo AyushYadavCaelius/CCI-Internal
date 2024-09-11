@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field Used for Kanban Line 1 --></help>
+    <label><!-- EA Kanban Card Line 1 --></label>
+    <name>EA_Kanban_Card_Line_1__c</name>
+</CustomFieldTranslation>

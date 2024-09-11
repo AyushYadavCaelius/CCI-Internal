@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Whether the current user is assigned to the project being viewed. This field may be inaccurate if a large number of resources are assigned to this project. --></help>
+    <label><!-- My Project --></label>
+    <name>MPM4_BASE__MyProject__c</name>
+</CustomFieldTranslation>

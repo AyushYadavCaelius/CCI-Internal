@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This setting disables the shifting performed to Milestones when Project Task dates are changed. --></help>
+    <label><!-- Disable Milestone Shifts Caused By Tasks --></label>
+    <name>MPM4_BASE__Disable_MS_Shifts__c</name>
+</CustomFieldTranslation>

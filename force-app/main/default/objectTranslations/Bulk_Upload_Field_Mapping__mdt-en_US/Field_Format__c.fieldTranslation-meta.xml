@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Field Format --></label>
+    <name>Field_Format__c</name>
+    <picklistValues>
+        <masterLabel>DD-MM-YYYY</masterLabel>
+        <translation><!-- DD-MM-YYYY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DD/MM/YYYY</masterLabel>
+        <translation><!-- DD/MM/YYYY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MM-DD-YYYY</masterLabel>
+        <translation><!-- MM-DD-YYYY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MM/DD/YYYY</masterLabel>
+        <translation><!-- MM/DD/YYYY --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

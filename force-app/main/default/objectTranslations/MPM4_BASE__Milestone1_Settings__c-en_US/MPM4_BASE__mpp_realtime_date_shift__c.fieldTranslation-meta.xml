@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checked date shifts triggered by updates on the manage project plan will occur in realtime (Premium Edition Only) --></help>
+    <label><!-- Manage Project Plan Realtime Date Shifts --></label>
+    <name>MPM4_BASE__mpp_realtime_date_shift__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If this Checkbox is checked, during time entry for this project, the daily notes popup appears and there is validation to ensure daily notes are entered where hours &gt; 0. Select this option only if customer requests it or project is facing accountability challenges. It makes time entry a longer task --></help>
+    <label><!-- Daily Timecard Notes Required --></label>
+    <name>FPSA_Daily_Timecard_Notes_Required__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<aura:component>
+
+    <aura:attribute name="approvalRequestColumns" type="List" />
+    <aura:attribute name="selectAll" type="Boolean" default="false" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.initApprovalRequestColumns}" />
+    <aura:handler name="change" value="{!v.selectAll}" action="{!c.onToggleSelectAll}" />
+
+    <aura:method name="clearSelection" action="{!c.handleClearSelection}" access="public" />
+
+    <aura:registerEvent name="toggleAllApprovalRequestSelection" type="c:FPSA_ToggleAllApprovalRequestSelectionEvent" />
+
+    <tr class="slds-line-height_reset">
+        <th class="col-0-style" scope="col">
+            <div class="slds-truncate" title="Row Count">
+                <!-- Row count column -->
+            </div>
+        </th>
+
+        <th class="col-1-style" scope="col">
+            <div class="slds-float_right slds-truncate" title="Select All">
+                <lightning:input type="checkbox" checked="{!v.selectAll}" disabled="false" />
+            </div>
+        </th>
+
+        <aura:iteration items="{!v.approvalRequestColumns}" var="approvalRequestColumn">
+            <th class="{!approvalRequestColumn.columnStyleClass}" scope="col">
+                <div class="slds-truncate" title="{!approvalRequestColumn.columnLabel}">
+                    {!approvalRequestColumn.columnLabel}
+                </div>
+            </th>
+        </aura:iteration>
+
+        <th class="col-11-style" scope="col">
+            <div class="slds-truncate" title="Action Menu">
+                <!-- Action menu column -->
+            </div>
+        </th>
+    </tr>
+
+</aura:component>

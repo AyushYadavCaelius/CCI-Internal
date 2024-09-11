@@ -1,0 +1,266 @@
+<template>
+	<div>
+
+		<div class="slds-section slds-is-open projectDetailSection">
+            <h3 class="slds-section__title">
+                <lightning-button aria-controls="projectDetailSectionId" onclick={sectionClick} aria-expanded="true" variant="base" 
+                    label="Project Details & Allocations" title="Project Details & Allocations" icon-name={sectionIcons.projectDetailSection} class="slds-section__title-action slds-m-left_x-small sectionButtonCls" data-id="projectDetailSection">
+                </lightning-button>
+            </h3>
+            <div aria-hidden="false" class="slds-section__content" id="projectDetailSectionId">
+				<template if:true={projectDetail}>
+					<lightning-layout multiple-rows horizontal-align="spread">
+						<lightning-layout-item size="6" large-device-size="6" medium-device-size="6" small-device-size="12" padding="horizontal-small" class="slds-form__item">
+							<div class="slds-form-element slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">Project Name</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										{projectDetail.Name}
+									</div>
+								</div>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" large-device-size="6" medium-device-size="6" small-device-size="12" padding="horizontal-small" class="slds-form__item">
+							<div class="slds-form-element slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">Project No</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										{projectDetail.FPSA_Project_ID__c}
+									</div>
+								</div>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" large-device-size="6" medium-device-size="6" small-device-size="12" padding="horizontal-small" class="slds-form__item">
+							<div class="slds-form-element slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">Project Start Date</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										<lightning-formatted-date-time
+											value={projectDetail.FPSA_Start_Date__c}
+											year="numeric"
+											month="numeric"
+											day="numeric"
+											time-zone="UTC">
+										</lightning-formatted-date-time>
+									</div>
+								</div>
+							</div>
+						</lightning-layout-item>
+						<lightning-layout-item size="6" large-device-size="6" medium-device-size="6" small-device-size="12" padding="horizontal-small" class="slds-form__item">
+							<div class="slds-form-element slds-form-element_readonly slds-form-element_horizontal slds-hint-parent">
+								<span class="slds-form-element__label">Total Duration</span>
+								<div class="slds-form-element__control">
+									<div class="slds-form-element__static">
+										{durationinweeks} Weeks
+									</div>
+								</div>
+							</div>
+						</lightning-layout-item>
+					</lightning-layout>
+				</template>
+			</div>
+		</div>
+		<br/>
+		<template if:true={isNoAllocations}>
+			<div class="slds-text-heading_small slds-text-align_center slds-p-around_large">Project allocations are not done. Click 'Add Resource' for project allocations.</div>
+		</template>
+		<template if:false={isNoAllocations}>
+
+			<div class="slds-table--header-fixed_container my-custom-table">
+				<table class="slds-table slds-table_bordered slds-table--header-fixed table-content" style="min-width: max-content;">
+					<thead>
+						<template for:each={resourceAllocationsDummy} for:item="oppLine">
+							<tr key={oppLine.Id}>
+								<template if:true={AllocationFieldSets}>
+									<th scope="col" key={fieldName} style="width:2rem;">
+										<div class="slds-cell-fixed"></div>
+									</th>
+									<lightning-record-edit-form record-id={oppLine.Id} key={oppLine.Id} object-api-name="FPSA_Project_Allocation__c">
+										<template for:each={AllocationFieldSets.fields} for:item="field">
+											<th scope="col" key={fieldName} class={field.classnamecustom}>
+												<div class="slds-cell-fixed slds-truncate slds-p-top_xx-small slds-p-left_small" title={field.label}>{field.label}</div>
+											</th>
+										</template>
+										<template for:each={mapData} for:item="mapKey" for:index="weekindex">
+											<th scope="col" key={mapKey.wDate} class="fixedColumnClsWeek">
+												<div class="slds-cell-fixed slds-truncate slds-p-top_xx-small slds-p-left_small">
+													W{mapKey.seqNo}(<lightning-formatted-date-time value={mapKey.wDate} month="numeric" day="numeric" time-zone="UTC"></lightning-formatted-date-time>)
+												</div>
+											</th>
+										</template>
+									</lightning-record-edit-form>
+								</template>
+							</tr>
+						</template>
+					</thead>
+					<tbody class="tbody-container">
+						<template for:each={resourceAllocations} for:item="oppLine" for:index="index">
+							<tr key={oppLine.Id}>
+								<template if:true={AllocationFieldSets}>
+									<th scope="row" key={fieldName} style="width:2rem;">
+										<lightning-button-icon title="Delete" icon-name="action:delete" value={index} variant="bare" onclick={deleteRow}>
+										</lightning-button-icon>
+										<lightning-button-icon title="Copy" class="slds-p-left_xx-small" icon-name="action:add_file" value={index} variant="bare" onclick={copyRow}>
+										</lightning-button-icon>
+									</th>
+									<lightning-record-edit-form record-id={oppLine.Id} onerror={handleErrorAllocation} onsuccess={handleSuccessAllocation} onsubmit={handleFormSubmit} key={oppLine.Id} object-api-name="FPSA_Project_Allocation__c" class="lwcRecEditFrom">
+										<template for:each={AllocationFieldSets.fields} for:item="field">
+											<td scope="row" key={fieldName} class={field.classnamecustom}>
+												<template if:true={field.isResourceField}>
+													<template if:true={oppLine.isUnassigned}>
+														<lightning-input-field 
+															disabled={field.isDisabled} 
+															size="12" 
+															data-myid={oppLine.selectedAllocationId} 
+															data-myfieldname={field.name} 
+															name={oppLine.selectedAllocationId} 
+															variant="label-hidden" 
+															if:true={field.editable} 
+															field-name={field.name} 
+															onchange={setHasChanged} 
+															class={field.name}
+															>
+														</lightning-input-field>
+													</template>
+													<template if:false={oppLine.isUnassigned}>
+														<lightning-output-field 
+															size="12" 
+															data-myfieldname={field.name} 
+															variant="label-hidden" 
+															field-name={field.name}
+															>
+														</lightning-output-field>
+													</template>
+												</template>
+												<template if:false={field.isResourceField}>
+													<lightning-input-field 
+														disabled={field.isDisabled} 
+														size="12" 
+														data-myid={oppLine.selectedAllocationId} 
+														data-myfieldname={field.name} 
+														name={oppLine.selectedAllocationId} 
+														variant="label-hidden" 
+														if:true={field.editable} 
+														field-name={field.name} 
+														onchange={setHasChanged} 
+														class={field.name} 
+														>
+													</lightning-input-field>
+												</template>
+											</td>
+										</template>
+										<template for:each={mapData} for:item="mapKey">
+											<td scope="row" key={mapKey.wFieldName} class="fixedColumnClsWeek">
+												<lightning-input-field 
+													size="12" 
+													data-myid={oppLine.selectedAllocationId} 
+													data-myfieldname={mapKey.wFieldName} 
+													name={oppLine.selectedAllocationId} 
+													variant="label-hidden" 
+													field-name={mapKey.wFieldName} 
+													onchange={setHasChanged} 
+													class={mapKey.wFieldName}
+													>
+												</lightning-input-field>
+											</td>
+										</template>
+										<div class="slds-form__item slds-hide" role="listitem">
+											<lightning-input-field 
+												data-projectid field-name="FPSA_Project__c" 
+												value={oppLine.projectId}>
+											</lightning-input-field>
+										</div>
+									</lightning-record-edit-form>
+								</template>
+							</tr>
+						</template>
+					</tbody>
+					<tfoot>
+						<template for:each={resourceAllocationsDummy} for:item="oppLine">
+							<tr key={oppLine.Id}>
+								<template if:true={AllocationFieldSets}>
+									<th scope="col" key={fieldName} style="width:2rem;">
+									
+									</th>
+									<lightning-record-edit-form record-id={oppLine.Id} key={oppLine.Id} object-api-name="FPSA_Project_Allocation__c">
+										<template for:each={AllocationFieldSets.fields} for:item="field">
+											<td scope="col" key={fieldName} class={field.classnamecustom}>
+												<template if:true={field.isPlannedHours}>
+													<div class="slds-box slds-box_xx-small slds-text-heading_small slds-text-align_center slds-text-color_success">
+														<!--p><lightning-formatted-number maximum-fraction-digits="2">{plannedHours}</lightning-formatted-number></p-->
+														<lightning-formatted-number value={plannedHours} maximum-fraction-digits="2"></lightning-formatted-number>
+														
+														</div>
+												</template>
+												<template if:true={field.isProjectedRevenue}>
+													<div class="slds-box slds-box_xx-small slds-text-heading_small slds-text-align_center slds-text-color_success">
+														<lightning-formatted-number value={projectedRevenue} maximum-fraction-digits="2"></lightning-formatted-number>
+														</div>
+												</template>
+											</td>
+										</template>
+										<template for:each={mapData} for:item="mapKey" for:index="weekindex">
+											<td scope="col" key={mapKey.wDate} class="fixedColumnClsWeek">
+												<div class="slds-p-top_xx-small slds-p-left_small">
+												</div>
+											</td>
+										</template>
+									</lightning-record-edit-form>
+								</template>
+							</tr>
+						</template>
+					</tfoot>
+				</table>
+			</div>
+			
+		</template>
+
+		<div class="slds-align_absolute-center slds-p-top_xx-small">
+			<template if:true={hasError}>
+				<lightning-button onclick={handleCloseError} variant="base" icon-name="utility:error" size="small" icon-position="right" class="errorIconRed slds-p-right_x-small"></lightning-button>
+				<template if:false={minimizeError}>
+					<section aria-describedby="dialog-body-id-5" aria-labelledby="dialog-heading-id-2" class="slds-popover slds-popover_error slds-nubbin_bottom-left" role="dialog" style="position:absolute;bottom:56px;left:49%;margin-left:62px;transform:translateX(-50%)">
+						<lightning-button onclick={handleCloseError} variant="base" icon-name="utility:close" size="x-small" icon-position="right" class="slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close slds-button_icon-inverse errorIconClass"></lightning-button>
+						<header class="slds-popover__header">
+							<div class="slds-media slds-media_center slds-has-flexi-truncate">
+								<div class="slds-media__figure">
+									<span class="slds-icon_container slds-icon-utility-error">
+									<lightning-button variant="base" icon-name="utility:error" size="x-small" icon-position="right" class="errorIconClass"></lightning-button>
+									</span>
+								</div>
+								<div class="slds-media__body">
+									<h2 class="slds-truncate slds-text-heading_medium" id="dialog-heading-id-2" title="We hit a snag.">We hit a snag.</h2>
+								</div>
+							</div>
+						</header>
+						<div class="slds-popover__body" id="dialog-body-id-5">
+							<div class="pageLevelErrors">
+								<template if:true={errorMessages}>
+									<div class="genericNotification"><strong>Review the errors on this page.</strong></div>
+									<ul class="slds-list_dotted slds-m-left_small">
+										<template for:each={errorMessages} for:item="msg">
+											<li key={msg}>
+												{msg}
+											</li>
+										</template>
+									</ul>
+								</template>
+							</div>
+						</div>
+					</section>
+				</template>
+			</template>
+			<button class="slds-button slds-button_neutral myBtn" onclick={addResource}> Add Resource </button>
+			<button class="slds-button slds-button_brand myBtn" type="submit" onclick={hadleProductLineSave} disabled={isNoAllocations}> Save </button>
+		</div>
+	</div>
+	<!-- Spinner -->
+	<div class="spinner">
+		<template if:true={isLoading}>
+			<lightning-spinner alternative-text="Loading" variant="brand" size="medium">
+			</lightning-spinner>
+		</template>
+	</div>
+
+	
+</template>

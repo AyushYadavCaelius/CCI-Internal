@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The type of Rollup (MAX, MIN, SUM, etc.) --></help>
+    <label><!-- Type --></label>
+    <name>rh2__logic__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zoom_Query_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Field used to identify the Zoom Query Name on contacts. Will be used to filter the contacts to be added to campaigns</inlineHelpText>
+    <label>Zoom Query Name</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

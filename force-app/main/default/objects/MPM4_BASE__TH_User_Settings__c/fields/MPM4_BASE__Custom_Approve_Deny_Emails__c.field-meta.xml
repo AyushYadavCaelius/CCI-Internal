@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Custom_Approve_Deny_Emails__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When enabled the manager will be able to customize the emails that are sent when approving and denying time entries.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When enabled the manager will be able to customize the emails that are sent when approving and denying time entries.</inlineHelpText>
+    <label>Custom Time Entry Approve/Deny Emails</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

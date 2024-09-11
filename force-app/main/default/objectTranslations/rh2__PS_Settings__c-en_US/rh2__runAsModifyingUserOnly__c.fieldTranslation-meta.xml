@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This checkbox will cause Rollup Helper to only process queued asynchronous requests for the user that initiated the asynchronous request. Enabling this setting may be necessary if there are parent objects that have custom field-level security checks or have field-level security checks from a third-party managed package. --></help>
+    <label><!-- Process Queue Items Based On Modified By --></label>
+    <name>rh2__runAsModifyingUserOnly__c</name>
+</CustomFieldTranslation>

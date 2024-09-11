@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The sObject of the Lookup Field --></help>
+    <label><!-- Source Field Object --></label>
+    <name>rh2__SourceFieldObject__c</name>
+</CustomFieldTranslation>

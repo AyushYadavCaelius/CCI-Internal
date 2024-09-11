@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Custom_Summary_Sort_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used to define the sort order of the Summary Tab.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When Defining the sort order please input a coma separated value list using Project/Program field API names appropriate to the object in use. You may also define ascending or descending order by including ASC/DESC.
+
+For example: Name ASC, Kickoff__c ASC</inlineHelpText>
+    <label>Custom Summary Sort Order</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

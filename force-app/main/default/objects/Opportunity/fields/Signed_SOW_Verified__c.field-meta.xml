@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signed_SOW_Verified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Signed Documents in Salesforce verified</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Signed Documents in Salesforce verified</inlineHelpText>
+    <label>Signed SOW Verified</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

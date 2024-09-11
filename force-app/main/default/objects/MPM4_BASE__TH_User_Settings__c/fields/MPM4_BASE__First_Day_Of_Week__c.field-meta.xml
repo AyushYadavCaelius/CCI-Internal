@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__First_Day_Of_Week__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>This day will be used as the beginning of the week on the Time Entry page. If left blank, the first day of the week will be determined by the user&apos;s locale. Enter one of the following values without quotes: &apos;SUN&apos;, &apos;MON&apos;, &apos;TUE&apos;, &apos;WED&apos;, &apos;THU&apos;, &apos;FRI&apos;, &apos;SAT&apos;.</inlineHelpText>
+    <label>First Day of Week</label>
+    <length>3</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

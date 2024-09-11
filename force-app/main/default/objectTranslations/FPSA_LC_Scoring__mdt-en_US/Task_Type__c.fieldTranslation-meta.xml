@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Task Type --></label>
+    <name>Task_Type__c</name>
+    <picklistValues>
+        <masterLabel>Connect and Sell Call</masterLabel>
+        <translation><!-- Connect and Sell Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mailchimp</masterLabel>
+        <translation><!-- Mailchimp --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

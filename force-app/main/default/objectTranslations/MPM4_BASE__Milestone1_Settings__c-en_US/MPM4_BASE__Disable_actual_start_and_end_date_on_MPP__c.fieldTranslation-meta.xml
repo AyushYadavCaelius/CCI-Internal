@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to disable the actual start and actual end dates fields from showing up on manage project plan --></help>
+    <label><!-- zDeprecated --></label>
+    <name>MPM4_BASE__Disable_actual_start_and_end_date_on_MPP__c</name>
+</CustomFieldTranslation>

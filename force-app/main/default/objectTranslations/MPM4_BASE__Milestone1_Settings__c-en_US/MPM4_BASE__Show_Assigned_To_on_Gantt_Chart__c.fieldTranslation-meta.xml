@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Shows the assigned to value on the gantt chart (Premium Edition Only) --></help>
+    <label><!-- zDeprecated --></label>
+    <name>MPM4_BASE__Show_Assigned_To_on_Gantt_Chart__c</name>
+</CustomFieldTranslation>

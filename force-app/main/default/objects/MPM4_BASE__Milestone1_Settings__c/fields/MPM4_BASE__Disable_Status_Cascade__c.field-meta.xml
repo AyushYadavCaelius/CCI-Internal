@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Disable_Status_Cascade__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked this setting will prevent status cascading. This means when the status of a project or milestone changes, the status of all child milestones or tasks will not be updated to its parents status.</inlineHelpText>
+    <label>Disable Status Cascading</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

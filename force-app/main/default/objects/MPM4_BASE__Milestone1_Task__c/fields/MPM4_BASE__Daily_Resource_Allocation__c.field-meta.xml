@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Daily_Resource_Allocation__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The percentage of a resources work day allocated to working on this task.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Resource, start date, due date, and estimated hours must be populated in order to automatically calculate daily resource allocation. Daily resource allocation will not be automatically calculated if manual override is enabled.</inlineHelpText>
+    <label>Daily Resource Allocation Percentage</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

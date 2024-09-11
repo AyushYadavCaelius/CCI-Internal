@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Custom_Milestone_Email_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field used for milestone email templates</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the field on the milestone object that will be used for the email template notifications. If left blank, the notification email address field will be used. (Premium Edition Only)</inlineHelpText>
+    <label>Custom Milestone Email Field</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

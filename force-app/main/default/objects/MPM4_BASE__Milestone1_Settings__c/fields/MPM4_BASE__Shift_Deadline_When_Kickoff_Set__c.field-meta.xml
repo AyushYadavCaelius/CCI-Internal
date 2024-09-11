@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Shift_Deadline_When_Kickoff_Set__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When the kickoff of a Milestone or Project is changed and the deadline is not changed, this setting causes the deadline of that Milestone/Project to shift by the same number of days as the Kickoff.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the kickoff of a Milestone or Project is changed and the deadline is not changed, this setting causes the deadline of that Milestone/Project to shift by the same number of days as the Kickoff.</inlineHelpText>
+    <label>Shift Proj/MS Deadline When Kickoff Set</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

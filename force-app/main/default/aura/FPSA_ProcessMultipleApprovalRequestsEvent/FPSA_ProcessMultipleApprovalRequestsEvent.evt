@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="">
+    <aura:attribute name="approvalAction" type="String" />
+</aura:event>

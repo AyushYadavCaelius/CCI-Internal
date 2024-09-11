@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Custom Object Limit --></label>
+    <name>BrillioFC__Custom_Object_Limit__c</name>
+</CustomFieldTranslation>

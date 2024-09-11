@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_details__c</fullName>
+    <description>all the other consolidated details on account .
+So that Admin can put all the extra values( which are not in Account&apos;s schema) in this field using Data loader.</description>
+    <externalId>false</externalId>
+    <label>Other details</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

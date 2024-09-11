@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, comma-separated rollup results will be formatted in the form &quot;one, two, and three.&quot; If unchecked, rollup results will be formatted as &quot;one, two, three.&quot; --></help>
+    <label><!-- Use Comma-And Delimiter --></label>
+    <name>rh2__useCommaAndDelim__c</name>
+</CustomFieldTranslation>

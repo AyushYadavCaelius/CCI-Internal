@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Syncs Start Date and Due Date with the values of Actual Start Date and Actual Finish Date --></help>
+    <label><!-- Sync Task With Actual Start Finish Dates --></label>
+    <name>MPM4_BASE__Sync_Task_With_Actual_Start_Finish_Dates__c</name>
+</CustomFieldTranslation>

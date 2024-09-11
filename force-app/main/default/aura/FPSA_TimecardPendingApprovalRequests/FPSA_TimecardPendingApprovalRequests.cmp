@@ -1,0 +1,15 @@
+<aura:component>
+
+    <aura:attribute name="approvalRequests" type="List" />
+
+    <aura:method name="setupFilteredApprovalRequests" action="{!c.handleApprovalRequestsSetup}" access="public">
+        <aura:attribute name="filteredApprovalRequests" type="List" />
+    </aura:method>
+
+    <aura:method name="getApprovalRequests" action="{!c.handleGetApprovalRequests}" access="public" />
+
+    <aura:iteration items="{!v.approvalRequests}" var="approvalRequest" indexVar="reqIndex">
+        <c:FPSA_TimecardPendingApprovalRequest approvalRequest="{!approvalRequest}" approvalRequestIndex="{!reqIndex}" />
+    </aura:iteration>
+
+</aura:component>

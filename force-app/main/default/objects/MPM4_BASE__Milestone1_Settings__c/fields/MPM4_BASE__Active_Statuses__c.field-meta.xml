@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Active_Statuses__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sets the default active statuses on a project. Each value must be enclosed in single quotes with additional values separated by a comma. Projects with statuses defined in this setting will display on the Summary page; the assigned resources in these projects may also receive task start date notifications.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sets the default active statuses on a project. Each value must be enclosed in single quotes with additional values separated by a comma. Projects with statuses defined in this setting will display on the Summary page; the assigned resources in these projects may also receive task start date notifications.</inlineHelpText>
+    <label>Active Statuses</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

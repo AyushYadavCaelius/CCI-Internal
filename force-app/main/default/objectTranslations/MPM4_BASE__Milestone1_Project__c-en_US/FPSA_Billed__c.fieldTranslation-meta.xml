@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Billed Amount is the Total dollar amount invoiced to the client for services and or expenses incurred on the project. The amount will initially be manually entered from quick books and eventually automated via an export from quick books.   --></help>
+    <label><!-- PD Billed --></label>
+    <name>FPSA_Billed__c</name>
+</CustomFieldTranslation>

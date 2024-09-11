@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advance_Payment_Terms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If Advance payment is being used, this field determines the payment terms for the Initial Invoice. This need not be the same as regular invoice terms. The Invoice module uses this value to determine when the Advance Payment Invoice is due</inlineHelpText>
+    <label>Advance Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Due Immediately</fullName>
+                <default>false</default>
+                <label>Due Immediately</label>
+            </value>
+            <value>
+                <fullName>Net 7</fullName>
+                <default>false</default>
+                <label>Net 7</label>
+            </value>
+            <value>
+                <fullName>Net 15</fullName>
+                <default>false</default>
+                <label>Net 15</label>
+            </value>
+            <value>
+                <fullName>Net 30</fullName>
+                <default>false</default>
+                <label>Net 30</label>
+            </value>
+            <value>
+                <fullName>Net 45</fullName>
+                <default>false</default>
+                <label>Net 45</label>
+            </value>
+            <value>
+                <fullName>Net 60</fullName>
+                <default>false</default>
+                <label>Net 60</label>
+            </value>
+            <value>
+                <fullName>Milestone Based</fullName>
+                <default>false</default>
+                <label>Milestone Based</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

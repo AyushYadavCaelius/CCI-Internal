@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Only_Get_Records_From_The_Recent_N_Days__c</fullName>
+    <defaultValue>90</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When approving times, only get and work with records from the recent number of days (based on last modified date). Default is 90 days.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When approving times, only get and work with records from the recent number of days (based on last modified date). Default is 90 days.</inlineHelpText>
+    <label>Deprecated</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

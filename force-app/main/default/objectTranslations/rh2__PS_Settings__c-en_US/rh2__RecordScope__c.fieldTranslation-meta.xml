@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Maximum number of records to process per asynchronous job with Rollup Helper.  This impacts the number of async calls needed to complete an asynchronous transaction.  Best to be a multiple of 5, default value is 400. --></help>
+    <label><!-- Record Scope --></label>
+    <name>rh2__RecordScope__c</name>
+</CustomFieldTranslation>

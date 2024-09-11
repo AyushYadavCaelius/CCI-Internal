@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checked, the Resources Assigned field on Projects and Tasks will not be automatically updated. Enable this setting to prevent issues with the Resources Assigned maximum field length. --></help>
+    <label><!-- Disable Resources Assigned Field Updates --></label>
+    <name>MPM4_BASE__Disable_Resources_Assigned_Updates__c</name>
+</CustomFieldTranslation>

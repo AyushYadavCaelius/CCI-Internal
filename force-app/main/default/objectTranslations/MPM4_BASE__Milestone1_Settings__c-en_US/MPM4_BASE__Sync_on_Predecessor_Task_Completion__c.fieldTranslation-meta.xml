@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When this setting is enabled successor project tasks will only be synced to Salesforce tasks/events when its predecessor project task is marked complete. (Premium Edition Only) --></help>
+    <label><!-- Sync on Predecessor Task Completion --></label>
+    <name>MPM4_BASE__Sync_on_Predecessor_Task_Completion__c</name>
+</CustomFieldTranslation>

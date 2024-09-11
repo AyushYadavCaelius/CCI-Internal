@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This setting allows you to disable individual triggers within the Milestones PM+ package. Enter the Apex class names of the triggers you want to disable, separated by commas. For example: MPM4_Resource_Trigger, Milestone1_Task_Trigger. --></help>
+    <label><!-- Granular Trigger Disablement --></label>
+    <name>MPM4_BASE__Disable_Triggers_Granular__c</name>
+</CustomFieldTranslation>

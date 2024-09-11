@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This will change to updated when the new report is added on Friday if not it will be in Due. --></help>
+    <label><!-- Track of Status Report --></label>
+    <name>Track_of_Status_Report__c</name>
+    <picklistValues>
+        <masterLabel>Due</masterLabel>
+        <translation><!-- Due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Updated</masterLabel>
+        <translation><!-- Updated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

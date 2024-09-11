@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The number of records per batch when a data load is performed in the environment.  Will not need to be adjusted unless the smallest number of records per batch you use when loading data in your environment is below 200. --></help>
+    <label><!-- Data Load Batch Size --></label>
+    <name>rh2__Data_Load_Batch_Size__c</name>
+</CustomFieldTranslation>

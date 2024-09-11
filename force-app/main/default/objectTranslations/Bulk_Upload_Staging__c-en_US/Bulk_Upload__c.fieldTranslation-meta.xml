@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bulk Upload File Id --></label>
+    <name>Bulk_Upload__c</name>
+    <relationshipLabel><!-- Bulk Upload Staging --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Custom_Task_Email_Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The field that is used for the email template notifications</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the field on the task object that will be used for the email template notifications. If left blank, the email will be sent to the address in the standard notification email field. (Premium Edition Only)</inlineHelpText>
+    <label>Custom Task Email Field</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

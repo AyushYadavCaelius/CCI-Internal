@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box to allow child records to save even if the parent record hits an exception while saving. --></help>
+    <label><!-- Allow Child Save If Parent Save Fails --></label>
+    <name>rh2__Allow_Child_Save_If_Parent_Save_Fails__c</name>
+</CustomFieldTranslation>

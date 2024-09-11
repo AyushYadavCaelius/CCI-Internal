@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The amount of hours the resource works each week. Defaults to 40 if left blank. --></help>
+    <label><!-- Workweek Duration --></label>
+    <name>MPM4_BASE__Resource_Workweek_Duration__c</name>
+</CustomFieldTranslation>

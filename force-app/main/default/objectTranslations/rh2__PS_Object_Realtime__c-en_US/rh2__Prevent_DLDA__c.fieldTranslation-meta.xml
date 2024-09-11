@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Disables data load dynamic asynchronous functionality on the specified object type when checked. Use of data load dynamic asynchronous processing is strongly recommended. --></help>
+    <label><!-- Disable Data Load Dynamic Async --></label>
+    <name>rh2__Prevent_DLDA__c</name>
+</CustomFieldTranslation>

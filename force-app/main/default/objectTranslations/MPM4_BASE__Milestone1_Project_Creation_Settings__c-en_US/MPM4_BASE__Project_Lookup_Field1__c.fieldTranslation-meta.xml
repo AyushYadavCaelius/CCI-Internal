@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The name of the Lookup field on the project object that will relate to the record that trigger the project to be created. --></help>
+    <label><!-- Project Lookup Field 1 --></label>
+    <name>MPM4_BASE__Project_Lookup_Field1__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMS</fullName>
+                <default>false</default>
+                <label>AMS</label>
+            </value>
+            <value>
+                <fullName>CMS</fullName>
+                <default>false</default>
+                <label>CMS</label>
+            </value>
+            <value>
+                <fullName>CTI</fullName>
+                <default>false</default>
+                <label>CTI</label>
+            </value>
+            <value>
+                <fullName>Document Execution</fullName>
+                <default>false</default>
+                <label>Document Execution</label>
+            </value>
+            <value>
+                <fullName>Document Generation</fullName>
+                <default>false</default>
+                <label>Document Generation</label>
+            </value>
+            <value>
+                <fullName>Document Management</fullName>
+                <default>false</default>
+                <label>Document Management</label>
+            </value>
+            <value>
+                <fullName>ERP</fullName>
+                <default>false</default>
+                <label>ERP</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>LMS</fullName>
+                <default>false</default>
+                <label>LMS</label>
+            </value>
+            <value>
+                <fullName>LSS</fullName>
+                <default>false</default>
+                <label>LSS</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>MuleSoft Anypoint</fullName>
+                <default>false</default>
+                <label>MuleSoft Anypoint</label>
+            </value>
+            <value>
+                <fullName>MuleSoft Anypoint Partner Manager</fullName>
+                <default>false</default>
+                <label>MuleSoft Anypoint Partner Manager</label>
+            </value>
+            <value>
+                <fullName>MuleSoft Automation: RPA</fullName>
+                <default>false</default>
+                <label>MuleSoft Automation: RPA</label>
+            </value>
+            <value>
+                <fullName>MuleSoft Automation IDP</fullName>
+                <default>false</default>
+                <label>MuleSoft Automation IDP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Salesforce Commerce</fullName>
+                <default>false</default>
+                <label>Salesforce Commerce</label>
+            </value>
+            <value>
+                <fullName>Salesforce CPQ</fullName>
+                <default>false</default>
+                <label>Salesforce CPQ</label>
+            </value>
+            <value>
+                <fullName>Salesforce Experience Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Experience Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce Field Service Lightning</fullName>
+                <default>false</default>
+                <label>Salesforce Field Service Lightning</label>
+            </value>
+            <value>
+                <fullName>Salesforce Health Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Health Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce Industry Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Industry Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce OMS</fullName>
+                <default>false</default>
+                <label>Salesforce OMS</label>
+            </value>
+            <value>
+                <fullName>Salesforce Sales Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Sales Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce Service Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Service Cloud</label>
+            </value>
+            <value>
+                <fullName>Salesforce Service Cloud Voice</fullName>
+                <default>false</default>
+                <label>Salesforce Service Cloud Voice</label>
+            </value>
+            <value>
+                <fullName>Slack</fullName>
+                <default>false</default>
+                <label>Slack</label>
+            </value>
+            <value>
+                <fullName>WMS</fullName>
+                <default>false</default>
+                <label>WMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

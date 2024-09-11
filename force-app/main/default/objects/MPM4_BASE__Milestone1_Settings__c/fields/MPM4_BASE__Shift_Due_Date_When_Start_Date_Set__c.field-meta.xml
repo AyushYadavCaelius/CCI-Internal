@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Shift_Due_Date_When_Start_Date_Set__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When the start date of a task is changed and the due date is not changed, this setting causes the due date of that task to shift by the same number of days as the start date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When the start date of a task is changed and the due date is not changed, this setting causes the due date of that task to shift by the same number of days as the start date.</inlineHelpText>
+    <label>Shift Task Due Date When Start Date Set</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

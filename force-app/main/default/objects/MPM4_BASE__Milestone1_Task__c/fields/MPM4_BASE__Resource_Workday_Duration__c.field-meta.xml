@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Resource_Workday_Duration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used by Apex task trigger to calculate the task due date via estimated hours. Saves a query in the transaction.</description>
+    <externalId>false</externalId>
+    <formula>MPM4_BASE__Resource__r.MPM4_BASE__Resource_Workday_Duration__c</formula>
+    <label>Resource Workday Duration</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

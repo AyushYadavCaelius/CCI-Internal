@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Push_Upgrade_Opt_Out__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Prevents push upgrades from installing successfully in this org (Premium Only).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Prevents push upgrades from installing successfully in this org (Premium Only).</inlineHelpText>
+    <label>Push Upgrade Opt Out</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

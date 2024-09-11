@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r$BrillioFC__IsAccessible__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r$BrillioFC__IsVisible__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r$BrillioFC__Namespace__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r.BrillioFC__Application_Access_Details__r$BrillioFC__Profile_Name__c</field>
+    </columns>
+    <columns>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r.BrillioFC__Application_Access_Details__r$BrillioFC__PermissionSet_Name__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Application with Access Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>BrillioFC__ForceClinic_Org_Details_with_ForceClinc_Application_Details_with_ForceClinic_A__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>BrillioFC__Org_Details__c.BrillioFC__Application_Details__r.BrillioFC__Application_Access_Details__r$BrillioFC__PermissionSet_Name__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>BrillioFC__Org_Details__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

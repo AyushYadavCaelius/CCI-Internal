@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Summary_Programs__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>The Summary tab will display Programs instead of Projects when this setting is checked.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Summary tab will display Programs instead of Projects when this setting is checked.</inlineHelpText>
+    <label>Summary Programs</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

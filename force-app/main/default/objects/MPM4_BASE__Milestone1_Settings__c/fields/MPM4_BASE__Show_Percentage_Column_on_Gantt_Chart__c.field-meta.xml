@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Show_Percentage_Column_on_Gantt_Chart__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Show the Percentage of the task on the gantt chart as a column(Premium Edition Only)</inlineHelpText>
+    <label>Show Percentage Column on Gantt Chart</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

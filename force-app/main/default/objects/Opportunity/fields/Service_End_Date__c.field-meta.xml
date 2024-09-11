@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_End_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when we are supposed to have completed project for this SOW. best date on date of closing the deal. Verbally agree to final pricing, terms and start date.</inlineHelpText>
+    <label>Service End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

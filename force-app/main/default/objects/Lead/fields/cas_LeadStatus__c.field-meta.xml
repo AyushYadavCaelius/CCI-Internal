@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cas_LeadStatus__c</fullName>
+    <description>Lead Status for Connect and Sell.  Need the same values as the Contact status and Lead status used for Lead stages - So we created a new field to match contact status and will be mapped in C &amp; S for status</description>
+    <externalId>false</externalId>
+    <label>Lead Status (CAS)</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Contacted</fullName>
+                <default>false</default>
+                <label>Not Contacted</label>
+            </value>
+            <value>
+                <fullName>Contacted - Qualifying</fullName>
+                <default>false</default>
+                <label>Contacted - Qualifying</label>
+            </value>
+            <value>
+                <fullName>Contacted - Disqualified</fullName>
+                <default>false</default>
+                <label>Contacted - Disqualified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

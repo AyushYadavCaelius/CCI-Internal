@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_QTD_Actuals__c</fullName>
+    <description>Sum of total billable hours and internal hours till today in current Quarter.</description>
+    <externalId>false</externalId>
+    <formula>QTD_Total_Billable_Hours__c + QTD_Total_Internal_hours__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Sum of total billable hours and internal hours till today in current Quarter.</inlineHelpText>
+    <label>Current QTD Actuals</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

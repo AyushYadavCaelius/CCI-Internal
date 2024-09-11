@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDR_Campaign_List__c</fullName>
+    <externalId>false</externalId>
+    <label>SDR Campaign List</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COVID ED</fullName>
+                <default>false</default>
+                <label>COVID ED</label>
+            </value>
+            <value>
+                <fullName>COVID Re-Entry</fullName>
+                <default>false</default>
+                <label>COVID Re-Entry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

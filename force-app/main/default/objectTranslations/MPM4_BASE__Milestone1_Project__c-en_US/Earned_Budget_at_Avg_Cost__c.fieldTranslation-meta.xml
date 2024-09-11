@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Earned Cost at Average Hourly Rate for the Project --></help>
+    <label><!-- Earned Budget at Avg Cost --></label>
+    <name>Earned_Budget_at_Avg_Cost__c</name>
+</CustomFieldTranslation>

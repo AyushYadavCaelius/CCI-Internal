@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- The Average Hourly Cost for a Project.
+Note: Goal is to ensure the higher cost resource spend less hours compared to junior team. If ratio is not maintained, this variable is influenced. -->
+    </help>
+    <label><!-- Average Hourly Cost --></label>
+    <name>Average_Hourly_Cost__c</name>
+</CustomFieldTranslation>

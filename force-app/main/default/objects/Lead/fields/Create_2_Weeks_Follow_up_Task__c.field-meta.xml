@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_2_Weeks_Follow_up_Task__c</fullName>
+    <description>Checks if Lead was created before 14 days and still has default Lead Score</description>
+    <externalId>false</externalId>
+    <formula>AND(
+(TODAY() &gt;= DATEVALUE(CreatedDate) + 14),
+FPSA_Lead_Score__c == VALUE($Label.Default_Lead_Score)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Create 2 Weeks Follow-up Task</label>
+    <type>Checkbox</type>
+</CustomField>

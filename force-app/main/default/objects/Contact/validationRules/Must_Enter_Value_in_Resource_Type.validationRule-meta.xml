@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Enter_Value_in_Resource_Type</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    Account.Name = &quot;Caelius Consulting&quot;,
+    ISPICKVAL( Resource_Type__c , &quot;&quot;),
+    NOT(ISNEW())
+)</errorConditionFormula>
+    <errorDisplayField>Resource_Type__c</errorDisplayField>
+    <errorMessage>Resource Type is required for Caelius Consulting Contacts</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field contains the names of all resources assigned via the Task Resource object. This field is updated automatically. --></help>
+    <label><!-- Resources Assigned --></label>
+    <name>MPM4_BASE__Resources_Assigned__c</name>
+</CustomFieldTranslation>

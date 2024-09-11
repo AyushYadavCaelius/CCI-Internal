@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Number of estimated hours from Task and Issues for each resource for a project rolled up at resource level. --></help>
+    <label><!-- Total Estimated Hours --></label>
+    <name>Total_Estimated_Hours__c</name>
+</CustomFieldTranslation>

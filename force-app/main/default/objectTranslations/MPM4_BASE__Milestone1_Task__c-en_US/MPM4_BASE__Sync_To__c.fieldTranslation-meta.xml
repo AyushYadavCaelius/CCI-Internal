@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Setting this field to &apos;Salesforce Event&apos; and populating the Start Time will automatically create a Salesforce Event on your Salesforce Calendar as well as any calendars that you sync with Salesforce using third party apps. --></help>
+    <label><!-- Sync To --></label>
+    <name>MPM4_BASE__Sync_To__c</name>
+    <picklistValues>
+        <masterLabel>Salesforce Event</masterLabel>
+        <translation><!-- Salesforce Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce Task</masterLabel>
+        <translation><!-- Salesforce Task --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPM4_BASE__Disable_Milestone_Deadline__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Allows Milestone due dates to be blank when it has a kickoff date populated.</inlineHelpText>
+    <label>Disable Milestone Deadline Population</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

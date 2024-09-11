@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EA_Kanban_Line_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Total Open Tasks - &quot; &amp;  TEXT(MPM4_BASE__Total_Open_Tasks__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Field Used for Kanban Card Layout</inlineHelpText>
+    <label>EA Kanban Line 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

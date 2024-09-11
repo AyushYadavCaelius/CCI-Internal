@@ -1,0 +1,143 @@
+<template>
+
+
+  
+ <lightning-card title="Logged time" icon-name="custom:custom63">
+    <!--lightning-button label="Create New Log" slot="actions" onclick={createRow} class="slds-m-left_x-small"></lightning-button-->
+
+    <template if:true={isNoAllocations}>
+        <div class="slds-text-heading_small slds-text-align_center "> No log has been created for this task yet.</div>
+    </template>
+    <template if:false={isNoAllocations}>
+   
+        <template if:true={logs.data}>
+            <lightning-datatable 
+            key-field="Id" 
+            data={logs.data} 
+            columns={columns} 
+            onsave={handleSave}
+            draft-values={draftValues}
+            hide-checkbox-column>
+             </lightning-datatable>
+        </template>
+        <template if:true={logs.error}>
+            <p>{logs.error}</p>
+        </template>
+
+    </template>
+    
+    
+  
+    <template if:true={firstRecord}>
+        <template if:false={isNoAllocations}> 
+        <div class="slds-grid slds-gutters">
+            <span>
+                <div  style="width:10px"></div>
+            </span>
+        
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="slds-col">
+              
+                <span>
+                    <lightning-input type="date" 
+                name="log_Date"
+                    label="" 
+                    value={log_Date} 
+                    onchange={handle_Date_Change}
+                    >
+                </lightning-input>
+               </span>
+            </div> 
+            <div class="slds-col">
+                    <span>
+                    <lightning-input type="number"
+                    name="Time_Spent" 
+                        label="" 
+                        value={Time_Spent} 
+                        onchange={handle_Time_Spent_Change}>
+                    </lightning-input>
+                </span>
+                </div>
+                <div class="slds-col">
+                    <span>
+                    <lightning-input type="text" 
+                    name="Work_Description"
+                        label="" 
+                        value={Work_Description} 
+                        onchange={handle_Work_Description_Change}>
+                    </lightning-input>
+                </span>
+                </div>
+                
+
+        
+                <div class="slds-col slds-align-bottom">
+               
+                    <span>
+                        <lightning-button title="Save" label="Save" value={index}  onclick={addResource} class="slds-m-right_large">
+                        </lightning-button>
+                        <!--lightning-button  title="cancel" label="cancel" value={index} onclick={hideRow} class="slds-m-right_large">
+                        </lightning-button-->
+                    </span>
+               
+            </div>
+                
+            </div>    
+           </template>
+           <template if:true={isNoAllocations}>
+            <div class="slds-grid slds-gutters">
+            
+        
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="slds-col">
+                    <span>
+                        <lightning-input type="date" 
+                    name="log_Date"
+                        label="Date" 
+                        value={log_Date} 
+                        onchange={handle_Date_Change}
+                        >
+                    </lightning-input>
+                   </span>
+                </div> 
+                <div class="slds-col">
+                        <span>
+                        <lightning-input type="number"
+                        name="Time_Spent" 
+                            label="Time Spent" 
+                            value={Time_Spent} 
+                            onchange={handle_Time_Spent_Change}>
+                        </lightning-input>
+                    </span>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+                        <lightning-input type="text" 
+                        name="Work_Description"
+                            label="Work Description" 
+                            value={Work_Description} 
+                            onchange={handle_Work_Description_Change}>
+                        </lightning-input>
+                    </span>
+                    </div>
+            
+                    <div class="slds-col slds-align-bottom">
+                   
+                        <span>
+                            <lightning-button title="Save" label="Save" value={index}  onclick={addResource} class="slds-m-right_large">
+                            </lightning-button>
+                            <!--lightning-button  title="cancel" label="cancel" value={index} onclick={hideRow} class="slds-m-right_large">
+                            </lightning-button-->
+                        </span>
+                   
+                </div>
+                    
+                </div>    
+               </template> 
+        </template>
+    
+ 
+</lightning-card>
+
+ 
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bulk_Upload_Utility_Highlights</fullName>
+    <fields>Name</fields>
+    <fields>File_Status__c</fields>
+    <fields>Total_Rows__c</fields>
+    <fields>Staging_Error_Count__c</fields>
+    <fields>Processing_Error_Count__c</fields>
+    <fields>OwnerId</fields>
+    <label>Bulk Upload Utility Highlights</label>
+</CompactLayout>

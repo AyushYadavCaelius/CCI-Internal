@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Invoicing Type --></label>
+    <name>Invoicing_Type__c</name>
+    <picklistValues>
+        <masterLabel>Schedule driven</masterLabel>
+        <translation><!-- Schedule driven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timesheet driven</masterLabel>
+        <translation><!-- Timesheet driven --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

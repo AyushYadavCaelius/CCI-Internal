@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the department the resource is primarily allocated too --></help>
+    <label><!-- Department --></label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT and Operations</masterLabel>
+        <translation><!-- IT and Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India Delivery</masterLabel>
+        <translation><!-- India Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadership</masterLabel>
+        <translation><!-- Leadership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-sales</masterLabel>
+        <translation><!-- Pre-sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDR</masterLabel>
+        <translation><!-- SDR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
